@@ -6,8 +6,5 @@ HELLO
 
 91919191
 
-<<<<<<< HEAD
-Hei. Dette er even og pär
-=======
-Hei. Dette er even og markus
->>>>>>> origin/master
+Hei. Dette er even og pär og markus
+
