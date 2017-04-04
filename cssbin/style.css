@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+/*
+COLORS
+#006989 / SEA BLUE
+#01A7C2 / BONDI BLUE
+#AF3800 / MAHOGANY
+#A3BAC3 / WILD BLUE YONDER
+#F1F5F2 / ANTI-FLASH WHITE
+*/
+
+html, body {
+    display: block;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    background: #F1F5F2;
+    font-family: 'Roboto', sans-serif;
+}
+
+#wrapper {
+    margin: 0 auto;
+    text-align: center;
+}
+/*HEADER START*/
+header {
+    display: block;
+    margin: 0 auto;
+    width: 1280px;
+    height: 140px;
+    background: #006989;
+    box-shadow: 0 0 100px #000;
+}
+header img {
+    height: 130px;
+    width: 130px;
+    margin: -50px 5px ;
+    border: 1px solid #F1F5F2;
+    float: left;
+    position: relative;
+}
+header img:after {
+    border-top: 30px solid transparent;
+    border-left: 40px solid #F1F5F2;
+    border-bottom: 30px solid transparent;
+    bottom: 35px;
+    content: "";
+    position: absolute;
+    left: 130px;
+    width: 0;
+    height: 0;
+}
+header h1 {
+    margin: 0 auto;
+    padding-top: 15px;
+    text-align: center;
+    text-shadow: 0 0 1px #000;
+    color: #F1F5F2;
+}
+
+/* MAKE UL/LI MENU CENTER */
+.table {
+    display: table;
+    margin: 0 auto;
+}
+ul#horizontalList {
+    list-style: none;
+    width: 800px;
+    text-align: center;
+    margin-left: -200px;
+}
+ul#horizontalList li {
+    display: inline-block;
+}
+#horizontalList li {
+    color: #F1F5F2;
+    width: 200px;
+    height: 30px;
+    margin-top: 50px;
+    padding-top: 10px;
+    background: #A3BAC3;
+    box-shadow: 0 25px 200px #000;
+}
+/*END UL/LI*/
+/* HEADER END */
+
+/* MAIN START */
+main {
+    width: 1270px;
+    height: 768px;
+    margin: 0 auto;
+    margin-top: 50px;
+    border: 5px solid #006989;
+    box-shadow: 0 0 50px #000;
+}
