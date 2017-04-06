@@ -30,7 +30,7 @@ header {
     width: 1280px;
     height: 140px;
     background: #006989;
-    box-shadow: 0 0 100px #000;
+    box-shadow: 0 0 5px #000;
 }
 header img {
     height: 130px;
@@ -80,7 +80,7 @@ ul#horizontalList li {
     margin-top: 50px;
     padding-top: 10px;
     background: #A3BAC3;
-    box-shadow: 0 25px 200px #000;
+    box-shadow: 0 0 5px #000;
 }
 /*END UL/LI*/
 /* HEADER END */
@@ -92,5 +92,5 @@ main {
     margin: 0 auto;
     margin-top: 50px;
     border: 5px solid #006989;
-    box-shadow: 0 0 50px #000;
+    box-shadow: 0 0 5px #000;
 }
