@@ -22,7 +22,7 @@
 
 <div id="wrapper">
     <header>
-        <h1>PROJECTNAME HERE</h1>
+        <h1>PROJECTNAME HALA</h1>
         <img src="">
         <!-- MAKE MENU CENTER  -->
         <div id="outerTable">
