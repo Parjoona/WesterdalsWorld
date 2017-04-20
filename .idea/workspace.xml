@@ -4,8 +4,6 @@
     <list default="true" id="f8c3f45a-495c-47c4-8c30-0c3382cf41c9" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cssbin/style.css" afterPath="$PROJECT_DIR$/cssbin/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jsbin/script.js" afterPath="$PROJECT_DIR$/jsbin/script.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -20,8 +18,8 @@
       <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="319">
-              <caret line="47" column="0" lean-forward="true" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
+            <state relative-caret-position="445">
+              <caret line="57" column="36" lean-forward="false" selection-start-line="57" selection-start-column="36" selection-end-line="57" selection-end-column="36" />
               <folding>
                 <element signature="e#6#87#0#PHP" expanded="true" />
                 <marker date="1492693011629" expanded="true" signature="1378:1405" ph="..." />
@@ -31,11 +29,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/cssbin/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="676">
-              <caret line="191" column="30" lean-forward="true" selection-start-line="191" selection-start-column="30" selection-end-line="191" selection-end-column="30" />
+            <state relative-caret-position="151">
+              <caret line="162" column="13" lean-forward="false" selection-start-line="162" selection-start-column="13" selection-end-line="162" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -53,7 +51,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="script.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="script.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/jsbin/script.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="336">
@@ -75,8 +73,8 @@
         <option value="$PROJECT_DIR$/register.php" />
         <option value="$PROJECT_DIR$/config.php" />
         <option value="$PROJECT_DIR$/index.php" />
-        <option value="$PROJECT_DIR$/cssbin/style.css" />
         <option value="$PROJECT_DIR$/jsbin/script.js" />
+        <option value="$PROJECT_DIR$/cssbin/style.css" />
       </list>
     </option>
   </component>
@@ -108,6 +106,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -120,10 +120,40 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WesterdalsWorld" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WesterdalsWorld" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="imgbin" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WesterdalsWorld" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WesterdalsWorld" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="imgbin" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="places_img" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -230,14 +260,16 @@
       <workItem from="1492682274913" duration="1920000" />
       <workItem from="1492692290099" duration="24000" />
       <workItem from="1492692352300" duration="1631000" />
+      <workItem from="1492694038782" duration="758000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="36266000" />
+    <option name="totallyTimeSpent" value="37024000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="94" y="8" width="1577" height="1042" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24951892" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -270,6 +302,44 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="882">
+          <caret line="47" column="0" lean-forward="false" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
+          <folding>
+            <element signature="e#6#87#0#PHP" expanded="true" />
+            <marker date="1492693011629" expanded="true" signature="1378:1405" ph="..." />
+            <marker date="1492693011629" expanded="true" signature="1378:1444" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cssbin/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4011">
+          <caret line="191" column="30" lean-forward="true" selection-start-line="191" selection-start-column="30" selection-end-line="191" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="20" column="28" lean-forward="false" selection-start-line="20" selection-start-column="28" selection-end-line="20" selection-end-column="28" />
+          <folding>
+            <marker date="1492677212686" expanded="true" signature="521:541" ph="SELECT * FRO... places" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jsbin/script.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="16" column="48" lean-forward="false" selection-start-line="16" selection-start-column="48" selection-end-line="16" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -583,10 +653,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/jsbin/script.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="16" column="48" lean-forward="false" selection-start-line="16" selection-start-column="48" selection-end-line="16" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="319">
-          <caret line="47" column="0" lean-forward="true" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
+        <state relative-caret-position="445">
+          <caret line="57" column="36" lean-forward="false" selection-start-line="57" selection-start-column="36" selection-end-line="57" selection-end-column="36" />
           <folding>
             <element signature="e#6#87#0#PHP" expanded="true" />
             <marker date="1492693011629" expanded="true" signature="1378:1405" ph="..." />
@@ -597,16 +675,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/cssbin/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="676">
-          <caret line="191" column="30" lean-forward="true" selection-start-line="191" selection-start-column="30" selection-end-line="191" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jsbin/script.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="16" column="48" lean-forward="false" selection-start-line="16" selection-start-column="48" selection-end-line="16" selection-end-column="48" />
+        <state relative-caret-position="151">
+          <caret line="162" column="13" lean-forward="false" selection-start-line="162" selection-start-column="13" selection-end-line="162" selection-end-column="13" />
           <folding />
         </state>
       </provider>
