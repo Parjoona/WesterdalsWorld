@@ -10,7 +10,7 @@ include 'config.php';
 ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sv">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -54,9 +54,15 @@ include 'config.php';
     <div id="content">
         <?php
         foreach ($places as $place) {
-            echo '<div id="placeContainer" onClick="openMessage()">';
+            echo '<div id="placeContainer" onClick="openMessage()"><div id="verticalLine"></div><div id="placeName">';
             echo $place['place_name'];
-            echo '</div>';
+            echo '</div><div id="placeType">';
+            echo $place['place_type'];
+            echo '</div><div id="placeDistance">';
+            echo $place['distance'];
+            echo 'm</div><div id="imgHolder">';
+            echo "<img srcset=\"{$place['img_url']}\" src='imgbin/alt_place.png'/>";
+            echo '</div></div>';
         }
         ?>
     </div>

@@ -1,5 +1,5 @@
 /* Import av fonts */
-@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Roboto:100');
 
 /*
 Dark blue - #13293d
@@ -149,13 +149,63 @@ main {
 
 /* CONTAINS "PLACES" */
 #placeContainer {
-    height: 200px;
-    width: 200px;
+    height: 155px;
+    width: 240px;
     margin: 5px;
+    font-family: 'Roboto', sans-serif;
     border: 1px solid #ad343e;
     position: relative;
     float: left;
     text-align: center;
+}
+
+#verticalLine {
+    width: 1px;
+    background: #07020d;
+    height: 20px;
+    top: 30px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+#placeName {
+    left: 0;
+    right: 0;
+    background: #ad343e;
+    color: #E8F1F2;
+    margin: 5px;
+}
+
+#placeType {
+    top: 30px;
+    right: 130px;
+}
+
+#placeDistance {
+    top: 30px;
+    left: 130px;
+}
+
+#imgHolder {
+    border-top: #a31621 3px solid;
+    height: 100px;
+    width: 240px;
+    display: flex;
+    bottom: 0;
+}
+
+#imgHolder img {
+    height: 100px;
+    width: 240px;
+    left: 0;
+    right: 0;
+    opacity: 0.65;
+    transition: 0.25s;
+}
+
+#placeContainer:hover #imgHolder img {
+    opacity: 0.9;
 }
 
 /* ÅKER UT FRÅN MAIN*/
@@ -185,5 +235,5 @@ main {
 }
 
 #closeButton:hover p {
-    right: 245px;
+    right: 247px;
 }
