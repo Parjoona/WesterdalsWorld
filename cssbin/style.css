@@ -7,6 +7,13 @@ Lapis blue - #247ba0
 Bright blue - #1b98e0
 Antiflash white - #e8f1f2
 Orange - #ef7a26
+
+WHITE #e8f1f2
+BRIGHT RED #ad343e
+DARKER RED #a31621
+RICH BLACK #07020d
+GRAY #93898c
+
 */
 html, body {
     margin: 0;
@@ -27,13 +34,11 @@ p, h1, a, form {
 }
 
 /*HEADER START*/
-
 header {
     width: 100%;
     height: 150px;
-    background: #13293D;
-    border-bottom: #EF7A26 solid 5px;
-    box-shadow: 0 5px 100px #13293D;
+    background: #ad343e;
+    border-bottom: #a31621 solid 1px;
 }
 
 header h1, p {
@@ -103,36 +108,33 @@ header h1, p {
     margin: 0 auto;
     top: 0;
 }
-
 /* HEADER END*/
 
 /* MAIN - HÅLLER CONTENT & MESSAGE WINDOW */
 main {
-    background: #13293D;
+    background: #ad343e;
     width: 1000px;
     margin: 0 auto;
     height: 100%;
     top: 200px;
     left: 0;
     right: 0;
-    border-top: #EF7A26 solid 5px;
+    border-top: #a31621 solid 1px;
     transition: 0.75s;
 }
 
 /* LIGGER INNE I MAIN, INNEHÅLLER OBJECT */
-
 #content {
     margin: 0 auto;
     left: 0;
     right: 0;
     background: #E8F1F2;
-    width: 990px;
+    width: 998px;
     height: 99%;
     z-index: 10;
 }
 
 /* CONTAINS "PLACES" */
-
 #placeContainer {
     height: 200px;
     width: 200px;
@@ -145,7 +147,6 @@ main {
 }
 
 /* ÅKER UT FRÅN MAIN*/
-
 #messageWindow {
     height: 100%;
     width: 300px;
