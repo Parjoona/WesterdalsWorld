@@ -1,37 +1,20 @@
 /**
  * Created by Pauma on 2017-03-30.
  */
+var messWindow = document.getElementById("messageWindow");
+var mainWindow = document.getElementById("mainWindow");
+var isOut = false;
+
 function openMessage() {
-    document.getElementById("messageWindow").style.right = -325 + 'px';
-    document.getElementById("mainWindow").style.right = 325 + 'px';
-    document.getElementById("messageWindow").style.opacity = 1;
+    messWindow.style.right = -325 + 'px';
+    mainWindow.style.right = 325 + 'px';
+    messWindow.style.opacity = 1;
+    isOut = true;
 }
 
 function closeMessage() {
-    document.getElementById("messageWindow").style.right = 0;
-    document.getElementById("mainWindow").style.right = 0;
-    document.getElementById("messageWindow").style.opacity = 0;
+    messWindow.style.right = 0;
+    mainWindow.style.right = 0;
+    messWindow.style.opacity = 0;
+    isOut = false;
 }
-/*
- // Parametrar för element movement
- var msgWin = document.getElementById("messageWindow");
- var mainWin = document.getElementById("mainWindow");
- var msgPos = 700;
- var mainPos = 0;
- var id = setInterval(frame, 5);
- var times = true;
-
- function frame() {
- if (msgPos == 1025) {
- clearInterval(id);
- } else {
- msgPos++;
- mainPos++;
- msgWin.style.left = msgPos + 'px';
- mainWin.style.right = mainPos + 'px';
- }
- }
- }
-
- */
-

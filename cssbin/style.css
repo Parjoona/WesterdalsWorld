@@ -23,6 +23,7 @@ body * {
 
 p, h1, a, form {
     font-family: 'Roboto', sans-serif;
+    max-font-size: 1em;
 }
 
 /*HEADER START*/

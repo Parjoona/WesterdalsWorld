@@ -13,6 +13,8 @@ try {
 } catch (Exception $ex) {
     echo 'Not connected'.$ex->getMessage();
 }
+// Sätter igång databasen vid namn westerproject,
+// använder sig av kollonen places.
 
 $stmt = $conn->prepare('SELECT * FROM places');
 $stmt->execute();
