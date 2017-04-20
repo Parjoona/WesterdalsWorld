@@ -89,7 +89,7 @@ header h1, p {
 
 #logOut {
     left: 20px;
-    top: 0px;
+    top: 0;
     width: 150px;
     height: 40px;
 
@@ -110,13 +110,26 @@ header h1, p {
 }
 /* HEADER END*/
 
+/* SPLITTER HEADER > MAIN*/
+#menuSpacer {
+    height: 20px;
+    width: 1000px;
+    background: #ad343e;
+    border: #a31621;
+    top: 160px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    transition: 0.75s;
+}
+
 /* MAIN - HÅLLER CONTENT & MESSAGE WINDOW */
 main {
     background: #ad343e;
     width: 1000px;
     margin: 0 auto;
     height: 100%;
-    top: 200px;
+    top: 190px;
     left: 0;
     right: 0;
     border-top: #a31621 solid 1px;
@@ -130,7 +143,7 @@ main {
     right: 0;
     background: #E8F1F2;
     width: 998px;
-    height: 99%;
+    height: 100%;
     z-index: 10;
 }
 
@@ -138,20 +151,19 @@ main {
 #placeContainer {
     height: 200px;
     width: 200px;
-
     margin: 5px;
+    border: 1px solid #ad343e;
     position: relative;
     float: left;
     text-align: center;
-    box-shadow: 0 0 3px #000;
 }
 
 /* ÅKER UT FRÅN MAIN*/
 #messageWindow {
     height: 100%;
     width: 300px;
-    right: 0px;
-    top: -5px;
+    right: 0;
+    top: 0;
     opacity: 0;
     overflow: hidden;
     transition: 0.75s;
@@ -159,16 +171,23 @@ main {
 }
 
 #closeButton {
-    border-top: 5px solid #EF7A26;
+    border: 1px solid #a31621;
     width: 300px;
-    height: 30px;
+    height: 20px;
     top: 0;
-    background: #13293D;
-    box-shadow: -3px 0 3px #13293D;
+    background: #ad343e;
 }
 
 #closeButton p {
     margin: 0 auto;
-    left: 5px;
-    top: 5px;
+    right: 5px;
+    transition: 1s;
+}
+
+#closeButton:hover p {
+    right: 245px;
+}
+#closeButton:hover {
+    background: #93898c;
+    border: 1px solid #07020d;
 }

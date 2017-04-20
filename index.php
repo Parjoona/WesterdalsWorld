@@ -43,14 +43,18 @@ include 'config.php';
         </a>
     </div>
 </header>
+<!-- Split med menu inni -->
+<div id="menuSpacer">
 
+
+</div>
 <!-- Får allt under header til att vara centrert -->
 <main id="mainWindow">
     <!-- Håller på resturanger/barer "objects" -->
     <div id="content">
         <?php
         foreach ($places as $place) {
-            echo '<div id="placeContainer" onclick="openMessage()">';
+            echo '<div id="placeContainer" onClick="openMessage()">';
             echo $place['place_name'];
             echo '</div>';
         }
@@ -59,7 +63,7 @@ include 'config.php';
     <!-- Object som åker ut, håller på "messages" som folk skriver -->
     <div id="messageWindow">
         <!-- Closing knapp för message fönster -->
-        <div id="closeButton" onclick="closeMessage()"><p>CLOSE</p></div>
+        <div id="closeButton" onClick="closeMessage()"><p>CLOSE</p></div>
     </div>
 </main>
 </body>
