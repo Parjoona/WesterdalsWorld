@@ -1,96 +1,172 @@
+/* Import av fonts */
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 
 /*
-COLORS
-#006989 / SEA BLUE
-#01A7C2 / BONDI BLUE
-#AF3800 / MAHOGANY
-#A3BAC3 / WILD BLUE YONDER
-#F1F5F2 / ANTI-FLASH WHITE
+Dark blue - #13293d
+Lapis blue - #247ba0
+Bright blue - #1b98e0
+Antiflash white - #e8f1f2
+Orange - #ef7a26
 */
-
 html, body {
-    display: block;
     margin: 0;
     padding: 0;
     height: 100%;
     width: 100%;
-    background: #F1F5F2;
+    background: #E8F1F2;
+    position: relative;
+}
+
+body * {
+    position: absolute;
+}
+
+p, h1, a, form {
     font-family: 'Roboto', sans-serif;
 }
 
-#wrapper {
-    margin: 0 auto;
-    text-align: center;
-}
 /*HEADER START*/
+
 header {
-    display: block;
-    margin: 0 auto;
-    width: 1280px;
-    height: 140px;
-    background: #006989;
-    box-shadow: 0 0 5px #000;
+    width: 100%;
+    height: 150px;
+    background: #13293D;
+    border-bottom: #EF7A26 solid 5px;
+    box-shadow: 0 5px 100px #13293D;
 }
-header img {
+
+header h1, p {
+    color: #E8F1F2;
+}
+
+/* HEADER VÄNSTER */
+#headerLeft {
+    left: 0;
+    width: 500px;
+}
+
+#profilePicture {
     height: 130px;
     width: 130px;
-    margin: -50px 5px ;
-    border: 1px solid #F1F5F2;
-    float: left;
-    position: relative;
-}
-header img:after {
-    border-top: 30px solid transparent;
-    border-left: 40px solid #F1F5F2;
-    border-bottom: 30px solid transparent;
-    bottom: 35px;
-    content: "";
-    position: absolute;
-    left: 130px;
-    width: 0;
-    height: 0;
-}
-header h1 {
-    margin: 0 auto;
-    padding-top: 15px;
-    text-align: center;
-    text-shadow: 0 0 1px #000;
-    color: #F1F5F2;
+    background: #E8F1F2;
+    margin: 10px;
+    left: 0;
 }
 
-/* MAKE UL/LI MENU CENTER */
-.table {
-    display: table;
-    margin: 0 auto;
+#profileName {
+    left: 150px;
+    top: 37px;
+    border-bottom: 5px solid #E8F1F2;
 }
-ul#horizontalList {
-    list-style: none;
-    width: 800px;
-    text-align: center;
-    margin-left: -200px;
-}
-ul#horizontalList li {
-    display: inline-block;
-}
-#horizontalList li {
-    color: #F1F5F2;
-    width: 200px;
-    height: 30px;
-    margin-top: 50px;
-    padding-top: 10px;
-    background: #A3BAC3;
-    box-shadow: 0 0 5px #000;
-}
-/*END UL/LI*/
-/* HEADER END */
 
-/* MAIN START */
+/* HEADER CENTER */
+#headerCenter {
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    text-align: center;
+    top: 35px;
+}
+
+#productName {
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+}
+
+/* HEADER RIGHT */
+#headerRight {
+    right: 10px;
+    width: 150px;
+    height: 150px;
+}
+
+#logOut {
+    left: 20px;
+    top: 0px;
+    width: 150px;
+    height: 40px;
+
+}
+
+#settings {
+    top: 95px;
+    left: 20px;
+    width: 140px;
+    height: 40px;
+    border-bottom: 5px solid #E8F1F2;
+}
+
+#headerRight h1 {
+    left: 20px;
+    margin: 0 auto;
+    top: 0;
+}
+
+/* HEADER END*/
+
+/* MAIN - HÅLLER CONTENT & MESSAGE WINDOW */
 main {
-    width: 1270px;
-    height: 768px;
+    background: #13293D;
+    width: 1000px;
     margin: 0 auto;
-    margin-top: 50px;
-    border: 5px solid #006989;
-    box-shadow: 0 0 5px #000;
+    height: 100%;
+    top: 200px;
+    left: 0;
+    right: 0;
+    border-top: #EF7A26 solid 5px;
+    transition: 0.75s;
+}
+
+/* LIGGER INNE I MAIN, INNEHÅLLER OBJECT */
+
+#content {
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    background: #E8F1F2;
+    width: 990px;
+    height: 99%;
+    z-index: 10;
+}
+
+/* CONTAINS "PLACES" */
+
+#placeContainer {
+    height: 200px;
+    width: 200px;
+
+    margin: 5px;
+    position: relative;
+    float: left;
+    text-align: center;
+    box-shadow: 0 0 3px #000;
+}
+
+/* ÅKER UT FRÅN MAIN*/
+
+#messageWindow {
+    height: 100%;
+    width: 300px;
+    right: 0px;
+    top: -5px;
+    opacity: 0;
+    overflow: hidden;
+    transition: 0.75s;
+    z-index: 5;
+}
+
+#closeButton {
+    border-top: 5px solid #EF7A26;
+    width: 300px;
+    height: 30px;
+    top: 0;
+    background: #13293D;
+    box-shadow: -3px 0 3px #13293D;
+}
+
+#closeButton p {
+    margin: 0 auto;
+    left: 5px;
+    top: 5px;
 }
