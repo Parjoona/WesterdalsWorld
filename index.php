@@ -10,7 +10,7 @@ include 'config.php';
 ?>
 
 <!DOCTYPE html>
-<html lang="sv">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -24,52 +24,39 @@ include 'config.php';
 </head>
 <body>
 <header>
-    <!-- Venster del av header i et felt-->
-    <div id="headerLeft">
-        <div id="profilePicture"></div>
-        <h1 id="profileName">First Name <br> Last Name</h1>
-    </div>
-    <!-- Håller produktnavn centrert -->
-    <div id="headerCenter">
-        <h1 id="productName">Product Name</h1>
-    </div>
-    <!-- Håller logout/settings till höyre -->
-    <div id="headerRight">
-        <a href="#">
-            <div id="logOut"><h1>Log Out</h1></div>
-        </a>
-        <a href="#">
-            <div id="settings"><h1>Settings</h1></div>
-        </a>
-    </div>
+    <!-- knappar venstre -->
+    <a id="eventBtn">Eventer</a>
+    <a id="restBtn">Resturanger</a>
+    <!-- LOGO -->
+    <h1 id="logo">Productname</h1>
+    <!-- knappar hoyre -->
+    <a id="settings">Settings</a>
+    <a id="logOut">Log Out</a>
 </header>
 <!-- Split med menu inni -->
-<div id="menuSpacer">
-
-
+<div id="menu">
+    <div id="leftBtn" class="menuBtn"></div>
+    <div id="centerBtn" class="menuBtn"></div>
+    <div id="rightBtn" class="menuBtn"></div>
 </div>
 <!-- Får allt under header til att vara centrert -->
 <main id="mainWindow">
     <!-- Håller på resturanger/barer "objects" -->
     <div id="content">
-        <?php
-        foreach ($places as $place) {
-            echo '<div id="placeContainer" onClick="openMessage()"><div id="verticalLine"></div><div id="placeName">';
-            echo $place['place_name'];
-            echo '</div><div id="placeType">';
-            echo $place['place_type'];
-            echo '</div><div id="placeDistance">';
-            echo $place['distance'];
-            echo 'm</div><div id="imgHolder">';
-            echo "<img srcset=\"{$place['img_url']}\" src='imgbin/alt_place.png'/>";
-            echo '</div></div>';
-        }
-        ?>
+        <?php require 'contentRestaurant.php' ?>
     </div>
     <!-- Object som åker ut, håller på "messages" som folk skriver -->
     <div id="messageWindow">
         <!-- Closing knapp för message fönster -->
         <div id="closeButton" onClick="closeMessage()"><p>CLOSE</p></div>
+        <div id="messInformation">
+            <?php
+                echo '<div id="messInfoName">';
+                echo $place['place_name'];
+                echo '</div>';
+                echo "<img id='messInfoImg' srcset=\"{$place['img_url']}\" src='imgbin/alt_place.png'/>";
+            ?>
+        </div>
     </div>
 </main>
 </body>
