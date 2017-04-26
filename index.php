@@ -6,6 +6,8 @@
  * Time: 12:01
  */
 
+$user = 'help';
+
 include 'config.php';
 ?>
 
@@ -43,10 +45,12 @@ include 'config.php';
 </header>
 <!-- Split med menu inni -->
 <div id="menu">
-    <div class="menuElement"><p>Alla typer</p></div>
-    <div class="menuElement"><p>Barer</p></div>
-    <div class="menuElement"><p>Utested</p></div>
-    <div class="menuElement"><p>Resturanger</p></div>
+    <ul>
+        <li>All types</li>
+        <li>Restaurants</li>
+        <li>Hotels</li>
+        <li>Bars</li>
+    </ul>
 </div>
 <!-- Får allt under header til att vara centrert -->
 <main id="mainWindow">

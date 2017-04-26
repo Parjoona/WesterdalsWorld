@@ -3,12 +3,13 @@
  */
 var isOut = false;
 
-function openMessage() {
+function openMessage(numberlog) {
     document.getElementById("messageWindow").style.right = -305 + 'px';
     document.getElementById("mainWindow").style.right = 305 + 'px';
     document.getElementById("messageWindow").style.opacity = 1;
     document.getElementById("menu").style.right = 305 + 'px';
     isOut = true;
+    alert(numberlog);
 }
 
 function closeMessage() {
