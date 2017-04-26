@@ -28,35 +28,38 @@ include 'config.php';
     <a id="eventBtn">Eventer</a>
     <a id="restBtn">Resturanger</a>
     <!-- LOGO -->
-    <h1 id="logo">Productname</h1>
+    <h1 id="logo">WesterHood</h1>
     <!-- knappar hoyre -->
-    <a id="settings">Settings</a>
-    <a id="logOut">Log Out</a>
+    <?php
+    // If logged in or not
+    if (1==0) {
+        echo '<a id="profileButton">Profile</a>';
+        echo '<a id="logOut">Log Out</a>';
+    } else if (1==1) {
+        echo '<a id="logIn">Log In</a>';
+        echo '<a id="settings">Register</a>';
+    }
+    ?>
 </header>
 <!-- Split med menu inni -->
 <div id="menu">
-    <div class="menuElement"></div>
-    <div class="menuElement"></div>
-    <div class="menuElement"></div>
-    <div class="menuElement"></div>
+    <div class="menuElement"><p>Alla typer</p></div>
+    <div class="menuElement"><p>Barer</p></div>
+    <div class="menuElement"><p>Utested</p></div>
+    <div class="menuElement"><p>Resturanger</p></div>
 </div>
 <!-- Får allt under header til att vara centrert -->
 <main id="mainWindow">
     <!-- Håller på resturanger/barer "objects" -->
     <div id="content">
-        <?php require 'contentRestaurant.php' ?>
+        <?php require 'contentRestaurant.php'?>
     </div>
     <!-- Object som åker ut, håller på "messages" som folk skriver -->
     <div id="messageWindow">
         <!-- Closing knapp för message fönster -->
         <div id="closeButton" onClick="closeMessage()"><p>CLOSE</p></div>
         <div id="messInformation">
-            <?php
-                echo '<div id="messInfoName">';
-                echo $place['place_name'];
-                echo '</div>';
-                echo "<img id='messInfoImg' srcset=\"{$place['img_url']}\" src='imgbin/alt_place.png'/>";
-            ?>
+
         </div>
     </div>
 </main>

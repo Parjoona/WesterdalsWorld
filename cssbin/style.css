@@ -72,11 +72,19 @@ a:hover {
 }
 
 #settings {
-    right: 125px;
+    right: 20px;
 }
 
 #logOut {
-    right: 20px;
+    right: 125px;
+}
+
+#logIn {
+    right: 125px;
+}
+
+#profileButton {
+    right: 230px;
 }
 
 /* SPLITTER HEADER > MAIN*/
@@ -93,11 +101,32 @@ a:hover {
 .menuElement {
     display: inline-block;
     position: relative;
-    width: 225px;
+    width: 233px;
     height: 30px;
-    margin: 0 10px;
     background: #ad343e;
-    border: 1px solid #07020d;
+    border: 1px solid #a31621;
+    right: 0;
+    transition: 0.5s ease;
+    z-index: 15;
+    margin: 0 0 0 10px;
+}
+
+.menuElement p {
+    text-align: center;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    line-height: 30px;
+    color: #E8F1F2;
+}
+
+.menuElement:hover {
+    transform: scale(1.1);
+    background: #E8F1F2;
+}
+
+.menuElement:hover p {
+    color: #a31621;
 }
 
 
@@ -194,11 +223,11 @@ main {
     height: 100%;
     width: 300px;
     right: 0;
-    top: 0;
+    top: -40px;
     opacity: 0;
     overflow: hidden;
     transition: 0.75s;
-    z-index: 5;
+    z-index: 1;
 }
 
 #closeButton {

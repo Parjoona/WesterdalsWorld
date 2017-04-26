@@ -1,6 +1,7 @@
 <?php
 foreach ($places as $place) {
-    echo '<div id="placeContainer" onClick="openMessage()"><div id="verticalLine"></div><div id="placeName">';
+    $place_id = $place['id'];
+    echo "<div id='placeContainer' onClick='openMessage()'><div id='verticalLine'></div><div id='placeName'>";
     echo $place['place_name'];
     echo '</div><div id="placeType">';
     echo $place['place_type'];
