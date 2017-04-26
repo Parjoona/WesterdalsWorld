@@ -83,31 +83,23 @@ a:hover {
 #menu {
     height: 30px;
     width: 1000px;
-    top: 45px;
+    top: 70px;
     left: 0;
     right: 0;
     margin: 0 auto;
     transition: 0.75s;
 }
 
-.menuBtn {
-    width: 330px;
+.menuElement {
+    display: inline-block;
+    position: relative;
+    width: 225px;
     height: 30px;
+    margin: 0 10px;
     background: #ad343e;
     border: 1px solid #07020d;
 }
 
-#leftBtn {
-    left: 0;
-}
-#centerBtn {
-    margin: 0 auto;
-    left: 0;
-    right: 0;
-}
-#rightBtn {
-    right: 0;
-}
 
 
 /* MAIN - HÅLLER CONTENT & MESSAGE WINDOW */
@@ -116,7 +108,7 @@ main {
     width: 1000px;
     margin: 0 auto;
     height: 100%;
-    top: 100px;
+    top: 110px;
     left: 0;
     right: 0;
     transition: 0.75s;

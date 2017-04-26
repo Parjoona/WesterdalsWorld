@@ -35,9 +35,10 @@ include 'config.php';
 </header>
 <!-- Split med menu inni -->
 <div id="menu">
-    <div id="leftBtn" class="menuBtn"></div>
-    <div id="centerBtn" class="menuBtn"></div>
-    <div id="rightBtn" class="menuBtn"></div>
+    <div class="menuElement"></div>
+    <div class="menuElement"></div>
+    <div class="menuElement"></div>
+    <div class="menuElement"></div>
 </div>
 <!-- Får allt under header til att vara centrert -->
 <main id="mainWindow">
