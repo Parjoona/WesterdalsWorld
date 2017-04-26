@@ -1,0 +1,3 @@
+Databasen kalt login, tabell kalt person
+
+id(int, A_I), brukernavn, email, passord, fornavn, etternavn
