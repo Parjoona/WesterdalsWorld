@@ -19,3 +19,5 @@ try {
 $stmt = $conn->prepare('SELECT * FROM places');
 $stmt->execute();
 $places = $stmt->fetchAll();
+
+//

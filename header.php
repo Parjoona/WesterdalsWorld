@@ -3,7 +3,7 @@
     <a id="eventBtn">Eventer</a>
     <a id="restBtn">Resturanger</a>
     <!-- LOGO -->
-    <h1 id="logo">WesterHood</h1>
+    <h1 id="logo">Studenterdals</h1>
     <!-- knappar hoyre -->
     <?php
     // If logged in or not
