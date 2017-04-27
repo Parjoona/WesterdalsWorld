@@ -67,8 +67,8 @@ a:hover {
     left: 0;
     right: 0;
     text-align: center;
+    line-height: 60px;
     color: #E8F1F2;
-    top: 5px;
 }
 
 #settings {
@@ -131,7 +131,7 @@ li:hover {
     color: #07020d;
 }
 
-li:active {
+.menuSelected {
     border: 1px solid #ad343e;
     border-bottom: 1px solid #E8F1F2;
     background: #E8F1F2;
@@ -163,7 +163,7 @@ main {
 }
 
 /* CONTAINS "PLACES" */
-#placeContainer {
+.placeContainer {
     height: 165px;
     width: 238px;
     margin: 5px;
@@ -174,7 +174,7 @@ main {
     text-align: center;
 }
 
-#verticalLine {
+.verticalLine {
     width: 1px;
     background: #07020d;
     height: 20px;
@@ -184,7 +184,7 @@ main {
     margin: 0 auto;
 }
 
-#placeName {
+.placeName {
     left: 0;
     right: 0;
     background: #ad343e;
@@ -194,17 +194,17 @@ main {
     margin: 0;
 }
 
-#placeType {
+.placeType {
     top: 37.5px;
     right: 130px;
 }
 
-#placeDistance {
+.placeDistance {
     top: 37.5px;
     left: 130px;
 }
 
-#imgHolder {
+.imgHolder {
     border-top: #a31621 3px solid;
     height: 100px;
     width: 238px;
@@ -212,7 +212,7 @@ main {
     bottom: 0;
 }
 
-#imgHolder img {
+.imgHolder img {
     height: 100px;
     width: 238px;
     left: 0;
@@ -221,7 +221,7 @@ main {
     transition: 0.25s;
 }
 
-#placeContainer:hover #imgHolder img {
+.placeContainer:hover .imgHolder img {
     opacity: 0.9;
 }
 
@@ -256,7 +256,7 @@ main {
     right: 247px;
 }
 
-#messInformation {
+#messInfo {
     border-bottom: 1px solid black;
     height: 300px;
     width: 300px;

@@ -6,8 +6,6 @@
  * Time: 12:01
  */
 
-$user = 'help';
-
 include 'config.php';
 ?>
 
@@ -20,50 +18,33 @@ include 'config.php';
     <title>This is a title</title>
     <!-- Javascript -->
     <script type="text/javascript" src="jsbin/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
     <!-- CSS stylesheet -->
     <link rel="stylesheet" href="cssbin/style.css">
-
 </head>
 <body>
-<header>
-    <!-- knappar venstre -->
-    <a id="eventBtn">Eventer</a>
-    <a id="restBtn">Resturanger</a>
-    <!-- LOGO -->
-    <h1 id="logo">WesterHood</h1>
-    <!-- knappar hoyre -->
-    <?php
-    // If logged in or not
-    if (1==0) {
-        echo '<a id="profileButton">Profile</a>';
-        echo '<a id="logOut">Log Out</a>';
-    } else if (1==1) {
-        echo '<a id="logIn">Log In</a>';
-        echo '<a id="settings">Register</a>';
-    }
-    ?>
-</header>
+<?php require 'header.php' ?>
 <!-- Split med menu inni -->
 <div id="menu">
-    <ul>
-        <li>All types</li>
-        <li>Restaurants</li>
-        <li>Hotels</li>
-        <li>Bars</li>
+    <ul id="ulmenu">
+        <li class="menuSelected">All types</li>
+        <li class="">Restaurants</li>
+        <li class="">Hotels</li>
+        <li class="">Bars</li>
     </ul>
 </div>
 <!-- Får allt under header til att vara centrert -->
 <main id="mainWindow">
     <!-- Håller på resturanger/barer "objects" -->
     <div id="content">
-        <?php require 'contentRestaurant.php'?>
+        <?php require 'conRestu.php' ?>
     </div>
     <!-- Object som åker ut, håller på "messages" som folk skriver -->
     <div id="messageWindow">
         <!-- Closing knapp för message fönster -->
         <div id="closeButton" onClick="closeMessage()"><p>CLOSE</p></div>
-        <div id="messInformation">
-
+        <div id="messInfo">
+            <?php require 'conInfo.php' ?>
         </div>
     </div>
 </main>
