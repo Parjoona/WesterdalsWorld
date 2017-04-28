@@ -16,10 +16,10 @@ $(document).ready(function () {
         //avslutt tag för ready function
 
         $.ajax({
-            url: '../conInfo.php',
+            url: 'index.php',
             type: "POST",
             dataType: 'json',
-            data: {'num': myKey},
+            data: myKey,
             success: function (data) {
                 console.log(data);
             }

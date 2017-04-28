@@ -40,7 +40,7 @@ include 'config.php';
 <main id="mainWindow">
     <!-- Håller på resturanger/barer "objects" -->
     <div id="content">
-        <?php require 'conRestu.php' ?>
+        <?php require 'conRestu.php'; ?>
     </div>
     <!-- Object som åker ut, håller på "messages" som folk skriver -->
     <div id="messageWindow">

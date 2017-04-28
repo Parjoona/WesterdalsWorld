@@ -1,8 +1,8 @@
 <?php
-if (isset($_POST["num"])) {
-    $js=$_POST["num"];
+if (isset($_POST['num'])) {
+    $js=$_POST['num'];
 } else {
-    echo "wtf";
+    $js = "<p>could not get value</p>";
 }
 
-$js;
+echo $js;
