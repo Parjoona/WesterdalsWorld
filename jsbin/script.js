@@ -10,14 +10,6 @@ $(document).ready(function () {
         document.getElementById("mainWindow").style.right = 305 + 'px';
         document.getElementById("messageWindow").style.opacity = 1;
         document.getElementById("menu").style.right = 305 + 'px';
-        $.ajax({
-            url: 'conInfo.php',
-            type: "POST",
-            data: {num: phpvar},
-            success: function (data) {
-                console.log(data);
-            }
-        });
     })
     //avslutt tag för ready function
 });

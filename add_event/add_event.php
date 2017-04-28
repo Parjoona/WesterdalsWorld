@@ -2,6 +2,8 @@
 <html>
 
 <head>
+<!-- la till link till css -->
+    <link rel="stylesheet" href="../cssbin/style.css">
 	<style>
 		label {
 			display: inline-block;
@@ -16,7 +18,9 @@
 </head>
 
 <body>
-
+<!-- La till den php require + main taggen -->
+<?php require '../header.php' ?>
+<main id="content">
 	<form method="post" action="process.php">
 		<label>Event name</label>
 		<input type="text" name="event_name" />
@@ -38,7 +42,7 @@
 		<br />
 		<input type="submit" value="Add event">
 	</form>
-
+</main>
 
 
 </body>
