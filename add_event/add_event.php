@@ -3,6 +3,7 @@
 
 <head>
 	<!-- la till link till css -->
+	<link rel="stylesheet" href="../cssbin/style.css" type="text/css"/>
 
 
 	<title>Add Event</title>
@@ -13,6 +14,7 @@
 	<?php require '../header.php' ?>
 	<main id="content">
 
+		<form id="form" method="post" action="process.php">
 			<label for="event_name">Event name:</label>
 			<br>
 			<br>
