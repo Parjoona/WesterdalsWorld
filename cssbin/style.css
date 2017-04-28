@@ -131,7 +131,7 @@ li:hover {
     color: #07020d;
 }
 
-.menuSelected {
+li.active {
     border: 1px solid #ad343e;
     border-bottom: 1px solid #E8F1F2;
     background: #E8F1F2;
@@ -282,14 +282,13 @@ main {
     color: #E8F1F2;
 }
 
-
 /*add_event*/
 #form {
-	margin: auto;
-	width: 1000px;
-	height: 100%
+    margin: auto;
+    width: 1000px;
+    height: 100%;
     border-radius: 5px;
-	top: 100px;
+    top: 100px;
     background-color: #f2f2f2;
     padding: 20px;
 }
@@ -324,8 +323,9 @@ input[type=submit] {
 
 input[type=submit]:hover {
     background-color: #45a049;
-	
-	textarea {
+}
+
+textarea {
     width: 100%;
     height: 150px;
     padding: 12px 20px;

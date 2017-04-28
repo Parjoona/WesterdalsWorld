@@ -13,8 +13,8 @@ $(document).ready(function () {
         document.getElementById("mainWindow").style.right = 305 + 'px';
         document.getElementById("messageWindow").style.opacity = 1;
         document.getElementById("menu").style.right = 305 + 'px';
-        //avslutt tag för ready function
 
+        // Sender POST till messWindow //
         $.ajax({
             url: 'index.php',
             type: "POST",
@@ -24,28 +24,31 @@ $(document).ready(function () {
                 console.log(data);
             }
         });
-    })
-});
-/*
- function openMessage(numberlog) {
- document.getElementById("messageWindow").style.right = -305 + 'px';
- document.getElementById("mainWindow").style.right = 305 + 'px';
- document.getElementById("messageWindow").style.opacity = 1;
- document.getElementById("menu").style.right = 305 + 'px';
+    });
 
+    //onclick closing messWindow
+    $('#closeButton').click(function () {
+        document.getElementById("messageWindow").style.right = 0;
+        document.getElementById("mainWindow").style.right = 0;
+        document.getElementById("messageWindow").style.opacity = 0;
+        document.getElementById("menu").style.right = 0;
+    });
+
+    //menu onclick, add different colors to "menu"
+    $('#ulmenu').on('click', 'li', function () {
+        $('#ulmenu li').removeClass('active');
+        $(this).addClass('active');
+    });
+
+});
+
+/*
  $.ajax({
  url: 'conRestu.php',
- type: "POST",
+ type: 'POST',
  data: {'data': numberlog},
  success: function (data) {
  console.log(data);
  }
  });
- }
  */
-function closeMessage() {
-    document.getElementById("messageWindow").style.right = 0;
-    document.getElementById("mainWindow").style.right = 0;
-    document.getElementById("messageWindow").style.opacity = 0;
-    document.getElementById("menu").style.right = 0;
-}

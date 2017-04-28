@@ -30,10 +30,10 @@ include 'config.php';
 <!-- Split med menu inni -->
 <div id="menu">
     <ul id="ulmenu">
-        <li class="menuSelected">All types</li>
-        <li class="">Restaurants</li>
-        <li class="">Hotels</li>
-        <li class="">Bars</li>
+        <li class="active">All types</li>
+        <li>Restaurants</li>
+        <li>Hotels</li>
+        <li>Bars</li>
     </ul>
 </div>
 <!-- Får allt under header til att vara centrert -->
@@ -45,7 +45,7 @@ include 'config.php';
     <!-- Object som åker ut, håller på "messages" som folk skriver -->
     <div id="messageWindow">
         <!-- Closing knapp för message fönster -->
-        <div id="closeButton" onClick="closeMessage()"><p>CLOSE</p></div>
+        <div id="closeButton"><p>CLOSE</p></div>
         <?php require 'conInfo.php' ?>
     </div>
 
