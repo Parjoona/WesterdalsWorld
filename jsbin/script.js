@@ -5,13 +5,26 @@
 
 // Open message window
 $(document).ready(function () {
+    //onclick funktion som hämtar data-id från .placeContainer
     $('.placeContainer').click(function () {
+        var myKey = $(this).attr('data-id');
+        console.log(myKey);
         document.getElementById("messageWindow").style.right = -305 + 'px';
         document.getElementById("mainWindow").style.right = 305 + 'px';
         document.getElementById("messageWindow").style.opacity = 1;
         document.getElementById("menu").style.right = 305 + 'px';
+        //avslutt tag för ready function
+
+        $.ajax({
+            url: '../conInfo.php',
+            type: "POST",
+            dataType: 'json',
+            data: {'num': myKey},
+            success: function (data) {
+                console.log(data);
+            }
+        });
     })
-    //avslutt tag för ready function
 });
 /*
  function openMessage(numberlog) {
@@ -20,7 +33,7 @@ $(document).ready(function () {
  document.getElementById("messageWindow").style.opacity = 1;
  document.getElementById("menu").style.right = 305 + 'px';
 
- jQuery.ajax({
+ $.ajax({
  url: 'conRestu.php',
  type: "POST",
  data: {'data': numberlog},
