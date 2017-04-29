@@ -46,7 +46,7 @@ include 'config.php';
     <div id="messageWindow">
         <!-- Closing knapp för message fönster -->
         <div id="closeButton"><p>CLOSE</p></div>
-        <?php require 'conInfo.php' ?>
+        <?php require 'info.php' ?>
     </div>
 
 

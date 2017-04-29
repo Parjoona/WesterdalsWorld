@@ -16,10 +16,10 @@ $(document).ready(function () {
 
         // Sender POST till messWindow //
         $.ajax({
-            url: 'index.php',
-            type: "POST",
-            dataType: 'json',
-            data: myKey,
+            url: 'info.php',
+            type: 'POST',
+            dataType: 'JSON',
+            data: {num: '1234'},
             success: function (data) {
                 console.log(data);
             }
@@ -41,14 +41,3 @@ $(document).ready(function () {
     });
 
 });
-
-/*
- $.ajax({
- url: 'conRestu.php',
- type: 'POST',
- data: {'data': numberlog},
- success: function (data) {
- console.log(data);
- }
- });
- */
