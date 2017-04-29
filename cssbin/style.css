@@ -1,7 +1,7 @@
-/* Import av fonts */
-@import url('https://fonts.googleapis.com/css?family=Roboto:100');
-
-/*
+	/* Import av fonts */
+	
+	@import url('https://fonts.googleapis.com/css?family=Roboto:100');
+	/*
 Dark blue - #13293d
 Lapis blue - #247ba0
 Bright blue - #1b98e0
@@ -15,6 +15,7 @@ RICH BLACK #07020d
 GRAY #93898c
 
 */
+<<<<<<< HEAD
 html, body {
     margin: 0;
     padding: 0;
@@ -337,3 +338,359 @@ textarea {
     font-size: 16px;
     resize: none;
 }
+=======
+	
+	html,
+	body {
+		margin: 0;
+		padding: 0;
+		height: 100%;
+		width: 100%;
+		background: #E8F1F2;
+		position: relative;
+	}
+	
+	body * {
+		position: absolute;
+	}
+	
+	p,
+	h1,
+	a,
+	form {
+		font-family: 'Roboto', sans-serif;
+		max-font-size: 1em;
+	}
+	/*HEADER START*/
+	
+	header {
+		width: 100%;
+		height: 60px;
+		background: #ad343e;
+		border-bottom: #07020d solid 1px;
+	}
+	
+	header a {
+		color: #E8F1F2;
+		text-align: center;
+		line-height: 60px;
+		height: 60px;
+		width: 100px;
+		transition: 0.25s ease-out;
+	}
+	
+	a:hover {
+		background: #a31621;
+	}
+	
+	#eventBtn {
+		left: 125px;
+	}
+	
+	#restBtn {
+		left: 20px;
+	}
+	
+	#logo {
+		margin: 0 auto;
+		left: 0;
+		right: 0;
+		text-align: center;
+		line-height: 60px;
+		color: #E8F1F2;
+	}
+	
+	#settings {
+		right: 20px;
+	}
+	
+	#logOut {
+		right: 125px;
+	}
+	
+	#logIn {
+		right: 125px;
+	}
+	
+	#profileButton {
+		right: 230px;
+	}
+	/* SPLITTER HEADER > MAIN*/
+	
+	#menu {
+		top: 70px;
+		left: 0;
+		right: 0;
+		margin: 0;
+		transition: 0.75s;
+	}
+	
+	#menu * {
+		position: relative;
+		z-index: 15;
+	}
+	
+	ul {
+		text-align: center;
+		list-style: none;
+		width: 1000px;
+		height: 30px;
+		margin: 0 auto;
+		padding: 0;
+		left: 0;
+		right: 0;
+	}
+	
+	li {
+		display: inline-block;
+		width: 150px;
+		height: 30px;
+		background: #ad343e;
+		margin: 0;
+		color: #E8F1F2;
+		line-height: 30px;
+		font-family: 'Roboto', sans-serif;
+		border: 1px solid #ad343e;
+	}
+	
+	li:hover {
+		border: 1px solid #ad343e;
+		border-bottom: 1px solid #E8F1F2;
+		background: #E8F1F2;
+		color: #07020d;
+	}
+	
+	.menuSelected {
+		border: 1px solid #ad343e;
+		border-bottom: 1px solid #E8F1F2;
+		background: #E8F1F2;
+		color: #07020d;
+	}
+	/* MAIN - HÅLLER CONTENT & MESSAGE WINDOW */
+	
+	main {
+		background: #ad343e;
+		width: 1000px;
+		margin: 0 auto;
+		height: 100%;
+		top: 101px;
+		left: 0;
+		right: 0;
+		transition: 0.75s;
+	}
+	/* LIGGER INNE I MAIN, INNEHÅLLER OBJECT */
+	
+	#content {
+		margin: 0 auto;
+		left: 0;
+		right: 0;
+		border: #a31621 solid 1px;
+		background: #E8F1F2;
+		width: 1000px;
+		height: 100%;
+		z-index: 10;
+	}
+	/* CONTAINS "PLACES" */
+	
+	.placeContainer {
+		height: 165px;
+		width: 238px;
+		margin: 5px;
+		font-family: 'Roboto', sans-serif;
+		border: 1px solid #07020d;
+		position: relative;
+		float: left;
+		text-align: center;
+	}
+	
+	.verticalLine {
+		width: 1px;
+		background: #07020d;
+		height: 20px;
+		top: 37.5px;
+		left: 0;
+		right: 0;
+		margin: 0 auto;
+	}
+	
+	.placeName {
+		left: 0;
+		right: 0;
+		background: #ad343e;
+		color: #E8F1F2;
+		height: 30px;
+		line-height: 30px;
+		margin: 0;
+	}
+	
+	.placeType {
+		top: 37.5px;
+		right: 130px;
+	}
+	
+	.placeDistance {
+		top: 37.5px;
+		left: 130px;
+	}
+	
+	.imgHolder {
+		border-top: #a31621 3px solid;
+		height: 100px;
+		width: 238px;
+		display: flex;
+		bottom: 0;
+	}
+	
+	.imgHolder img {
+		height: 100px;
+		width: 238px;
+		left: 0;
+		right: 0;
+		opacity: 0.65;
+		transition: 0.25s;
+	}
+	
+	.placeContainer:hover .imgHolder img {
+		opacity: 0.9;
+	}
+	/* ÅKER UT FRÅN MAIN*/
+	
+	#messageWindow {
+		height: 100%;
+		width: 300px;
+		right: 0;
+		top: 0;
+		opacity: 0;
+		overflow: hidden;
+		transition: 0.75s;
+		z-index: 1;
+	}
+	
+	#closeButton {
+		border: 1px solid #a31621;
+		width: 300px;
+		height: 20px;
+		top: 0;
+		background: #ad343e;
+		color: #E8F1F2;
+	}
+	
+	#closeButton p {
+		margin: 0 auto;
+		right: 5px;
+		transition: 1s ease;
+	}
+	
+	#closeButton:hover p {
+		right: 247px;
+	}
+	
+	#messInfo {
+		border-bottom: 1px solid black;
+		height: 300px;
+		width: 300px;
+		top: 20px;
+		right: 0;
+		left: 0;
+		font-family: 'Roboto', sans-serif;
+	}
+	
+	#messInfoImg {
+		top: 0;
+		height: 150px;
+		width: 300px;
+	}
+	
+	#messInfoName {
+		height: 30px;
+		top: 150px;
+		line-height: 30px;
+		width: 300px;
+		text-align: center;
+		background: #ad343e;
+		color: #E8F1F2;
+	}
+	/*add_event*/
+	
+	#form {
+		position: relative;
+		width: 900px;
+		height: 500px;
+	}
+	
+	label {
+		position: relative;
+}
+	
+	input[type=text],
+	select {
+		position: relative;
+		width: 100%;
+		padding: 12px 20px;
+		margin: 8px 0;
+		display: inline-block;
+		border: 1px solid #ccc;
+		border-radius: 4px;
+		box-sizing: border-box;
+	}
+	
+	input[type=number],
+	select {
+		position: relative;
+		width: 100%;
+		padding: 12px 20px;
+		margin: 8px 0;
+		display: inline-block;
+		border: 1px solid #ccc;
+		border-radius: 4px;
+		box-sizing: border-box;
+	}
+	
+	input[type=datetime-local],
+	select {
+		position: relative;
+		width: 100%;
+		padding: 12px 20px;
+		margin: 8px 0;
+		display: inline-block;
+		border: 1px solid #ccc;
+		border-radius: 4px;
+		box-sizing: border-box;
+	}
+	
+	textarea {
+		position: relative;
+		width: 100%;
+		padding: 12px 20px;
+		margin: 8px 0;
+		display: inline-block;
+		border: 1px solid #ccc;
+		border-radius: 4px;
+		box-sizing: border-box;
+	}
+	
+	input[type=submit] {
+		position: relative;
+		width: 100%;
+		background-color: #4CAF50;
+		color: white;
+		padding: 14px 20px;
+		margin: 8px 0;
+		border: none;
+		border-radius: 4px;
+		cursor: pointer;
+	}
+	
+	input[type=submit]:hover {
+		background-color: #45a049;
+	}
+	
+	#formdiv {
+		position: relative;
+		width: 900px;
+		height: 100%;
+		border-radius: 5px;
+		background-color: #f2f2f2;
+		padding: 20px;
+	}
+>>>>>>> master
