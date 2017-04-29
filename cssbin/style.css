@@ -283,20 +283,26 @@ main {
 }
 
 /*add_event*/
+#formdiv {
+    position: relative;
+    width: 900px;
+    height: 100%;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+#formdiv * {
+    position: relative;
+}
 
 #form {
-    position: relative;
     width: 900px;
     height: 500px;
 }
 
-label {
-    position: relative;
-}
-
 input[type=text],
 select {
-    position: relative;
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
@@ -308,7 +314,6 @@ select {
 
 input[type=number],
 select {
-    position: relative;
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
@@ -320,7 +325,6 @@ select {
 
 input[type=datetime-local],
 select {
-    position: relative;
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
@@ -331,7 +335,6 @@ select {
 }
 
 textarea {
-    position: relative;
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
@@ -342,7 +345,6 @@ textarea {
 }
 
 input[type=submit] {
-    position: relative;
     width: 100%;
     background-color: #4CAF50;
     color: white;
@@ -355,13 +357,4 @@ input[type=submit] {
 
 input[type=submit]:hover {
     background-color: #45a049;
-}
-
-#formdiv {
-    position: relative;
-    width: 900px;
-    height: 100%;
-    border-radius: 5px;
-    background-color: #f2f2f2;
-    padding: 20px;
 }
