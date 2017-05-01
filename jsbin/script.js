@@ -3,17 +3,16 @@
  * Created by Pauma on 2017-03-30.
  */
 
-// Open message window
+// Aktiverar jQuery
 $(document).ready(function () {
+
     //onclick funktion som hämtar data-id från .placeContainer
     $('.placeContainer').click(function () {
         var myKey = $(this).attr('data-id');
-        console.log(myKey);
-        document.getElementById("messageWindow").style.right = -305 + 'px';
-        document.getElementById("mainWindow").style.right = 305 + 'px';
-        document.getElementById("messageWindow").style.opacity = 1;
-        document.getElementById("menu").style.right = 305 + 'px';
-
+        //CSS change
+        $('#messageWindow').css({'right': -305, 'opacity': 1});
+        $('#mainWindow, #menu').css({'right': 305});
+        //Hämtar data från info.php
         $.ajax({
             type: 'GET',
             url: 'info.php',
@@ -22,18 +21,19 @@ $(document).ready(function () {
                 $("#messInfo").html(data);
             }
         });
-
     });
 
     //onclick closing messWindow
     $('#closeButton').click(function () {
-        document.getElementById("messageWindow").style.right = 0;
-        document.getElementById("mainWindow").style.right = 0;
-        document.getElementById("messageWindow").style.opacity = 0;
-        document.getElementById("menu").style.right = 0;
+        $('#messageWindow').css({'right': 0, 'opacity': 0});
+        $('#mainWindow, #menu').css({'right': 0});
+    });
+    //Tar bort splashscreen vid första besök.
+    $('#welcomeScreen').click(function () {
+        $(this).remove();
     });
 
-    //menu onclick, add different colors to "menu"
+    //Byter färg på meny.
     $('#ulmenu').on('click', 'li', function () {
         $('#ulmenu li').removeClass('active');
         $(this).addClass('active');

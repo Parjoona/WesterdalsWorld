@@ -40,7 +40,13 @@ include 'config.php';
 <main id="mainWindow">
     <!-- Håller på resturanger/barer "objects" -->
     <div id="content">
-        <?php require 'conRestu.php' ?>
+        <?php
+        // if first time open welcome splash
+        if (!isset($_COOKIE['welcome'])) {
+            require 'welcomesplash.php';
+            setcookie("welcome", "value", time() + 60 * 60 * 24 * 100, "/");
+        }
+        require 'conRestu.php' ?>
     </div>
     <!-- Object som åker ut, håller på "messages" som folk skriver -->
     <div id="messageWindow">
@@ -48,7 +54,8 @@ include 'config.php';
         <div id="closeButton"><p>CLOSE</p></div>
         <div id="messInfo">
         </div>
-    </div></div>
+    </div>
+    </div>
 
 
 </main>

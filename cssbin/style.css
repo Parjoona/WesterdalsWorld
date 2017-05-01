@@ -101,7 +101,7 @@ a:hover {
     z-index: 15;
 }
 
-ul {
+#menu ul {
     text-align: center;
     list-style: none;
     width: 1000px;
@@ -112,7 +112,7 @@ ul {
     right: 0;
 }
 
-li {
+#menu li {
     display: inline-block;
     width: 150px;
     height: 30px;
@@ -124,14 +124,14 @@ li {
     border: 1px solid #ad343e;
 }
 
-li:hover {
+#menu li:hover {
     border: 1px solid #ad343e;
     border-bottom: 1px solid #E8F1F2;
     background: #E8F1F2;
     color: #07020d;
 }
 
-li.active {
+#menu  li.active {
     border: 1px solid #ad343e;
     border-bottom: 1px solid #E8F1F2;
     background: #E8F1F2;
@@ -162,6 +162,22 @@ main {
     z-index: 10;
 }
 
+#welcomeScreen {
+    margin: 5px 5px 0 5px;
+    height: 200px;
+    width: 990px;
+    background: #E8F1F2;
+    border: 1px solid #a31621;
+    position: relative;
+}
+
+#welcomeScreen * {
+    margin: 0 auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 /* CONTAINS "PLACES" */
 .placeContainer {
     height: 165px;
@@ -172,16 +188,6 @@ main {
     position: relative;
     float: left;
     text-align: center;
-}
-
-.verticalLine {
-    width: 1px;
-    background: #07020d;
-    height: 20px;
-    top: 37.5px;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
 }
 
 .placeName {
@@ -195,33 +201,32 @@ main {
 }
 
 .placeType {
-    top: 37.5px;
-    right: 130px;
+    bottom: 0;
+    background: #E8F1F2;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%);
+    width: 100%;
+    height: 25px;
+    line-height: 25px;
 }
 
-.placeDistance {
-    top: 37.5px;
-    left: 130px;
-}
-
-.imgHolder {
-    border-top: #a31621 3px solid;
-    height: 100px;
+.placeImg {
+    height: 110px;
     width: 238px;
     display: flex;
     bottom: 0;
 }
 
-.imgHolder img {
-    height: 100px;
+.placeImg img {
+    height: 110px;
     width: 238px;
-    left: 0;
-    right: 0;
+    bottom: 25px;
     opacity: 0.65;
     transition: 0.25s;
 }
 
-.placeContainer:hover .imgHolder img {
+.placeContainer:hover .placeImg img {
     opacity: 0.9;
 }
 
