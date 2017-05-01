@@ -1,9 +1,10 @@
 <?php
-$value = array("Volvo", "BMW", "Toyota");
-if(isset($_POST['num'])) {
-    $value = $_POST['num'];
+include 'config.php';
+
+$numphp = isset($_GET['data']) ? $_GET['data'] : 'Nope';
+
+foreach ($places as $place) {
+    if ($numphp == $place['id']) {
+        echo $place['place_name'];
+    }
 }
-foreach ($value as $v) {
-    echo $value;
-}
-var_dump($_POST);

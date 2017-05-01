@@ -14,16 +14,15 @@ $(document).ready(function () {
         document.getElementById("messageWindow").style.opacity = 1;
         document.getElementById("menu").style.right = 305 + 'px';
 
-        // Sender POST till messWindow //
         $.ajax({
+            type: 'GET',
             url: 'info.php',
-            type: 'POST',
-            dataType: 'JSON',
-            data: {num: '1234'},
+            data: {data: myKey},
             success: function (data) {
-                console.log(data);
+                $("#messInfo").html(data);
             }
         });
+
     });
 
     //onclick closing messWindow
