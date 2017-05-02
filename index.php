@@ -37,27 +37,25 @@ include 'config.php';
     </ul>
 </div>
 <!-- Får allt under header til att vara centrert -->
-<main id="mainWindow">
+<main id="mainContent">
     <!-- Håller på resturanger/barer "objects" -->
     <div id="content">
         <?php
         // if first time open welcome splash
         if (!isset($_COOKIE['welcome'])) {
-            require 'welcomesplash.php';
+            require 'underpages/welcomesplash.php';
             setcookie("welcome", "value", time() + 60 * 60 * 24 * 100, "/");
         }
-        require 'conRestu.php' ?>
+        require 'underpages/places.php' ?>
     </div>
     <!-- Object som åker ut, håller på "messages" som folk skriver -->
-    <div id="messageWindow">
+    <div id="infoWindow">
         <!-- Closing knapp för message fönster -->
         <div id="closeButton"><p>CLOSE</p></div>
-        <div id="messInfo">
+        <div id="infoContent">
         </div>
     </div>
     </div>
-
-
 </main>
 </body>
 </html>

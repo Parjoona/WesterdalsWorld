@@ -9,24 +9,23 @@ $(document).ready(function () {
     //onclick funktion som hämtar data-id från .placeContainer
     $('.placeContainer').click(function () {
         var myKey = $(this).attr('data-id');
-        //CSS change
-        $('#messageWindow').css({'right': -305, 'opacity': 1});
-        $('#mainWindow, #menu').css({'right': 305});
+        $('#infoWindow').css({'right': -305, 'opacity': 1});
+        $('#mainContent, #menu').css({'right': 305});
         //Hämtar data från info.php
         $.ajax({
             type: 'GET',
-            url: 'info.php',
+            url: 'underpages/info.php',
             data: {data: myKey},
             success: function (data) {
-                $("#messInfo").html(data);
+                $("#infoContent").html(data);
             }
         });
     });
 
     //onclick closing messWindow
     $('#closeButton').click(function () {
-        $('#messageWindow').css({'right': 0, 'opacity': 0});
-        $('#mainWindow, #menu').css({'right': 0});
+        $('#infoWindow').css({'right': 0, 'opacity': 0});
+        $('#mainContent, #menu').css({'right': 0});
     });
     //Tar bort splashscreen vid första besök.
     $('#welcomeScreen').click(function () {

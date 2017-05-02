@@ -50,7 +50,7 @@ header a {
     transition: 0.25s ease-out;
 }
 
-a:hover {
+header a:hover {
     background: #a31621;
 }
 
@@ -129,6 +129,7 @@ a:hover {
     border-bottom: 1px solid #E8F1F2;
     background: #E8F1F2;
     color: #07020d;
+    transition: 0.25s;
 }
 
 #menu  li.active {
@@ -231,7 +232,7 @@ main {
 }
 
 /* ÅKER UT FRÅN MAIN*/
-#messageWindow {
+#infoWindow {
     height: 100%;
     width: 300px;
     right: 0;
@@ -261,10 +262,12 @@ main {
     right: 247px;
 }
 
-#messInfo {
-    border-bottom: 1px solid black;
+#infoContent {
+    text-align: center;
+    transition: 0.75s;
+    margin-top: 5px;
     height: 300px;
-    width: 300px;
+    width: 298px;
     top: 20px;
     right: 0;
     left: 0;
@@ -291,7 +294,7 @@ main {
     box-sizing: border-box;
 }
 
-input #addEvDiv {
+#addEvDiv input {
     border: 1px solid #ccc;
 }
 
