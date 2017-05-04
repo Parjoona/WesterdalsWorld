@@ -1,9 +1,8 @@
 <header>
     <!-- knappar venstre -->
-    <a id="placeBtn" href="index.php">Places</a>
-    <a id="eventBtn" href="event.php">Eventer</a>
+    <a id="about" href="index.php">About us</a>
     <!-- LOGO -->
-    <h1 id="logo">Studenterdals</h1>
+    <a href="index.php" id="logo"><h1>Studenterdals</h1></a>
     <!-- knappar hoyre -->
     <?php
     // If logged in or not

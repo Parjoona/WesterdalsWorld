@@ -15,10 +15,8 @@ include 'config.php';
 <!-- Split med menu inni -->
 <div id="menu">
     <ul id="ulmenu">
-        <li class="active">Alle event</li>
-        <li>Kultur</li>
-        <li>Nattliv</li>
-        <li>Sport</li>
+        <a href="index.php"><li>Places</li></a>
+        <a href="event.php"><li class="active">Events</li></a>
     </ul>
 </div>
 <!-- Får allt under header til att vara centrert -->

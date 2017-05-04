@@ -14,21 +14,20 @@ require 'config.php'; ?>
 <!-- Split med menu inni -->
 <div id="menu">
     <ul id="ulmenu">
-        <li class="active">All types</li>
-        <li>Restaurants</li>
-        <li>Hotels</li>
-        <li>Bars</li>
+        <a href="index.php"><li class="active">Places</li></a>
+        <a href="event.php"><li>Events</li></a>
     </ul>
 </div>
 <!-- Får allt under header til att vara centrert -->
 <main id="mainContent">
+
     <!-- Håller på resturanger/barer "objects" -->
     <div id="content">
         <?php
         // if first time open welcome splash
         if (!isset($_COOKIE['welcome'])) {
             require 'underpages/welcomesplash.php';
-            setcookie("welcome", "value", time() + 60 * 60 * 24 * 100, "/");
+            // setcookie("welcome", "value", time() + 60 * 60 * 24 * 100, "/");
         }
         require 'underpages/places.php' ?>
     </div>

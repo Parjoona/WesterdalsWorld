@@ -5,12 +5,14 @@ $db_pass = '';
 $db_name = 'westerproject';
 $db_port = 3306;
 
-try {
-    $conn = new PDO('mysql:host=localhost;dbname=westerproject',$db_user,$db_pass);
+$conn = new PDO('mysql:host=localhost;dbname=westerproject',$db_user,$db_pass);
+/*try {
+
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 } catch (Exception $ex) {
     echo 'Not connected'.$ex->getMessage();
 }
+*/
 
 // Sätter igång databasen vid namn westerproject,
 // använder sig av kollonen places.
