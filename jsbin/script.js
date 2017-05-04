@@ -7,14 +7,29 @@
 $(document).ready(function () {
 
     //onclick funktion som hämtar data-id från .placeContainer
-    $('.placeContainer').click(function () {
+    $('.placeCon').click(function () {
         var myKey = $(this).attr('data-id');
         $('#infoWindow').css({'right': -305, 'opacity': 1});
         $('#mainContent, #menu').css({'right': 305});
-        //Hämtar data från info.php
+        //Hämtar data från placeInfo.php
         $.ajax({
             type: 'GET',
-            url: 'underpages/info.php',
+            url: 'underpages/placeInfo.php',
+            data: {data: myKey},
+            success: function (data) {
+                $("#infoContent").html(data);
+            }
+        });
+    });
+
+    $('.eventCon').click(function () {
+        var myKey = $(this).attr('data-id');
+        $('#infoWindow').css({'right': -305, 'opacity': 1});
+        $('#mainContent, #menu').css({'right': 305});
+        //Hämtar data från placeInfo.php
+        $.ajax({
+            type: 'GET',
+            url: 'underpages/eventInfo.php',
             data: {data: myKey},
             success: function (data) {
                 $("#infoContent").html(data);

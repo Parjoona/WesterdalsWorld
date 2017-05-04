@@ -6,7 +6,8 @@
  * Time: 12:01
  */
 session_start();
-require 'config.php'; ?>
+include 'config.php';
+?>
 <!-- Kallar på html, css & andra taggar -->
 <?php require 'head.php' ?>
 <body>
@@ -14,10 +15,10 @@ require 'config.php'; ?>
 <!-- Split med menu inni -->
 <div id="menu">
     <ul id="ulmenu">
-        <li class="active">All types</li>
-        <li>Restaurants</li>
-        <li>Hotels</li>
-        <li>Bars</li>
+        <li class="active">Alle event</li>
+        <li>Kultur</li>
+        <li>Nattliv</li>
+        <li>Sport</li>
     </ul>
 </div>
 <!-- Får allt under header til att vara centrert -->
@@ -30,7 +31,7 @@ require 'config.php'; ?>
             require 'underpages/welcomesplash.php';
             setcookie("welcome", "value", time() + 60 * 60 * 24 * 100, "/");
         }
-        require 'underpages/places.php' ?>
+        require 'underpages/events.php' ?>
     </div>
     <!-- Object som åker ut, håller på "messages" som folk skriver -->
     <div id="infoWindow">

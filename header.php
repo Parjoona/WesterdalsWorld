@@ -1,7 +1,7 @@
 <header>
     <!-- knappar venstre -->
-    <a id="eventBtn">Eventer</a>
-    <a id="restBtn">Resturanger</a>
+    <a id="placeBtn" href="index.php">Places</a>
+    <a id="eventBtn" href="event.php">Eventer</a>
     <!-- LOGO -->
     <h1 id="logo">Studenterdals</h1>
     <!-- knappar hoyre -->

@@ -1,5 +1,4 @@
 <?php
-
 $host = 'localhost';
 $db_user = 'root';
 $db_pass = '';
@@ -16,8 +15,10 @@ try {
 // Sätter igång databasen vid namn westerproject,
 // använder sig av kollonen places.
 
-$stmt = $conn->prepare('SELECT * FROM places');
-$stmt->execute();
-$places = $stmt->fetchAll();
+$stmtplaces = $conn->prepare('SELECT * FROM places');
+$stmtplaces->execute();
+$places = $stmtplaces->fetchAll();
 
-//
+$stmtevents = $conn->prepare('SELECT * FROM events');
+$stmtevents->execute();
+$events = $stmtevents->fetchAll();

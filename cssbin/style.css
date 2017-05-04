@@ -50,16 +50,22 @@ header a {
     transition: 0.25s ease-out;
 }
 
+header a:link, a:visited {
+    text-decoration: none;
+}
+
 header a:hover {
     background: #a31621;
 }
 
 #eventBtn {
     left: 125px;
+    z-index: 1;
 }
 
-#restBtn {
+#placeBtn {
     left: 20px;
+    z-index: 1;
 }
 
 #logo {
@@ -180,7 +186,7 @@ main {
 }
 
 /* CONTAINS "PLACES" */
-.placeContainer {
+#boxContainer {
     height: 165px;
     width: 238px;
     margin: 5px;
@@ -227,7 +233,7 @@ main {
     transition: 0.25s;
 }
 
-.placeContainer:hover .placeImg img {
+#boxContainer:hover .placeImg img {
     opacity: 0.9;
 }
 
