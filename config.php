@@ -7,7 +7,7 @@ $db_port = 3306;
 
 $conn = new PDO('mysql:host=localhost;dbname=westerproject',$db_user,$db_pass);
 /*try {
-
+    $conn = new PDO('mysql:host=localhost;dbname=westerproject',$db_user,$db_pass);
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 } catch (Exception $ex) {
     echo 'Not connected'.$ex->getMessage();

@@ -2,14 +2,13 @@
 /**
  * Created by Pauma on 2017-03-30.
  */
-
 // Aktiverar jQuery
 $(document).ready(function () {
         //onclick funktion som hämtar data-id från .placeContainer
         $('.placeCon').click(function () {
             var myKey = $(this).attr('data-id');
-            $('#infoWindow').css({'right': -305, 'opacity': 1});
-            $('#mainContent, #menu').css({'right': 305});
+            $('#infoWindow').removeClass('infoOutAnim');
+            $('#infoWindow').addClass('infoInAnim');
             //Hämtar data från placeInfo.php
             $.ajax({
                 type: 'GET',
@@ -23,8 +22,8 @@ $(document).ready(function () {
     //Var tvungen att lägga som duplikat för att få det att fungera som vilja.
     $('.eventCon').click(function () {
         var myKey = $(this).attr('data-id');
-        $('#infoWindow').css({'right': -305, 'opacity': 1});
-        $('#mainContent, #menu').css({'right': 305});
+        $('#infoWindow').removeClass('infoOutAnim');
+        $('#infoWindow').addClass('infoInAnim');
         //Hämtar data från placeInfo.php
         $.ajax({
             type: 'GET',
@@ -38,8 +37,8 @@ $(document).ready(function () {
 
     //onclick closing messWindow
     $('#closeButton').click(function () {
-        $('#infoWindow').css({'right': 0, 'opacity': 0});
-        $('#mainContent, #menu').css({'right': 0});
+        $('#infoWindow').removeClass('infoInAnim');
+        $('#infoWindow').addClass('infoOutAnim');
     });
     //Tar bort splashscreen vid första besök.
     $('#welcomeScreen').click(function () {
@@ -53,3 +52,6 @@ $(document).ready(function () {
     });
 
 });
+
+// $('#infoWindow').css({'right': -305, 'opacity': 1});
+// $('#mainContent, #menu').css({'right': 305});
