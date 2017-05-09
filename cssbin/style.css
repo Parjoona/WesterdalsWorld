@@ -23,7 +23,7 @@ html, body {
     position: relative;
 }
 
-body * {
+wrapper * {
     position: absolute;
 }
 
@@ -58,19 +58,23 @@ header a:hover {
     background: #a31621;
 }
 
-#about {
+body:hover {
+    cursor: default;
+}
+
+header #about-btn {
     left: 20px;
     z-index: 1;
 }
 
-#logo {
+header #logo {
     right: 0;
     left: 0;
     width: 300px;
     margin: 0 auto;
 }
 
-#logo h1 {
+header #logo h1 {
     margin: 0 auto;
     left: 0;
     right: 0;
@@ -79,19 +83,19 @@ header a:hover {
     color: #E8F1F2;
 }
 
-#settings {
+header #settings-btn {
     right: 20px;
 }
 
-#logOut {
+header #logout-btn {
     right: 125px;
 }
 
-#logIn {
+header #login-btn {
     right: 125px;
 }
 
-#profileButton {
+header #profile-btn {
     right: 230px;
 }
 
@@ -171,24 +175,25 @@ main {
     z-index: 10;
 }
 
-#welcomeScreen {
+#welcome-splash {
     margin: 5px 5px 0 5px;
-    height: 200px;
+    height: 400px;
     width: 990px;
     background: #E8F1F2;
     border: 1px solid #a31621;
     position: relative;
 }
 
-#welcomeScreen * {
+#welcome-splash * {
     margin: 0 auto;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    width: 750px;
 }
 
 /* CONTAINS "PLACES" */
-#boxContainer {
+#box-con {
     height: 165px;
     width: 238px;
     margin: 5px;
@@ -199,7 +204,7 @@ main {
     text-align: center;
 }
 
-.placeName {
+.box-name {
     left: 0;
     right: 0;
     background: #ad343e;
@@ -209,7 +214,7 @@ main {
     margin: 0;
 }
 
-.placeType {
+.box-type {
     bottom: 0;
     background: #E8F1F2;
     left: 50%;
@@ -220,14 +225,14 @@ main {
     line-height: 25px;
 }
 
-.placeImg {
+.box-img {
     height: 110px;
     width: 238px;
     display: flex;
     bottom: 0;
 }
 
-.placeImg img {
+.box-img img {
     height: 110px;
     width: 238px;
     bottom: 25px;
@@ -236,18 +241,18 @@ main {
 
 }
 
-#boxContainer:hover .placeImg img {
+#box-con:hover .box-img img {
     opacity: 0.9;
 }
 
 /* ÅKER UT FRÅN MAIN*/
-#infoWindow {
+#info-win {
     height: 600px;
     width: 600px;
     left: 0;
     right: 0;
     margin: 0 auto;
-    top: 15px;
+    top: 70px;
     opacity: 1;
     overflow: hidden;
     transition: 0.75s;
@@ -256,33 +261,7 @@ main {
     border: 1px solid #ad343e;
 }
 
-.infoInAnim {
-    -webkit-animation: infoIn 3s forwards;
-    -o-animation: infoIn 3s forwards;
-    animation: infoIn 3s forwards;
-}
-
-.infoOutAnim {
-    -webkit-animation: infoOut 3s forwards;
-    -o-animation: infoOut 3s forwards;
-    animation: infoOut 3s forwards;
-}
-
-@keyframes infoIn {
-    0% { transform: translateX(0);  opacity: 0;  z-index: -1;}
-    50% { transform: translateX(150%);  opacity: 0.8;  z-index: 1;}
-    51% { transform: translateX(150%);  opacity: 0.8;  z-index: 35; }
-    100% { transform: translateX(0); opacity: 1;  z-index: 35;}
-}
-
-@keyframes infoOut {
-    0% { transform: translateX(0);  opacity: 1;  z-index: 35;}
-    50% { transform: translateX(-150%);  opacity: 0.2;  z-index: 35;}
-    51% { transform: translateX(-150%);  opacity: 0.2;  z-index: 1; }
-    100% { transform: translateX(0); opacity: 0;  z-index: -1;}
-}
-
-#closeButton {
+#info-close-btn {
     border: 1px solid #a31621;
     width: 600px;
     height: 20px;
@@ -291,26 +270,93 @@ main {
     color: #E8F1F2;
 }
 
-#closeButton p {
+#info-close-btn p {
     margin: 0 auto;
     right: 5px;
     transition: 1s ease;
 }
 
-#closeButton:hover p {
-    right: 247px;
+#info-close-btn:hover {
+    background: #a31621;
 }
 
-#infoContent {
+#info-content {
     text-align: center;
     transition: 0.75s;
-    margin-top: 5px;
     height: 600px;
     width: 600px;
     top: 20px;
     right: 0;
     left: 0;
     font-family: 'Roboto', sans-serif;
+}
+
+.info-container {
+    width: 275px;
+    height: 600px;
+}
+
+.info-msg {
+    right: 0;
+    width: 325px;
+    height: 100px;
+}
+
+.info-msg * {
+    position: relative;
+}
+
+.info-msg-box {
+    height: 100px;
+    width: 325px;
+    padding: 20px;
+    position: relative;
+}
+
+.info-name {
+    width: 275px;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.info-type {
+    top: 30px;
+    margin: 5px;
+}
+
+.info-place {
+    top: 50px;
+    margin: 5px;
+}
+
+.info-address {
+    top: 70px;
+    margin: 5px;
+}
+
+.info-time {
+    top: 90px;
+    margin: 5px;
+}
+
+.info-description {
+    top: 310px;
+    margin: 5px;
+}
+
+.info-img {
+    margin: 5px;
+    top: 115px;
+    width: 265px;
+    height: 190px;
+
+}
+
+.info-img img {
+    margin: 0;
+    left: 0;
+    width: 265px;
+    height: 190px;
 }
 
 /*add_event*/
@@ -347,3 +393,26 @@ main {
 #addEvSubmit:hover {
     background-color: #45a049;
 }
+
+.infoInAnim {
+    -webkit-animation: infoIn 300ms forwards;
+    -o-animation: infoIn 300ms forwards;
+    animation: infoIn 300ms forwards;
+}
+
+.infoOutAnim {
+    -webkit-animation: infoOut 300ms forwards;
+    -o-animation: infoOut 300ms forwards;
+    animation: infoOut 300ms forwards;
+}
+
+@keyframes infoIn {
+    0% { transform: translate3d(0, -100%, 0); opacity: 0;  z-index: -1; }
+    100% { transform: translateX(0); opacity: 1;  z-index: 35;}
+}
+
+@keyframes infoOut {
+    0% { transform: translateX(0);  opacity: 1;  z-index: 35;}
+    100% { transform: translate3d(0, 100%, 0); opacity: 0;  z-index: -1;}
+}
+

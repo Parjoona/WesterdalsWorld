@@ -6,7 +6,8 @@ $db_name = 'westerproject';
 $db_port = 3306;
 
 $conn = new PDO('mysql:host=localhost;dbname=westerproject',$db_user,$db_pass);
-/*try {
+/*
+try {
     $conn = new PDO('mysql:host=localhost;dbname=westerproject',$db_user,$db_pass);
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 } catch (Exception $ex) {
@@ -20,7 +21,7 @@ $conn = new PDO('mysql:host=localhost;dbname=westerproject',$db_user,$db_pass);
 //Checkar vilken sida du är på.
 $serv = $_SERVER['REQUEST_URI'];
 if( strpos( $serv,'index') || strpos($serv,'place') !== false ) {
-    $stmtplaces = $conn->prepare('SELECT * FROM places');
+    $stmtplaces = $conn->prepare('SELECT places.*, msg.name_connect, msg.comment FROM places LEFT JOIN msg ON msg.name_connect=places.place_name');
     $stmtplaces->execute();
     $places = $stmtplaces->fetchAll();
 } else if ( strpos($serv, 'event') !== false) {

@@ -11,6 +11,7 @@ require 'config.php'; ?>
 <?php require 'head.php' ?>
 <body>
 <?php require 'header.php' ?>
+
 <!-- Split med menu inni -->
 <div id="menu">
     <ul id="ulmenu">
@@ -32,13 +33,14 @@ require 'config.php'; ?>
         require 'underpages/places.php' ?>
     </div>
     <!-- Object som åker ut, håller på "messages" som folk skriver -->
-    <div id="infoWindow">
+    <div id="info-win">
         <!-- Closing knapp för message fönster -->
-        <div id="closeButton"><p>CLOSE</p></div>
-        <div id="infoContent">
+        <div id="info-close-btn"><p>CLOSE</p></div>
+        <div id="info-content">
         </div>
     </div>
     </div>
+    </wrapper>
 </main>
 </body>
 </html>
