@@ -299,7 +299,7 @@ main {
 .info-msg {
     right: 0;
     width: 325px;
-    height: 100px;
+    height: 600px;
 }
 
 .info-msg * {
@@ -307,10 +307,30 @@ main {
 }
 
 .info-msg-box {
-    height: 100px;
-    width: 325px;
-    padding: 20px;
-    position: relative;
+    border: #07020d solid 1px;
+    margin: 0 auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 310px;
+
+}
+
+#info-msg-add input {
+    text-align: center;
+    margin: 5px 0;
+    width: 255px;
+    height: 20px;
+    padding: 0;
+}
+
+#info-msg-add button {
+    width: 50px;
+    height: 23px;
+    border: none;
+    background: #ad343e;
+    margin: 5px 0;
+    padding: 0;
+    color: #E8F1F2;
 }
 
 .info-name {

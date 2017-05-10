@@ -16,16 +16,26 @@ foreach ($places as $place) {
             <div class="info-img">
                 <?php echo "<img srcset=\"{$place['img_url']}\" src='imgbin/alt_place.png'/>"; ?>
             </div>
-            <div class="info-description"><?php echo $place['description']; ?></div>
+            <div class="info-description"><?php echo $place['description'];
+
+                ?></div>
         </div>
         <div class="info-msg">
+            <div id="info-msg-add">
+                <form method="GET" action="underpages/comment.php">
+                    <input type="text" name="comment" placeholder="COMMENT">
+                    <button type="submit">ADD</button>
+                </form>
+            </div>
             <?php
-            if ($place['place_name'] == $place['name_connect']) {
-                echo '<div class="info-msg-box">';
-                echo $place['comment'];
-                echo '</div>';
-            } else {
-                echo "NOPE";
+
+            foreach ($msgs as $msg) {
+                // Kopplar främmandenyckel till främmandenyckel för att få fram kommentarer för rätt knapp
+                if ($msg['name_connect'] == $place['place_name']) {
+                    echo '<div class="info-msg-box">';
+                    echo $msg['comment'];
+                    echo '</div>';
+                }
             }
             ?>
         </div>

@@ -21,7 +21,7 @@ try {
 //Checkar vilken sida du är på.
 $serv = $_SERVER['REQUEST_URI'];
 if( strpos( $serv,'index') || strpos($serv,'place') !== false ) {
-    $stmtplaces = $conn->prepare('SELECT places.*, msg.name_connect, msg.comment FROM places LEFT JOIN msg ON msg.name_connect=places.place_name');
+    $stmtplaces = $conn->prepare('SELECT * FROM places');
     $stmtplaces->execute();
     $places = $stmtplaces->fetchAll();
 } else if ( strpos($serv, 'event') !== false) {
@@ -31,3 +31,7 @@ if( strpos( $serv,'index') || strpos($serv,'place') !== false ) {
 } else {
     echo "Something went wrong";
 }
+
+$stmtmsg = $conn->prepare('SELECT * FROM msg');
+$stmtmsg->execute();
+$msgs = $stmtmsg->fetchAll();
