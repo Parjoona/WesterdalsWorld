@@ -1,6 +1,6 @@
 <header>
     <!-- knappar venstre -->
-    <a id="about-btn" href="underpages/contactoform.php">About us</a>
+    <a id="about-btn" href="/WesterdalsWorld/underpages/contactoform.php">About us</a>
     <!-- LOGO -->
     <a href="/WesterdalsWorld/index.php" id="logo"><h1>Studenterdals</h1></a>
     <!-- knappar hoyre -->
