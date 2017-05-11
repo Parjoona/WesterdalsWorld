@@ -1,25 +1,29 @@
-<?php include "database.php"; ?>
- 
 <?php
- 
-// create a variable
-$event_name=$_POST['event_name'];
-$description=$_POST['description'];
-$cost=$_POST['cost'];
-//$image=$_POST['image'];
-$when=$_POST['date_time'];
-$venue=$_POST['venue'];
- 
-//Execute the query
- 
- 
-mysqli_query($connect,"INSERT INTO events (title,description,cost,starts_at,venue_id)
-		        VALUES ('$event_name','$description','$cost','$when','$venue')");
-				
-	if(mysqli_affected_rows($connect) > 0){
-	echo '<p>Employee Added</p>';
-	echo '<a href="add_event.php">Go Back</a>';
-} else {
-	echo 'Employee NOT Added<br />';
-	echo mysqli_error ($connect);
+
+require '../config.php';
+error_log(print_r($_POST,true));
+
+
+	$title = $_POST['event_name'];
+	$description = $_POST['description'];
+	$cost = $_POST['cost'];
+	$date_time = $_POST['date_time'];
+	$venue_id = $_POST['venue'];
+
+	try{
+		$sql='INSERT INTO events(title,description,cost,starts_at,venue_id) VALUES(:event_name,:description,:cost,:date_time,:venue)';
+		$stmt = $conn->prepare($sql);
+		$stmt->bindValue(':event_name', $title, PDO::PARAM_STR);
+		$stmt->bindValue(':description', $description, PDO::PARAM_STR);
+		$stmt->bindValue(':cost', $cost, PDO::PARAM_INT);
+		$stmt->bindValue(':date_time', $date_time, PDO::PARAM_STR);
+		$stmt->bindValue(':venue', $venue_id, PDO::PARAM_INT);
+        if (isset($stmt)) {
+            $stmt->execute(array(':event_name' => $title, ':description' => $description, ':cost' => $cost, ':starts_at' => $date_time, ':venue' => $venue_id));
+        }
+		//$stmt->execute();
+		$affected_rows = $stmt->rowCount();
+	}
+	catch(PDOException $e) {
+		echo $e->getMessage();
 }
