@@ -171,6 +171,46 @@ main {
     z-index: 10;
 }
 
+.contactContent {
+    position: relative;
+    top: 170px;
+    left: 270px;
+    bottom: 20px;
+    border: #a31621 solid 1px;
+    background: #E8F1F2;
+    width: 700px;
+    height: 500px;
+    display: inline-block;
+    overflow: inherit;
+}
+
+#infoCont{
+    position: absolute;
+    width: 500px;
+    height: 150px;
+    border: 2px solid #a31621;
+    top: 20px;
+    bottom: 20px;
+    left: 100px;
+}
+#conText{
+    text-align: center;
+    transition: 0.75s;
+    margin-top: 3px;
+    width: 500px;
+    height: 140px;
+    top: 5px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 17px;
+
+}
+#contactO{
+    position: relative;
+
+}
+
+
+
 #welcomeScreen {
     margin: 5px 5px 0 5px;
     height: 200px;

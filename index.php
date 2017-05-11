@@ -8,7 +8,7 @@
 session_start();
 require 'config.php'; ?>
 <!-- Kallar på html, css & andra taggar -->
-<?php require 'head.php' ?>
+ <?php require 'head.php' ?>
 <body>
 <?php require 'header.php' ?>
 <!-- Split med menu inni -->
@@ -38,7 +38,7 @@ require 'config.php'; ?>
         <div id="infoContent">
         </div>
     </div>
-    </div>
+    
 </main>
 </body>
-</html>
+
