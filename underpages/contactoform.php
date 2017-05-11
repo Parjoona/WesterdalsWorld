@@ -16,6 +16,11 @@
 
 </head>
 <style>
+
+    .contactFrm {
+        height: 40px;
+
+    }
     .contactFrm h4 {
         font-size: 1em;
         color: #ad343e;
@@ -48,9 +53,7 @@
         -webkit-appearance: none;
     }
     .contactFrm input[type="submit"] {
-        position: relative;
         bottom: 0px;
-        left: 20px;
         outline: none;
         color: #FFFFFF;
         padding: 0.5em 0;
@@ -65,6 +68,7 @@
         -moz-transition: 0.5s all;
         width: 20%;
         cursor: pointer;
+
     }
     .contactFrm input[type="submit"]:hover {
         background: none;
@@ -77,8 +81,23 @@
     #posRel * {
         position: relative;
     }
-</style>
+    #fixForm *{
+        left: 50px;
+        bottom: -20px;
+    }
+    #textI{
+        font-family: 'Roboto', sans-serif;
+        font-size: 20px;
+        color: #a31621;
+        left: 149px;
+        bottom: -50px;
+    }
 
+
+
+
+
+</style>
 
 <body>
 <?php require '../header.php'; ?>
@@ -97,7 +116,8 @@
             Westerdals Wester What. </h3>
 
     </div>
-    <h2>Kontakt Oss</h2>
+    <div id="fixForm">
+    <h2 id="textI">Send oss en henvendelse</h2>
     <div class="contactFrm">
         <?php if(!empty($statusMsg)){ ?>
             <p class="statusMsg <?php echo !empty($msgClass)?$msgClass:''; ?>"><?php echo $statusMsg; ?></p>
@@ -107,15 +127,13 @@
             <input type="text" name="name" placeholder="Your Name" required="">
             <h4>Email </h4>
             <input type="email" name="email" placeholder="email@example.com" required="">
-            <h4>Subject</h4>
-            <input type="text" name="subject" placeholder="Write subject" required="">
             <h4>Message</h4>
             <textarea name="message" placeholder="Write your message here" required=""> </textarea>
-            <input type="submit" name="submit" value="Submit">
+            <p> <input type="submit" name="submit" value="Submit"> </p>
             <div class="clear"> </div>
         </form>
     </div>
-
+    </div>
 
 
 

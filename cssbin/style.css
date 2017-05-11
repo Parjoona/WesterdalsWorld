@@ -173,13 +173,12 @@ main {
 
 .contactContent {
     position: relative;
-    top: 170px;
-    left: 270px;
+    left: 200px;
     bottom: 20px;
     border: #a31621 solid 1px;
     background: #E8F1F2;
     width: 700px;
-    height: 500px;
+    height: 700px;
     display: inline-block;
     overflow: inherit;
 }

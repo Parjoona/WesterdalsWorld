@@ -1,9 +1,9 @@
 <?php
 $host = 'localhost';
 $db_user = 'root';
-$db_pass = '';
+$db_pass = 'root';
 $db_name = 'westerproject';
-$db_port = 3306;
+$db_port = 8889;
 
 $conn = new PDO('mysql:host=localhost;dbname=westerproject',$db_user,$db_pass);
 /*try {
