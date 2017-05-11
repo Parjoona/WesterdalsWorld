@@ -179,43 +179,6 @@ main {
     z-index: 10;
 }
 
-.contactContent {
-    position: relative;
-    left: 200px;
-    bottom: 20px;
-    border: #a31621 solid 1px;
-    background: #E8F1F2;
-    width: 700px;
-    height: 700px;
-    display: inline-block;
-    overflow: inherit;
-}
-
-#infoCont{
-    position: absolute;
-    width: 500px;
-    height: 150px;
-    border: 2px solid #a31621;
-    top: 20px;
-    bottom: 20px;
-    left: 100px;
-}
-#conText{
-    text-align: center;
-    transition: 0.75s;
-    margin-top: 3px;
-    width: 500px;
-    height: 140px;
-    top: 5px;
-    font-family: 'Roboto', sans-serif;
-    font-size: 17px;
-
-}
-#contactO{
-    position: relative;
-
-}
-
 #welcome-splash {
     margin: 5px 5px 0 5px;
     height: 400px;
@@ -354,49 +317,77 @@ main {
 }
 
 .info-msg-box {
-    border: #07020d solid 1px;
-    margin: 0 auto;
-    margin-top: 5px;
-    margin-bottom: 5px;
+    border-left: #07020d solid 1px;
+    border-bottom: #07020d solid 1px;
+    margin: 20px 5px;
     width: 300px;
     text-align: left;
     padding: 5px;
 }
 
+.info-msg-name {
+    border-left: #07020d solid 1px;
+    position: absolute;
+    left: -1px;
+    height: 12px;
+    top: -12px;
+    line-height: 12px;
+    background: #ad343e;
+    font-size: 60%;
+    color: #E8F1F2;
+    text-align: left;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
 .delete-comment-btn {
     position: absolute;
-    right: 0;
+    right: -20px;
     top: 0;
-    width: 30px;
+    width: 0;
     height: 100%;
     background: #E8F1F2;
-    transition: 300ms;
+    text-align: center;
+    line-height: 30px;
+    display: none;
+    font-size: 150%;
+    z-index: 36;
+}
+
+.info-msg-box:hover .delete-comment-btn {
+    display: block;
+    right: 0;
+    width: 30px;
+    background: #a31621;
+    color: #E8F1F2;
 }
 
 .delete-comment-btn:hover {
-    background: #a31621;
+    box-shadow: 0 0 10px #929292;
 }
 
 .info-msg-comment {
-
+    width: 265px;
 }
 
 #info-msg-add input {
     text-align: center;
-    margin: 5px 0;
+    margin: 10px 0;
     width: 255px;
     height: 20px;
     padding: 0;
 }
 
 #info-msg-add button {
-    width: 50px;
+    width: 54px;
     height: 23px;
-    border: none;
     background: #ad343e;
+    right: 4px;
     margin: 5px 0;
+    border: none;
     padding: 0;
     color: #E8F1F2;
+    font-family: 'Roboto', sans-serif;
 }
 
 #info-msg-add button:hover {
@@ -508,4 +499,114 @@ main {
 
 .hidestuff {
     display: none;
+}
+/* CONTACT sida */
+.contactContent {
+    position: absolute;
+    left: 200px;
+    bottom: 20px;
+    border: #a31621 solid 1px;
+    background: #E8F1F2;
+    width: 700px;
+    height: 700px;
+    display: inline-block;
+    overflow: inherit;
+}
+
+.contactContent * {
+    position: relative;
+}
+
+#infoCont{
+    position: absolute;
+    width: 500px;
+    height: 150px;
+    border: 2px solid #a31621;
+    top: 20px;
+    bottom: 20px;
+    left: 100px;
+}
+#conText{
+    text-align: center;
+    margin-top: 3px;
+    width: 500px;
+    height: 140px;
+    top: 5px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 17px;
+
+}
+
+.contactFrm {
+    height: 500px;
+}
+
+#fixForm {
+    top: 150px;
+}
+
+#fixForm * {
+    left: 50px;
+    bottom: -20px;
+}
+
+.contactFrm h4 {
+    font-size: 1em;
+    color: #ad343e;
+    top: 100px;
+    margin-bottom: 0.3em;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 2px;
+}
+.contactFrm input[type="text"], .contactFrm input[type="email"] {
+    width: 50%;
+    color: #ad343e;
+    background: #fff;
+    outline: none;
+    font-size: 0.8em;
+    padding: .5em 1em;
+    border: 1px solid #ad343e;
+    -webkit-appearance: none;
+    display: block;
+    margin-bottom: 1.2em;
+}
+.contactFrm textarea {
+    resize: none;
+    width: 50%;
+    background: #fff;
+    color: #ad343e;
+    font-size: 0.8em;
+    outline: none;
+    padding: .5em 1em;
+    border: 1px solid #ad343e;
+    min-height: 8em;
+    -webkit-appearance: none;
+}
+.contactFrm input[type="submit"] {
+    outline: none;
+    color: #FFFFFF;
+    padding: 0.5em 0;
+    font-size: 1em;
+    background: #ad343e;
+    transition: 0.5s all;
+    border: 1px solid #ad343e;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    width: 20%;
+    cursor: pointer;
+}
+.contactFrm input[type="submit"]:hover {
+    background: none;
+    color: #ad343e;
+}
+p.statusMsg{font-size:18px;}
+p.succdiv{color: black;}
+p.errordiv{color: darkred}
+
+#textI{
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    color: #a31621;
+    left: 149px;
+    bottom: -50px;
 }

@@ -1,8 +1,8 @@
 <header>
     <!-- knappar venstre -->
-    <a id="about-btn" href="index.php">About us</a>
+    <a id="about-btn" href="underpages/contactoform.php">About us</a>
     <!-- LOGO -->
-    <a href="index.php" id="logo"><h1>Studenterdals</h1></a>
+    <a href="/WesterdalsWorld/index.php" id="logo"><h1>Studenterdals</h1></a>
     <!-- knappar hoyre -->
     <?php
     // If logged in or not

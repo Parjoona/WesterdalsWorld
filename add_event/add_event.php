@@ -6,6 +6,7 @@
 </head>
 
 <body>
+<wrapper>
 <!-- La till den php require + main taggen -->
 <?php require '../header.php' ?>
 <main id="content">
@@ -28,5 +29,6 @@
         </form>
     </div>
 </main>
+</wrapper>
 </body>
 </html>
