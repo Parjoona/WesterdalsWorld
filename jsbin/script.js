@@ -2,47 +2,46 @@
 /**
  * Created by Pauma on 2017-03-30.
  */
-
 // Aktiverar jQuery
 $(document).ready(function () {
         //onclick funktion som hämtar data-id från .placeContainer
         $('.placeCon').click(function () {
             var myKey = $(this).attr('data-id');
-            $('#infoWindow').css({'right': -305, 'opacity': 1});
-            $('#mainContent, #menu').css({'right': 305});
-            //Hämtar data från placeInfo.php
+            $('#info-win').removeClass('infoOutAnim');
+            $('#info-win').addClass('infoInAnim');
+            //Hämtar data från place-info.php
             $.ajax({
                 type: 'GET',
-                url: 'underpages/placeInfo.php',
+                url: 'underpages/place-info.php',
                 data: {data: myKey},
                 success: function (data) {
-                    $("#infoContent").html(data);
+                    $("#info-content").html(data);
                 }
             });
         });
     //Var tvungen att lägga som duplikat för att få det att fungera som vilja.
     $('.eventCon').click(function () {
         var myKey = $(this).attr('data-id');
-        $('#infoWindow').css({'right': -305, 'opacity': 1});
-        $('#mainContent, #menu').css({'right': 305});
-        //Hämtar data från placeInfo.php
+        $('#info-win').removeClass('infoOutAnim');
+        $('#info-win').addClass('infoInAnim');
+        //Hämtar data från place-info.php
         $.ajax({
             type: 'GET',
-            url: 'underpages/eventInfo.php',
+            url: 'underpages/event-info.php',
             data: {data: myKey},
             success: function (data) {
-                $("#infoContent").html(data);
+                $("#info-content").html(data);
             }
         });
     });
 
     //onclick closing messWindow
-    $('#closeButton').click(function () {
-        $('#infoWindow').css({'right': 0, 'opacity': 0});
-        $('#mainContent, #menu').css({'right': 0});
+    $('#info-close-btn').click(function () {
+        $('#info-win').removeClass('infoInAnim');
+        $('#info-win').addClass('infoOutAnim');
     });
     //Tar bort splashscreen vid första besök.
-    $('#welcomeScreen').click(function () {
+    $('#welcome-splash').click(function () {
         $(this).remove();
     });
 
@@ -51,5 +50,7 @@ $(document).ready(function () {
         $('#ulmenu li').removeClass('active');
         $(this).addClass('active');
     });
-
 });
+
+// $('#infoWindow').css({'right': -305, 'opacity': 1});
+// $('#mainContent, #menu').css({'right': 305});
