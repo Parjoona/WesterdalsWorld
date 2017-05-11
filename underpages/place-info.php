@@ -35,7 +35,14 @@ foreach ($places as $place) {
                 // Kopplar främmandenyckel till främmandenyckel för att få fram kommentarer för rätt knapp
                 if ($msg['name_connect'] == $place['place_name']) {
                     echo '<div class="info-msg-box">';
+                    echo '<div class="info-msg-comment">';
                     echo $msg['comment'];
+                    echo '</div>';
+                    if (1==0) {
+
+                    } else if (1==1) {
+                        echo '<div class="delete-comment-btn"></div>';
+                    }
                     echo '</div>';
                 }
             }

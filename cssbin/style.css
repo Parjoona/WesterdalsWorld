@@ -36,7 +36,7 @@ p, h1, a, form {
 header {
     width: 100%;
     min-width: 100%;
-    height: 75px;
+    height: 70px;
     background: #ad343e;
     border-bottom: #07020d solid 1px;
     box-shadow: 0 0 35px #929292;
@@ -45,8 +45,8 @@ header {
 header a {
     color: #E8F1F2;
     text-align: center;
-    line-height: 75px;
-    height: 75px;
+    line-height: 70px;
+    height: 70px;
     width: 100px;
     transition: 0.25s ease-out;
 }
@@ -80,7 +80,7 @@ header #logo h1 {
     left: 0;
     right: 0;
     text-align: center;
-    line-height: 75px;
+    line-height: 70px;
     color: #E8F1F2;
 }
 
@@ -126,6 +126,7 @@ header #profile-btn {
 }
 
 #menu li {
+    border-radius: 2px;
     display: inline-block;
     width: 150px;
     height: 30px;
@@ -162,11 +163,13 @@ main {
     left: 0;
     right: 0;
     transition: 0.75s;
+    border-radius: 2px;
 }
 
 /* LIGGER INNE I MAIN, INNEHÅLLER OBJECT */
 #content {
     margin: 0 auto;
+    border-radius: 2px;
     left: 0;
     right: 0;
     border: #a31621 solid 1px;
@@ -240,6 +243,8 @@ main {
     position: relative;
     float: left;
     text-align: center;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
 }
 
 #box-con:hover {
@@ -353,7 +358,26 @@ main {
     margin: 0 auto;
     margin-top: 5px;
     margin-bottom: 5px;
-    width: 310px;
+    width: 300px;
+    text-align: left;
+    padding: 5px;
+}
+
+.delete-comment-btn {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 30px;
+    height: 100%;
+    background: #E8F1F2;
+    transition: 300ms;
+}
+
+.delete-comment-btn:hover {
+    background: #a31621;
+}
+
+.info-msg-comment {
 
 }
 
