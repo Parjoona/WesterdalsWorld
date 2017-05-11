@@ -8,7 +8,7 @@
 session_start();
 require 'config.php'; ?>
 <!-- Kallar på html, css & andra taggar -->
-<?php require 'head.php' ?>
+ <?php require 'head.php' ?>
 <body>
 <?php require 'header.php' ?>
 
@@ -21,7 +21,7 @@ require 'config.php'; ?>
 </div>
 <!-- Får allt under header til att vara centrert -->
 <main id="mainContent">
-
+    <blur></blur>
     <!-- Håller på resturanger/barer "objects" -->
     <div id="content">
         <?php
@@ -39,8 +39,8 @@ require 'config.php'; ?>
         <div id="info-content">
         </div>
     </div>
-    </div>
-    </wrapper>
+</div>
+</wrapper>
 </main>
 </body>
-</html>
+
