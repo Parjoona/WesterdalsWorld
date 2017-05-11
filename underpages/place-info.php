@@ -5,7 +5,10 @@ $num = isset($_GET['data']) ? $_GET['data'] : '404 could not find page';
 
 foreach ($places as $place) {
     if ($num == $place['id']) {
+        //Sätter in placevar för senare bruk
+        $placevar = $place['place_name']
         ?>
+        <!-- container för vänster information-->
         <div class="info-container">
             <div class="info-name"><?php echo $place['place_name']; ?></div>
             <div class="info-place">DISTANCE: <?php echo $place['distance']; ?></div>
@@ -18,14 +21,11 @@ foreach ($places as $place) {
             </div>
             <div class="info-description"><?php echo $place['description']; ?></div>
         </div>
+        <!-- Message window till höger -->
         <div class="info-msg">
             <div id="info-msg-add">
                 <form method="GET" action="underpages/comment-added.php">
-                    <?php foreach ($msgs as $msg) {
-                        if ($msg['name_connect'] == $place['place_name']) {
-                            ?> <input type="text" name="place_name" value="<?php echo $place['place_name'] ?>" class="hidestuff"> <?php
-                        }
-                    } ?>
+                    <input type="text" name="place_name" value="<?php echo $placevar ?>" class="hidestuff">
                     <input type="text" name="comment" placeholder="COMMENT">
                     <button type="submit">ADD</button>
                 </form>
