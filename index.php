@@ -39,12 +39,8 @@ require 'config.php'; ?>
         <div id="info-content">
         </div>
     </div>
-<<<<<<< HEAD
-    
-=======
-    </div>
-    </wrapper>
->>>>>>> master
+</div>
+</wrapper>
 </main>
 </body>
 

@@ -176,7 +176,6 @@ main {
     z-index: 10;
 }
 
-<<<<<<< HEAD
 .contactContent {
     position: relative;
     left: 200px;
@@ -214,12 +213,7 @@ main {
 
 }
 
-
-
-#welcomeScreen {
-=======
 #welcome-splash {
->>>>>>> master
     margin: 5px 5px 0 5px;
     height: 400px;
     width: 990px;
