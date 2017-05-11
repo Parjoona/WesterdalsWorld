@@ -13,7 +13,7 @@
         <form id="form" method="post" action="process.php">
             <label for="event_name">Event name:</label>
             <input type="text" name="event_name" placeholder="Navn på eventet"/>
-            <label for="description">Description</label>:
+            <label for="addevTxt">Description</label>:
             <textarea id="addevTxt" name="description">Beskrivelse...</textarea>
             <label for="cost">Cost:</label>
             <input type="number" name="cost" placeholder="Hvor mye koster det?"/>
@@ -21,7 +21,7 @@
     <input type="image" name="image" />
     <br>-->
             <label for="date_time">When:</label>
-            <input type="datetime-local" name="date_time"/>
+            <input type="datetime-local" name="date_time" title="date_time"/>
             <label for="venue">Venue:</label>
             <input type="text" name="venue" placeholder="Utested"/>
             <input type="submit" id="addEvSubmit" value="Add event">

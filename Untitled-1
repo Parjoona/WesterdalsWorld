@@ -1,0 +1,38 @@
+
+
+
+
+<?php
+if(isset($_POST["addEvSubmit"])){
+$host = 'localhost';
+$db_user = 'root';
+$db_pass = '';
+$db_name = 'westerproject';
+$db_port = 3306;
+	
+	try {
+		$conn = new PDO('mysql:host=localhost;dbname=westerproject',$db_user,$db_pass);
+
+	$conn->setAttribute(PDO::ATT_ERRMODE, PDO::ERRMODE_EXCEPTION);
+	$sql = "INSERT INTO events(title,description, cost,date_time,venue_id) VALUES ('".$_POST["event_name"]."','".$_POST["description"]."','".$_POST["cost"]."','".$_POST["date_time"]."','".$_POST["venue"]."');
+	if ($conn->query($sql)) {
+	echo "<script type= 'text/javascript'>alert('New Record Inserted Successfully');</script>";
+	}
+	else{
+	echo "<script type= 'text/javascript'>alert("Data not successfully Inserted");</script>";
+	}
+	
+	$conn = null;
+	}
+	catch(PDOException $e)
+	{
+	echo $->getMessage();
+	}
+}
+
+-->
+
+
+
+
+
