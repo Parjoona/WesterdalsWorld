@@ -28,8 +28,6 @@ if( strpos( $serv,'index') || strpos($serv,'place') !== false ) {
     $stmtevents = $conn->prepare('SELECT * FROM events');
     $stmtevents->execute();
     $events = $stmtevents->fetchAll();
-} else {
-    echo "Something went wrong";
 }
 
 $stmtmsg = $conn->prepare('SELECT * FROM msg');

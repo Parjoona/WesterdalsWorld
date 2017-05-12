@@ -4,21 +4,21 @@
  */
 // Aktiverar jQuery
 $(document).ready(function () {
-        //onclick funktion som hämtar data-id från .placeContainer
-        $('.placeCon').click(function () {
-            var myKey = $(this).attr('data-id');
-            $('#info-win').removeClass('infoOutAnim');
-            $('#info-win').addClass('infoInAnim');
-            //Hämtar data från place-info.php
-            $.ajax({
-                type: 'GET',
-                url: 'underpages/place-info.php',
-                data: {data: myKey},
-                success: function (data) {
-                    $("#info-content").html(data);
-                }
-            });
+    //onclick funktion som hämtar data-id från .placeContainer
+    $('.placeCon').click(function () {
+        var myKey = $(this).attr('data-id');
+        $('#info-win').removeClass('infoOutAnim');
+        $('#info-win').addClass('infoInAnim');
+        //Hämtar data från place-info.php
+        $.ajax({
+            type: 'GET',
+            url: 'underpages/place-info.php',
+            data: {data: myKey},
+            success: function (data) {
+                $("#info-content").html(data);
+            }
         });
+    });
     //Var tvungen att lägga som duplikat för att få det att fungera som vilja.
     $('.eventCon').click(function () {
         var myKey = $(this).attr('data-id');
@@ -31,6 +31,20 @@ $(document).ready(function () {
             data: {data: myKey},
             success: function (data) {
                 $("#info-content").html(data);
+            }
+        });
+    });
+
+    $('.delete-comment-btn').click(function () {
+        var myKey = $(this).attr('data-id');
+        //Hämtar data från place-info.php
+        console.log(myKey);
+        $.ajax({
+            type: 'GET',
+            url: 'underpages/comment-delete.php',
+            data: {data: myKey},
+            success: function (data) {
+                $(".info-msg").html(data);
             }
         });
     });
