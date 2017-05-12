@@ -1,10 +1,4 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: Pauma
- * Date: 2017-03-30
- * Time: 12:01
- */
 session_start();
 require 'config.php'; ?>
 <!-- Kallar på html, css & andra taggar -->
@@ -15,7 +9,7 @@ require 'config.php'; ?>
 <!-- Split med menu inni -->
 <div id="menu">
     <ul id="ulmenu">
-        <a href="index.php"><li class="active">Places</li></a>
+        <a href="place.php"><li>Places</li></a>
         <a href="event.php"><li>Events</li></a>
     </ul>
 </div>
@@ -28,9 +22,10 @@ require 'config.php'; ?>
         // if first time open welcome splash
         if (!isset($_COOKIE['welcome'])) {
             require 'underpages/welcomesplash.php';
-            // setcookie("welcome", "value", time() + 60 * 60 * 24 * 100, "/");
+            setcookie("welcome", "value", time() + 60 * 60 * 24 * 100, "/");
         }
-        require 'underpages/places.php' ?>
+        ?>
+        <p style="left: 0; right: 0; text-align: center; top: 50px;">Tryck på en av dessa för att starta!</p>
     </div>
     <!-- Object som åker ut, håller på "messages" som folk skriver -->
     <div id="info-win">
