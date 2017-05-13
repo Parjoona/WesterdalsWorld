@@ -1,26 +1,21 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: Pauma
- * Date: 2017-03-30
- * Time: 12:01
- */
 session_start();
-include 'config.php';
-?>
+require 'config.php'; ?>
 <!-- Kallar på html, css & andra taggar -->
 <?php require 'head.php' ?>
 <body>
 <?php require 'header.php' ?>
+
 <!-- Split med menu inni -->
 <div id="menu">
     <ul id="ulmenu">
-        <a href="place.php"><li>Places</li></a>
-        <a href="event.php"><li class="active">Events</li></a>
+        <a href="place.php"><li class="active">Places</li></a>
+        <a href="event.php"><li>Events</li></a>
     </ul>
 </div>
 <!-- Får allt under header til att vara centrert -->
 <main id="mainContent">
+    <blur></blur>
     <!-- Håller på resturanger/barer "objects" -->
     <div id="content">
         <?php
@@ -29,7 +24,7 @@ include 'config.php';
             require 'underpages/welcomesplash.php';
             setcookie("welcome", "value", time() + 60 * 60 * 24 * 100, "/");
         }
-        require 'underpages/events.php' ?>
+        require 'underpages/places.php' ?>
     </div>
     <!-- Object som åker ut, håller på "messages" som folk skriver -->
     <div id="info-win">
@@ -42,4 +37,3 @@ include 'config.php';
     </wrapper>
 </main>
 </body>
-</html>

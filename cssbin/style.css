@@ -380,9 +380,9 @@ main {
 
 #info-msg-add button {
     width: 54px;
-    height: 23px;
+    height: 25px;
+    top: 1px;
     background: #ad343e;
-    right: 4px;
     margin: 5px 0;
     border: none;
     padding: 0;
