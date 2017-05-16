@@ -5,11 +5,11 @@ error_log(print_r($_GET,true));
 
     //var_dump($_GET);
 
-	$title = $_GET['event_name'];
-	$description = $_GET['description'];
-	$cost = $_GET['cost'];
-	$date_time = $_GET['date_time'];
-	$venue_id = $_GET['venue'];
+	$title = $_POST['event_name'];
+	$description = $_POST['description'];
+	$cost = $_POST['cost'];
+	$date_time = $_POST['date_time'];
+	$venue_id = $_POST['venue'];
 
 	try{
 		$sql='INSERT INTO events(title,description,cost,starts_at,venue_id) VALUES(:event_name,:description,:cost,:date_time,:venue)';

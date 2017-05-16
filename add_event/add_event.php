@@ -11,7 +11,7 @@
 <?php require '../header.php' ?>
 <main id="content">
     <div id="addEvDiv">
-        <form id="form" method="get" action="process.php">
+        <form id="form" method="post" action="process.php">
             <label for="event_name">Event name:</label>
             <input type="text" name="event_name" placeholder="Navn på eventet"/>
             <label for="addevTxt">Description</label>:
