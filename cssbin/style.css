@@ -306,6 +306,26 @@ main {
     height: 600px;
 }
 
+.info-container * {
+    position: relative;
+    margin: 5px;
+}
+
+.info-img {
+    margin: 10px 5px;
+    width: 265px;
+    height: 190px;
+    border-top: 1px solid #000;
+    border-right: 1px solid #000;
+}
+
+.info-img img {
+    margin: 0;
+    left: 0;
+    width: 265px;
+    height: 190px;
+}
+
 .info-msg {
     right: 0;
     width: 325px;
@@ -331,7 +351,7 @@ main {
     left: -1px;
     height: 12px;
     top: -12px;
-    line-height: 12px;
+    line-height: 14px;
     background: #ad343e;
     font-size: 60%;
     color: #E8F1F2;
@@ -394,51 +414,6 @@ main {
     background: #a31621;
 }
 
-.info-name {
-    width: 275px;
-    text-align: center;
-    margin-top: 5px;
-}
-
-.info-type {
-    top: 30px;
-    margin: 5px;
-}
-
-.info-place {
-    top: 50px;
-    margin: 5px;
-}
-
-.info-address {
-    top: 70px;
-    margin: 5px;
-}
-
-.info-time {
-    top: 90px;
-    margin: 5px;
-}
-
-.info-description {
-    top: 310px;
-    margin: 5px;
-}
-
-.info-img {
-    margin: 5px;
-    top: 115px;
-    width: 265px;
-    height: 190px;
-
-}
-
-.info-img img {
-    margin: 0;
-    left: 0;
-    width: 265px;
-    height: 190px;
-}
 
 /*add_event*/
 #addEvDiv {
