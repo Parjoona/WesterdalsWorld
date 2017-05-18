@@ -1,5 +1,4 @@
 <?php
-session_start();
 require 'config.php'; ?>
 <!-- Kallar på html, css & andra taggar -->
  <?php require 'head.php' ?>

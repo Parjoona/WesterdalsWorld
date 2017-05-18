@@ -1,18 +1,23 @@
 <?php
 require '../config.php';
+session_start();
 
 $myusername = $_GET['bruker'];
 $mypassword = $_GET['pass'];
 
-$sql = "SELECT * FROM login WHERE username='$myusername' and password='$mypassword'";
-$query = $conn->prepare($sql);
-$query->execute(array(':username' => $myusername, ':password' => $mypassword));
 
-if ($query->fetchColumn()) {
-    $seconds = 120 + time();
-    setcookie(loggedin, date("F jS - g:i a"), $seconds);
+$query = "SELECT * FROM login WHERE username = :username AND password = :password";
+$statement = $conn->prepare($query);
+$statement->execute(
+    array(
+        'username' => $_GET['bruker'],
+        'password' => $_GET['pass']
+    )
+);
+$count = $statement->rowCount();
+if ($count > 0) {
+    $_SESSION['username'] = $_GET['bruker'];
     header("location:../index.php");
 } else {
-    echo 'Incorrect Username or password. You will be redirected within 5 seconds.';
-    header("refresh:5; url=../index.php");
+    $message = '<label>Wrong Data</label>';
 }

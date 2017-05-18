@@ -14,34 +14,15 @@
 
 <body>
 
-    <form action="change_passsword.php" method="post">
-        <table>
-            <tr>
-                <th></th>
-                <th>
-                    <h2>Bytt Passord</h2>
-                </th>
-            </tr>
-
-            <tr>
-                <td>Gammelt passord :</td>
-                <td><input type="text" name="gammeltPass"></td>
-            </tr>
-
-            <tr>
-                <td>Nytt Passord :</td>
-                <td><input type="password" name="nyttPass1"></td>
-            </tr>
-            <tr>
-                <td>Nytt Passord :</td>
-                <td><input type="password" name="nyttPass2"></td>
-            </tr>
-
-
-            <td></td>
-            <td><input type="submit" value="Logg inn"></td>
-        </table>
-    </form>
+<form action="change_passsword.php" method="post">
+    <h2>Bytt Passord</h2>
+    Gammelt passord :<input type="text" name="gammeltPass">
+    Nytt Passord :
+    <input type="password" name="nyttPass1">
+    Nytt Passord :
+    <input type="password" name="nyttPass2">
+    <input type="submit" value="Logg inn">
+</form>
 
 </body>
 

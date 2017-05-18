@@ -5,7 +5,6 @@
  * Date: 2017-03-30
  * Time: 12:01
  */
-session_start();
 include 'config.php';
 ?>
 <!-- Kallar på html, css & andra taggar -->
