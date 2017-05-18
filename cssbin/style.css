@@ -89,7 +89,7 @@ header #settings-btn {
 }
 
 header #logout-btn {
-    right: 125px;
+    right: 20px;
 }
 
 header #login-btn {
@@ -97,6 +97,10 @@ header #login-btn {
 }
 
 header #profile-btn {
+    right: 125px;
+}
+
+header #username_session {
     right: 230px;
 }
 
