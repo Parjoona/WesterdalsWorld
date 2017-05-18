@@ -585,3 +585,16 @@ p.errordiv{color: darkred}
     left: 149px;
     bottom: -50px;
 }
+
+#centerRelative {
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+#centerRelative * {
+    position: relative;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}

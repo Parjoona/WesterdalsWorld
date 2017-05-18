@@ -38,3 +38,7 @@ $events = $stmtevents->fetchAll();
 $stmtmsg = $conn->prepare('SELECT * FROM msg');
 $stmtmsg->execute();
 $msgs = $stmtmsg->fetchAll();
+
+$stmtlogin = $conn->prepare('SELECT * FROM login');
+$stmtlogin->execute();
+$login = $stmtlogin->fetchAll();

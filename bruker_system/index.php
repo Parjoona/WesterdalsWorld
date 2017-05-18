@@ -1,21 +1,10 @@
-<!DOCTYPE html>
-<html>
-
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <title>NETTSIDENAVN innlogging</title>
-
-</head>
-
+<?php require '../headunderpages.php' ?>
 <body>
+<?php require '../header.php' ?>
 
-
-    <form action="login.php" method="post">
+<main id="content">
+    <div id="centerRelative">
+    <form action="login.php" method="get">
         <table>
             <tr>
                 <th></th>
@@ -39,10 +28,8 @@
             <td><input type="submit" value="Logg inn"></td>
         </table>
     </form>
-
-
-
-    <a href="new_user.php">Registrer deg!</a>
+    </div>
+</main>
+</wrapper>
+</main>
 </body>
-
-</html>

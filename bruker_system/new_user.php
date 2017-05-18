@@ -1,88 +1,63 @@
 <?php
-    $username = "root";
-    $password = '';
-    $hostname = "localhost";
+require '../config.php';
 
-    $dbhandle = mysql_connect($hostname, $username, $password) or die("Kunne ikke koble til databasen.");
+if (isset($_GET['username']) && isset($_GET['password'])) {
+    $bruker = $_GET['username'];
+    $pass = $_GET['password'];
+    $epost = $_GET['email'];
+    $fornavn = $_GET['first_name'];
+    $etternavn = $_GET['last_name'];
 
-    $selected = mysql_select_db("login", $dbhandle);
-    
-    if(isset($_POST['bruker']) && isset($_POST['pass']))
-    {
-        $bruker = $_POST['bruker'];
-        $pass = $_POST['pass'];
-        $epost = $_POST['epost'];
-        $fornavn = $_POST['fornavn'];
-        $etternavn = $_POST['etternavn'];
-        
-        $query = mysql_query("SELECT * FROM brukere WHERE brukernavn='$bruker'");
-        if(mysql_num_rows($query) > 0)
-        {
-            echo 'Brukernavnet er allerede i bruk.';
-        }
-        else
-        {
-            mysql_query("INSERT INTO brukere (brukernavn, passord, epost, fornavn, etternavn) VALUES ('$bruker', '$pass', '$epost', '$fornavn', '$etternavn')");
-            header("location:index.php");
-        }
-    }
+    $sql = "INSERT INTO login ( username, password, email, first_name, last_name ) VALUES ( :username, :password, :email, :first_name, :last_name )";
+    $query = $conn->prepare($sql);
+    $query->execute(array(':username' => $bruker, ':password' => $password, ':email' => $epost, ':first_name' => $fornavn, ':last_name' => $etternavn));
+    header("location:index.php");
+}
 
-    mysql_close();
+require '../headunderpages.php';
 ?>
+<body>
+<?php require '../header.php'; ?>
+<main id="content">
+    <div id="centerRelative">
+<form action="new_user.php" method="get">
+    <table>
+        <tr>
+            <th></th>
+            <th>
+                <h2>Lag ny bruker</h2>
+            </th>
+        </tr>
 
-    <html>
+        <tr>
+            <td>Brukernavn :</td>
+            <td><input type="text" name="username"></td>
+        </tr>
 
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="">
-        <meta name="author" content="">
+        <tr>
+            <td>Passord :</td>
+            <td><input type="password" name="password"></td>
+        </tr>
 
-        <title>NETTSIDENAVN - Lag ny bruker</title>
+        <tr>
+            <td>Epost:</td>
+            <td><input type="text" name="email"></td>
+        </tr>
 
-    </head>
-
-    <body>
-
-
-        <form action="new_user.php" method="post">
-            <table>
-                <tr>
-                    <th></th>
-                    <th>
-                        <h2>Lag ny bruker</h2>
-                    </th>
-                </tr>
-
-                <tr>
-                    <td>Brukernavn :</td>
-                    <td><input type="text" name="bruker"></td>
-                </tr>
-
-                <tr>
-                    <td>Passord :</td>
-                    <td><input type="password" name="pass"></td>
-                </tr>
-
-                <tr>
-                    <td>Epost:</td>
-                    <td><input type="text" name="epost"></td>
-                </tr>
-
-                <tr>
-                    <td>Fornavn :</td>
-                    <td><input type="text" name="fornavn"></td>
-                </tr>
-                <tr>
-                    <td>Etternavn :</td>
-                    <td><input type="text" name="etternavn"></td>
-                </tr>
-                <td></td>
-                <td><input type="submit" value="Registrer"></td> 
-            </table>
-        </form>
-        <a href="index.php">Tilbake til forsiden</a>
-    </body>
-
-    </html>
+        <tr>
+            <td>Fornavn :</td>
+            <td><input type="text" name="first_name"></td>
+        </tr>
+        <tr>
+            <td>Etternavn :</td>
+            <td><input type="text" name="last_name"></td>
+        </tr>
+        <td></td>
+        <td><input type="submit" value="Registrer"></td>
+    </table>
+</form>
+</div>
+</main>
+</wrapper>
+</body>
+</html>

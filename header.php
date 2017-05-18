@@ -6,12 +6,12 @@
     <!-- knappar hoyre -->
     <?php
     // If logged in or not
-    if (1==0) {
-        echo '<a id="profile-btn">Profile</a>';
-        echo '<a id="logout-btn">Log Out</a>';
-    } else if (1==1) {
-        echo '<a id="login-btn">Log In</a>';
-        echo '<a id="settings-btn">Register</a>';
+    if (isset($_COOKIE['loggedin'])) {
+        echo '<a id="profile-btn" href="#">Profile</a>';
+        echo '<a id="logout-btn" href="/WesterdalsWorld/bruker_system/logout.php">Log Out</a>';
+    } else if (!isset($_COOKIE['loggedin'])) {
+        echo '<a id="login-btn" href="/WesterdalsWorld/bruker_system/index.php">Log In</a>';
+        echo '<a id="settings-btn" href="/WesterdalsWorld/bruker_system/new_user.php">Register</a>';
     }
     ?>
 </header>
