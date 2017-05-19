@@ -482,7 +482,7 @@ main {
 /* CONTACT sida */
 .contactContent {
     position: absolute;
-    left: 200px;
+    left: 0px;
     bottom: 20px;
     border: #a31621 solid 1px;
     background: #E8F1F2;
