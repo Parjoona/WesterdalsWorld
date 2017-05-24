@@ -27,8 +27,12 @@ foreach ($events as $event) {
                 // Kopplar främmandenyckel till främmandenyckel för att få fram kommentarer för rätt knapp
                 if ($msg['name_connect'] == $event['event_name']) {
                     echo '<div class="info-msg-box">';
-                    echo $msg['comment'];
+                    echo '<div class="info-msg-name">';
+                    echo $msg['username_comment'];
                     echo '</div>';
+                    echo '<div class="info-msg-comment">';
+                    echo $msg['comment'];
+                    echo '</div></div>';
                 }
             }
             ?>

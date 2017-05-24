@@ -34,7 +34,7 @@ foreach ($places as $place) {
         if (empty($_SESSION)) {
             echo 'You need to be logged in to see comments on this post';
         } else if (!empty($_SESSION)) {
-            require 'commentfield.php';
+            require 'commentfield-places.php';
         }
         ?>
         </div>

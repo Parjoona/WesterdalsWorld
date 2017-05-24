@@ -75,13 +75,12 @@ header #logo {
     margin: 0 auto;
 }
 
-header #logo h1 {
+header #lg-pic {
     margin: 0 auto;
     left: 0;
     right: 0;
-    text-align: center;
-    line-height: 70px;
-    color: #E8F1F2;
+    width: 300px;
+    height: 70px;
 }
 
 header #settings-btn {
@@ -268,7 +267,6 @@ main {
     margin: 0 auto;
     top: 70px;
     opacity: 1;
-    overflow: hidden;
     transition: 0.75s;
     z-index: -1;
     background: #E8F1F2;
@@ -295,7 +293,7 @@ main {
 }
 
 #info-content {
-    text-align: center;
+    text-align: right;
     transition: 0.75s;
     height: 600px;
     width: 600px;
@@ -321,6 +319,14 @@ main {
     height: 190px;
     border-top: 1px solid #000;
     border-right: 1px solid #000;
+    opacity: 0.75;
+    z-index: 40;
+    transition: 300ms;
+}
+
+.info-img:hover {
+    transform: scale(1.50);
+    opacity: 1;
 }
 
 .info-img img {
@@ -617,4 +623,27 @@ p.errordiv{color: darkred}
 
 #logreg input[type=submit]:hover {
     background: #a31621;
+}
+
+.acc-box {
+    width: 150px;
+    height: 30px;
+    position: relative;
+    float: right;
+    background: #a31621;
+    font-size: 10px;
+    text-align: center;
+    color: #E8F1F2;
+    line-height: 30px;
+    z-index: 44;
+}
+.acc-del {
+    width: 75px;
+    float: left;
+    background: forestgreen;
+}
+
+.decli-del {
+    width: 75px;
+    float: right;
 }

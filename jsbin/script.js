@@ -38,15 +38,19 @@ $(document).ready(function () {
     $('.delete-comment-btn').click(function () {
         var myKey = $(this).attr('data-id');
         //Hämtar data från place-info.php
-        console.log(myKey);
-        $.ajax({
-            type: 'GET',
-            url: 'underpages/comment-delete.php',
-            data: {data: myKey},
-            success: function (data) {
-                $(".info-msg").html(data);
-            }
-        });
+        if ($(myKey).is(':empty')) {
+            //Do nothing
+        } else {
+            // $(this).append("<div class='acc-box'><div class='acc-del' data-id='" + myKey +"'>ACCEPT</div><div class='decli-del'>DECLINE</div></div>");
+            $.ajax({
+                type: 'GET',
+                url: 'underpages/comment-delete.php',
+                data: {data: myKey},
+                success: function (data) {
+                    $(".info-msg").html(data);
+                }
+            });
+        }
     });
 
     //onclick closing messWindow
