@@ -57,7 +57,7 @@ header a:link, a:visited {
 }
 
 header a:hover {
-    background: #004E64;
+    background: #427AA1;
 }
 
 body:hover {
@@ -143,7 +143,7 @@ header #username_session {
 }
 
 #menu li:hover {
-    border: 1px solid #004E64;
+    border: 1px solid #427AA1;
     border-bottom: 1px solid #E8F1F2;
     background: #E8F1F2;
     color: #07020d;
@@ -291,7 +291,7 @@ main {
 }
 
 #info-close-btn:hover {
-    background: #004E64;
+    background: #427AA1;
 }
 
 #info-content {
@@ -322,7 +322,7 @@ main {
 
 .event-i-places h1 {
     text-align: center;
-    background: #ad343e;
+    background: #004E64;
     color: #E8F1F2;
     margin: 0 auto;
     font-size: 20px;
@@ -443,7 +443,7 @@ main {
 }
 
 #info-msg-add button:hover {
-    background: #004E64;
+    background: #427AA1;
 }
 
 /*add_event*/
@@ -691,7 +691,7 @@ p.errordiv {
     color: #E8F1F2;
     line-height: 30px;
     z-index: 44;
-    background: #ad343e;
+    background: #004E64;
 }
 
 .acc-del {
@@ -705,5 +705,5 @@ p.errordiv {
     width: 80px;
     height: 30px;
     float: right;
-    background: #ad343e;
+    background: #004E64;
 }
