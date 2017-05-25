@@ -150,8 +150,13 @@ header #username_session {
     transition: 0.25s;
 }
 
+<<<<<<< HEAD
 #menu  li.active {
     border: 1px solid #004E64;
+=======
+#menu li.active {
+    border: 1px solid #ad343e;
+>>>>>>> master
     border-bottom: 1px solid #E8F1F2;
     background: #E8F1F2;
     color: #07020d;
@@ -159,8 +164,13 @@ header #username_session {
 
 /* MAIN - HÅLLER CONTENT & MESSAGE WINDOW */
 main {
+<<<<<<< HEAD
     background: #004E64;
     width: 1000px;
+=======
+    background: #ad343e;
+    width: 992px;
+>>>>>>> master
     margin: 0 auto;
     height: 100%;
     top: 111px;
@@ -178,7 +188,7 @@ main {
     right: 0;
     border: #004E64 solid 1px;
     background: #E8F1F2;
-    width: 1000px;
+    width: 992px;
     height: 100%;
     z-index: 10;
 }
@@ -186,7 +196,7 @@ main {
 #welcome-splash {
     margin: 5px 5px 0 5px;
     height: 400px;
-    width: 990px;
+    width: 992px;
     background: #E8F1F2;
     border: 1px solid #004E64;
     position: relative;
@@ -203,8 +213,8 @@ main {
 /* CONTAINS "PLACES" */
 #box-con {
     height: 165px;
-    width: 238px;
-    margin: 5px;
+    width: 240px;
+    margin: 5px 0 0 5px;
     font-family: 'Roboto', sans-serif;
     border: 1px solid #07020d;
     position: relative;
@@ -215,48 +225,54 @@ main {
 }
 
 #box-con:hover {
-    box-shadow: 0 0 5px #929292;
+    box-shadow: 0 0 10px #929292;
 }
 
 .box-name {
     left: 0;
+<<<<<<< HEAD
     right: 0;
     background: #004E64;
+=======
+    top: 80px;
+    background: #ad343e;
+>>>>>>> master
     color: #E8F1F2;
-    height: 30px;
-    line-height: 30px;
+    height: 25px;
+    line-height: 25px;
     margin: 0;
+    padding: 0 10px;
+    z-index: 1;
 }
 
 .box-type {
-    bottom: 0;
+    bottom: 20px;
     background: #E8F1F2;
-    left: 50%;
-    right: 50%;
-    transform: translate(-50%);
-    width: 100%;
+    left: 0;
     height: 25px;
     line-height: 25px;
+    padding: 0 10px;
 }
 
 .box-img {
-    height: 110px;
-    width: 238px;
+    height: 165px;
+    width: 240px;
     display: flex;
-    bottom: 0;
+    top: 0;
 }
 
 .box-img img {
-    height: 110px;
-    width: 238px;
-    bottom: 25px;
-    opacity: 0.65;
+    height: 165px;
+    width: 240px;
+    bottom: 0;
+    opacity: 1;
     transition: 0.30s;
-
+    filter: grayscale(100%);
 }
 
 #box-con:hover .box-img img {
     opacity: 0.9;
+    filter: grayscale(0%);
 }
 
 /* ÅKER UT FRÅN MAIN*/
@@ -294,7 +310,7 @@ main {
 }
 
 #info-content {
-    text-align: right;
+    text-align: left;
     transition: 0.75s;
     height: 600px;
     width: 600px;
@@ -311,7 +327,21 @@ main {
 
 .info-container * {
     position: relative;
-    margin: 5px;
+    margin: 5px 15px;
+}
+
+.event-i-places {
+    text-align: center;
+    width: 245px;
+}
+
+.event-i-places h1 {
+    text-align: center;
+    background: #ad343e;
+    color: #E8F1F2;
+    margin: 0 auto;
+    font-size: 20px;
+    padding: 5px;
 }
 
 .info-img {
@@ -401,20 +431,33 @@ main {
     width: 265px;
 }
 
+#info-msg-add {
+    background: #45a049;
+    margin: 2px;
+}
+
 #info-msg-add input {
     text-align: center;
-    margin: 10px 0;
-    width: 255px;
+    margin: 10px 0 10px 5px;
+    width: 250px;
     height: 20px;
     padding: 0;
+    border: none;
 }
 
 #info-msg-add button {
     width: 54px;
+<<<<<<< HEAD
     height: 25px;
     top: 1px;
     background: #004E64;
     margin: 5px 0;
+=======
+    height: 28px;
+    top: 0;
+    background: #ad343e;
+    margin: 5px 0 0 -5px;
+>>>>>>> master
     border: none;
     padding: 0;
     color: #E8F1F2;
@@ -424,7 +467,6 @@ main {
 #info-msg-add button:hover {
     background: #004E64;
 }
-
 
 /*add_event*/
 #addEvDiv {
@@ -474,18 +516,35 @@ main {
 }
 
 @keyframes infoIn {
-    0% { transform: translate3d( -100%, 0, 0); opacity: 0;  z-index: -1; }
-    100% { transform: translateX(0); opacity: 1;  z-index: 35;}
+    0% {
+        transform: translate3d(-100%, 0, 0);
+        opacity: 0;
+        z-index: -1;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+        z-index: 35;
+    }
 }
 
 @keyframes infoOut {
-    0% { transform: translateX(0);  opacity: 1;  z-index: 35;}
-    100% { transform: translate3d(100%, 0, 0); opacity: 0;  z-index: -1;}
+    0% {
+        transform: translateX(0);
+        opacity: 1;
+        z-index: 35;
+    }
+    100% {
+        transform: translate3d(100%, 0, 0);
+        opacity: 0;
+        z-index: -1;
+    }
 }
 
 .hidestuff {
     display: none;
 }
+
 /* CONTACT sida */
 .contactContent {
     position: absolute;
@@ -503,7 +562,7 @@ main {
     position: relative;
 }
 
-#infoCont{
+#infoCont {
     position: absolute;
     width: 500px;
     height: 150px;
@@ -512,7 +571,8 @@ main {
     bottom: 20px;
     left: 100px;
 }
-#conText{
+
+#conText {
     text-align: center;
     margin-top: 3px;
     width: 500px;
@@ -544,6 +604,7 @@ main {
     font-family: 'Roboto', sans-serif;
     letter-spacing: 2px;
 }
+
 .contactFrm input[type="text"], .contactFrm input[type="email"] {
     width: 50%;
     color: #004E64;
@@ -556,6 +617,7 @@ main {
     display: block;
     margin-bottom: 1.2em;
 }
+
 .contactFrm textarea {
     resize: none;
     width: 50%;
@@ -568,6 +630,7 @@ main {
     min-height: 8em;
     -webkit-appearance: none;
 }
+
 .contactFrm input[type="submit"] {
     outline: none;
     color: #FFFFFF;
@@ -581,15 +644,25 @@ main {
     width: 20%;
     cursor: pointer;
 }
+
 .contactFrm input[type="submit"]:hover {
     background: none;
     color: #004E64;
 }
-p.statusMsg{font-size:18px;}
-p.succdiv{color: black;}
-p.errordiv{color: darkred}
 
-#textI{
+p.statusMsg {
+    font-size: 18px;
+}
+
+p.succdiv {
+    color: black;
+}
+
+p.errordiv {
+    color: darkred
+}
+
+#textI {
     font-family: 'Roboto', sans-serif;
     font-size: 20px;
     color: #004E64;
@@ -627,24 +700,40 @@ p.errordiv{color: darkred}
 }
 
 .acc-box {
+<<<<<<< HEAD
     width: 150px;
     height: 30px;
     position: relative;
     float: right;
     background: #004E64;
+=======
+    position: absolute;
+    width: 160px;
+    height: 60px;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    top: 25px;
+    float: left;
+>>>>>>> master
     font-size: 10px;
     text-align: center;
     color: #E8F1F2;
     line-height: 30px;
     z-index: 44;
+    background: #ad343e;
 }
+
 .acc-del {
-    width: 75px;
+    width: 80px;
+    height: 30px;
     float: left;
     background: forestgreen;
 }
 
 .decli-del {
-    width: 75px;
+    width: 80px;
+    height: 30px;
     float: right;
+    background: #ad343e;
 }
