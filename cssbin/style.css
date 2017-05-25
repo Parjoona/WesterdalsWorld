@@ -150,13 +150,8 @@ header #username_session {
     transition: 0.25s;
 }
 
-<<<<<<< HEAD
 #menu  li.active {
     border: 1px solid #004E64;
-=======
-#menu li.active {
-    border: 1px solid #ad343e;
->>>>>>> master
     border-bottom: 1px solid #E8F1F2;
     background: #E8F1F2;
     color: #07020d;
@@ -164,13 +159,8 @@ header #username_session {
 
 /* MAIN - HÅLLER CONTENT & MESSAGE WINDOW */
 main {
-<<<<<<< HEAD
     background: #004E64;
-    width: 1000px;
-=======
-    background: #ad343e;
     width: 992px;
->>>>>>> master
     margin: 0 auto;
     height: 100%;
     top: 111px;
@@ -230,13 +220,8 @@ main {
 
 .box-name {
     left: 0;
-<<<<<<< HEAD
-    right: 0;
-    background: #004E64;
-=======
     top: 80px;
-    background: #ad343e;
->>>>>>> master
+    background: #004E64;
     color: #E8F1F2;
     height: 25px;
     line-height: 25px;
@@ -447,17 +432,10 @@ main {
 
 #info-msg-add button {
     width: 54px;
-<<<<<<< HEAD
     height: 25px;
-    top: 1px;
-    background: #004E64;
-    margin: 5px 0;
-=======
-    height: 28px;
     top: 0;
-    background: #ad343e;
+    background: #004E64;
     margin: 5px 0 0 -5px;
->>>>>>> master
     border: none;
     padding: 0;
     color: #E8F1F2;
@@ -700,13 +678,6 @@ p.errordiv {
 }
 
 .acc-box {
-<<<<<<< HEAD
-    width: 150px;
-    height: 30px;
-    position: relative;
-    float: right;
-    background: #004E64;
-=======
     position: absolute;
     width: 160px;
     height: 60px;
@@ -715,7 +686,6 @@ p.errordiv {
     margin: 0 auto;
     top: 25px;
     float: left;
->>>>>>> master
     font-size: 10px;
     text-align: center;
     color: #E8F1F2;
