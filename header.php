@@ -1,21 +1,25 @@
 <?php session_start(); ?>
 <header>
     <!-- knappar venstre -->
-    <a id="about-btn" href="/WesterdalsWorld/underpages/contactoform.php">About us</a>
+    <a id="about-btn" href="/~joopar16/Westerwhat/underpages/contactoform.php">About us</a>
     <!-- LOGO -->
+<<<<<<< Updated upstream
     <a href="/WesterdalsWorld/index.php" id="logo"><img id="lg-pic" src="/WesterdalsWorld/imgbin/logo/23.png"></a>
+=======
+    <a href="/~joopar16/Westerwhat/index.php" id="logo"><img id="lg-pic" src="/~joopar16/Westerwhat/imgbin/logo/300.png"></a>
+>>>>>>> Stashed changes
     <!-- knappar hoyre -->
     <?php
     // If logged in or not
     if (isset($_SESSION['username'])) {
-        echo '<a id="username_session">User : ';
+        echo '<p id="username_session">';
         echo $_SESSION['username'];
-        echo '</a>';
-        echo '<a id="profile-btn" href="/WesterdalsWorld/bruker_system/user_settings.php">Profile</a>';
-        echo '<a id="logout-btn" href="/WesterdalsWorld/bruker_system/logout.php">Log Out</a>';
+        echo '</p>';
+        echo '<a id="profile-btn" href="/~joopar16/Westerwhat/bruker_system/user_settings.php">Profile</a>';
+        echo '<a id="logout-btn" href="/~joopar16/Westerwhat/bruker_system/logout.php">Log Out</a>';
     } else if (!isset($_SESSION['username'])) {
-        echo '<a id="login-btn" href="/WesterdalsWorld/bruker_system/logon.php">Log In</a>';
-        echo '<a id="settings-btn" href="/WesterdalsWorld/bruker_system/new_user.php">Register</a>';
+        echo '<a id="login-btn" href="/~joopar16/Westerwhat/bruker_system/logon.php">Log In</a>';
+        echo '<a id="settings-btn" href="/~joopar16/Westerwhat/bruker_system/new_user.php">Register</a>';
     }
     ?>
 </header>
