@@ -28,7 +28,7 @@ foreach ($places as $place) {
             <div class="info-time">OPENED AT:
                 <?php echo $place['open_at']; ?>-<?php echo $place['closes_at']; ?></div>
             <div class="info-description"><?php echo $place['description']; ?></div>
-
+<hr class="oneliner">
         <div class="event-i-places">
         <h1>EVENTS happening here:</h1>
             <!-- Event koppling till places-->

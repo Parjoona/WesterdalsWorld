@@ -273,10 +273,13 @@ main {
     z-index: -1;
     background: #E8F1F2;
     border: 1px solid #004E64;
+    border-top-left-radius: 10px;
 }
 
 #info-close-btn {
     border: 1px solid #004E64;
+    left: -1px;
+    border-top-left-radius: 10px;
     width: 600px;
     height: 20px;
     top: 0;
@@ -308,6 +311,7 @@ main {
 .info-container {
     width: 275px;
     height: 600px;
+    font-family: 'Roboto:100', sans-serif;
 }
 
 .info-container * {
@@ -322,8 +326,7 @@ main {
 
 .event-i-places h1 {
     text-align: center;
-    background: #004E64;
-    color: #E8F1F2;
+    color: #000;
     margin: 0 auto;
     font-size: 20px;
     padding: 5px;
@@ -341,7 +344,7 @@ main {
 }
 
 .info-img:hover {
-    transform: scale(1.50);
+    transform: scale(1.30);
     opacity: 1;
 }
 
@@ -418,14 +421,21 @@ main {
 
 #info-msg-add {
     background: #FFF;
-    margin: 5px;
+    margin: 10px 0 10px 0;
+    left: 5px;
     padding: 3px 0 3px 3px;
+    box-shadow: 0 0 2px #000;
+    width: 310px;
+}
+
+#info-msg-add form {
+    width: 310px;
 }
 
 #info-msg-add input {
     text-align: center;
     margin: 0 0 5px 5px;
-    width: 250px;
+    width: 245px;
     height: 20px;
     padding: 0;
     border: none;
@@ -435,6 +445,7 @@ main {
     width: 54px;
     height: 25px;
     top: 0;
+    right: 0;
     background: #004E64;
     margin: 5px 0 0 -5px;
     border: none;
@@ -707,4 +718,8 @@ p.errordiv {
     height: 30px;
     float: right;
     background: #004E64;
+}
+
+.oneliner {
+    margin: 20px 10px 10px 10px;
 }
