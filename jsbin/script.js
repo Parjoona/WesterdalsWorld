@@ -37,11 +37,17 @@ $(document).ready(function () {
 
     $('.delete-comment-btn').click(function () {
         var myKey = $(this).attr('data-id');
-        //Hämtar data från place-info.php
-        if ($(myKey).is(':empty')) {
-            //Do nothing
-        } else {
-            // $(this).append("<div class='acc-box'><div class='acc-del' data-id='" + myKey +"'>ACCEPT</div><div class='decli-del'>DECLINE</div></div>");
+        deletecomment(myKey);
+    });
+
+    function deletecomment(myKey) {
+        var accbox = "<div class='acc-box'> Vill du ta bort denna kommentar?<div class='acc-del' data-id='" + myKey + "'>" +
+            "ACCEPT</div><div class='decli-del'>DECLINE</div></div>";
+        //Tar enbart fram en knapp, och inte flera.
+        $('.info-msg-box .delete-comment-btn').eq(0).after($(accbox));
+
+        // DELETE THIS
+        $('.acc-del').click(function () {
             $.ajax({
                 type: 'GET',
                 url: 'underpages/comment-delete.php',
@@ -50,8 +56,13 @@ $(document).ready(function () {
                     $(".info-msg").html(data);
                 }
             });
-        }
-    });
+        });
+
+        // CLOSE STUFF
+        $('.decli-del').click(function () {
+            $('.acc-box').remove();
+        });
+    }
 
     //onclick closing messWindow
     $('#info-close-btn').click(function () {

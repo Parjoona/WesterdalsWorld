@@ -1,12 +1,13 @@
 <?php
 include '../config.php';
 session_start();
+
 $num = isset($_GET['data']) ? $_GET['data'] : '404 could not find page';
 
 foreach ($places as $place) {
     if ($num == $place['id']) {
         //Sätter in placevar för senare bruk
-        $placevar = $place['place_name']
+        $placevar = $place['id']
         ?>
 
         <script src="https://code.jquery.com/jquery-3.2.1.min.js"
@@ -27,18 +28,25 @@ foreach ($places as $place) {
             <div class="info-time">OPENED AT:
                 <?php echo $place['open_at']; ?>-<?php echo $place['closes_at']; ?></div>
             <div class="info-description"><?php echo $place['description']; ?></div>
+
+            <!-- Event koppling till places-->
+            <?php foreach ($events as $event) {
+                if ($place['place_name'] == $event['event_place']) {
+                    echo 'EVENTS HAPPENING: '; echo $event['event_name'];
+                }
+            } ?>
         </div>
         <!-- Message window till höger -->
         <div class="info-msg">
-        <?php
-        if (empty($_SESSION)) {
-            echo 'You need to be logged in to see comments on this post';
-        } else if (!empty($_SESSION)) {
-            require 'commentfield-places.php';
-        }
-        ?>
+            <?php
+            if (empty($_SESSION)) {
+                echo 'You need to be logged in to see comments on this post';
+            } else if (!empty($_SESSION)) {
+                require 'commentfield-places.php';
+            }
+            ?>
         </div>
-<?php
+        <?php
     }
 }
 ?>
