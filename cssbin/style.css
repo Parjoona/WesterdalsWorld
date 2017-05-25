@@ -8,6 +8,7 @@ Bright blue - #1b98e0
 Antiflash white - #e8f1f2
 Orange - #ef7a26
 
+Blågrønn #004E64
 WHITE #e8f1f2
 BRIGHT RED #ad343e
 DARKER RED #a31621
@@ -37,7 +38,7 @@ header {
     width: 100%;
     min-width: 100%;
     height: 70px;
-    background: #ad343e;
+    background: #004E64;
     border-bottom: #07020d solid 1px;
     box-shadow: 0 0 35px #929292;
 }
@@ -56,7 +57,7 @@ header a:link, a:visited {
 }
 
 header a:hover {
-    background: #a31621;
+    background: #004E64;
 }
 
 body:hover {
@@ -133,16 +134,16 @@ header #username_session {
     display: inline-block;
     width: 150px;
     height: 30px;
-    background: #ad343e;
+    background: #004E64;
     margin: 0;
     color: #E8F1F2;
     line-height: 30px;
     font-family: 'Roboto', sans-serif;
-    border: 1px solid #ad343e;
+    border: 1px solid #004E64;
 }
 
 #menu li:hover {
-    border: 1px solid #ad343e;
+    border: 1px solid #004E64;
     border-bottom: 1px solid #E8F1F2;
     background: #E8F1F2;
     color: #07020d;
@@ -150,7 +151,7 @@ header #username_session {
 }
 
 #menu  li.active {
-    border: 1px solid #ad343e;
+    border: 1px solid #004E64;
     border-bottom: 1px solid #E8F1F2;
     background: #E8F1F2;
     color: #07020d;
@@ -158,7 +159,7 @@ header #username_session {
 
 /* MAIN - HÅLLER CONTENT & MESSAGE WINDOW */
 main {
-    background: #ad343e;
+    background: #004E64;
     width: 1000px;
     margin: 0 auto;
     height: 100%;
@@ -175,7 +176,7 @@ main {
     border-radius: 2px;
     left: 0;
     right: 0;
-    border: #a31621 solid 1px;
+    border: #004E64 solid 1px;
     background: #E8F1F2;
     width: 1000px;
     height: 100%;
@@ -187,7 +188,7 @@ main {
     height: 400px;
     width: 990px;
     background: #E8F1F2;
-    border: 1px solid #a31621;
+    border: 1px solid #004E64;
     position: relative;
 }
 
@@ -220,7 +221,7 @@ main {
 .box-name {
     left: 0;
     right: 0;
-    background: #ad343e;
+    background: #004E64;
     color: #E8F1F2;
     height: 30px;
     line-height: 30px;
@@ -270,15 +271,15 @@ main {
     transition: 0.75s;
     z-index: -1;
     background: #E8F1F2;
-    border: 1px solid #ad343e;
+    border: 1px solid #004E64;
 }
 
 #info-close-btn {
-    border: 1px solid #a31621;
+    border: 1px solid #004E64;
     width: 600px;
     height: 20px;
     top: 0;
-    background: #ad343e;
+    background: #004E64;
     color: #E8F1F2;
 }
 
@@ -289,7 +290,7 @@ main {
 }
 
 #info-close-btn:hover {
-    background: #a31621;
+    background: #004E64;
 }
 
 #info-content {
@@ -362,7 +363,7 @@ main {
     height: 12px;
     top: -12px;
     line-height: 14px;
-    background: #ad343e;
+    background: #004E64;
     font-size: 60%;
     color: #E8F1F2;
     text-align: left;
@@ -388,7 +389,7 @@ main {
     display: block;
     right: 0;
     width: 30px;
-    background: #a31621;
+    background: #004E64;
     color: #E8F1F2;
 }
 
@@ -412,7 +413,7 @@ main {
     width: 54px;
     height: 25px;
     top: 1px;
-    background: #ad343e;
+    background: #004E64;
     margin: 5px 0;
     border: none;
     padding: 0;
@@ -421,7 +422,7 @@ main {
 }
 
 #info-msg-add button:hover {
-    background: #a31621;
+    background: #004E64;
 }
 
 
@@ -490,7 +491,7 @@ main {
     position: absolute;
     left: 0px;
     bottom: 20px;
-    border: #a31621 solid 1px;
+    border: #004E64 solid 1px;
     background: #E8F1F2;
     width: 700px;
     height: 700px;
@@ -506,7 +507,7 @@ main {
     position: absolute;
     width: 500px;
     height: 150px;
-    border: 2px solid #a31621;
+    border: 2px solid #004E64;
     top: 20px;
     bottom: 20px;
     left: 100px;
@@ -537,7 +538,7 @@ main {
 
 .contactFrm h4 {
     font-size: 1em;
-    color: #ad343e;
+    color: #004E64;
     top: 100px;
     margin-bottom: 0.3em;
     font-family: 'Roboto', sans-serif;
@@ -545,12 +546,12 @@ main {
 }
 .contactFrm input[type="text"], .contactFrm input[type="email"] {
     width: 50%;
-    color: #ad343e;
+    color: #004E64;
     background: #fff;
     outline: none;
     font-size: 0.8em;
     padding: .5em 1em;
-    border: 1px solid #ad343e;
+    border: 1px solid #004E64;
     -webkit-appearance: none;
     display: block;
     margin-bottom: 1.2em;
@@ -559,11 +560,11 @@ main {
     resize: none;
     width: 50%;
     background: #fff;
-    color: #ad343e;
+    color: #004E64;
     font-size: 0.8em;
     outline: none;
     padding: .5em 1em;
-    border: 1px solid #ad343e;
+    border: 1px solid #004E64;
     min-height: 8em;
     -webkit-appearance: none;
 }
@@ -572,9 +573,9 @@ main {
     color: #FFFFFF;
     padding: 0.5em 0;
     font-size: 1em;
-    background: #ad343e;
+    background: #004E64;
     transition: 0.5s all;
-    border: 1px solid #ad343e;
+    border: 1px solid #004E64;
     -webkit-transition: 0.5s all;
     -moz-transition: 0.5s all;
     width: 20%;
@@ -582,7 +583,7 @@ main {
 }
 .contactFrm input[type="submit"]:hover {
     background: none;
-    color: #ad343e;
+    color: #004E64;
 }
 p.statusMsg{font-size:18px;}
 p.succdiv{color: black;}
@@ -591,7 +592,7 @@ p.errordiv{color: darkred}
 #textI{
     font-family: 'Roboto', sans-serif;
     font-size: 20px;
-    color: #a31621;
+    color: #004E64;
     left: 149px;
     bottom: -50px;
 }
@@ -616,13 +617,13 @@ p.errordiv{color: darkred}
 }
 
 #logreg input[type=submit] {
-    background: #ad343e;
+    background: #004E64;
     border: none;
     color: #E8F1F2;
 }
 
 #logreg input[type=submit]:hover {
-    background: #a31621;
+    background: #004E64;
 }
 
 .acc-box {
@@ -630,7 +631,7 @@ p.errordiv{color: darkred}
     height: 30px;
     position: relative;
     float: right;
-    background: #a31621;
+    background: #004E64;
     font-size: 10px;
     text-align: center;
     color: #E8F1F2;
