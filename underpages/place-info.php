@@ -29,12 +29,20 @@ foreach ($places as $place) {
                 <?php echo $place['open_at']; ?>-<?php echo $place['closes_at']; ?></div>
             <div class="info-description"><?php echo $place['description']; ?></div>
 
+        <div class="event-i-places">
+        <h1>EVENTS happening here:</h1>
             <!-- Event koppling till places-->
             <?php foreach ($events as $event) {
-                if ($place['place_name'] == $event['event_place']) {
-                    echo 'EVENTS HAPPENING: '; echo $event['event_name'];
+                if ($place['id'] == $event['place_id']) {
+                    echo '<p>';
+                    echo $event['event_name'];
+                    echo ' : ';
+                    echo $event['event_time'];
+                    echo ':00';
+                    echo '</p>';
                 }
             } ?>
+        </div>
         </div>
         <!-- Message window till höger -->
         <div class="info-msg">
