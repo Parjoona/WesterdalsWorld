@@ -20,6 +20,13 @@ include 'config.php';
 </div>
 <!-- Får allt under header til att vara centrert -->
 <main id="mainContent">
+    <?php
+
+    if (empty($_SESSION)) {
+    } else if (!empty($_SESSION)) {
+        echo '<a href="add_event/add_event.php" class="neweventlink"><div id="new-event-btn"></div></a>';
+    }
+    ?>
     <!-- Håller på resturanger/barer "objects" -->
     <div id="content">
         <?php

@@ -1,11 +1,11 @@
 <?php
 $host = 'localhost';
-$db_user = 'root';
-$db_pass = '';
-$db_name = 'westerproject';
+$db_user = 'joopar16_root';
+$db_pass = 'RK896tibialolz1';
+$db_name = 'joopar16_westerproject';
 $db_port = 3306;
 
-$conn = new PDO('mysql:host=localhost;dbname=westerproject', $db_user, $db_pass);
+$conn = new PDO('mysql:host=tek.westerdals.no;dbname=joopar16_westerproject', $db_user, $db_pass);
 /* Checkar om det blir errors, *INAKTIVERA FÖR DEN SKA LÄGGAS UT PÅ RIKTIG SIDA*
 try {
     $conn = new PDO('mysql:host=localhost;dbname=westerproject',$db_user,$db_pass);

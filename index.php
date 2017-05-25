@@ -1,5 +1,3 @@
-<?php
-require 'config.php'; ?>
 <!-- Kallar på html, css & andra taggar -->
  <?php require 'head.php' ?>
 <body>

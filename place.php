@@ -14,7 +14,6 @@ require 'config.php'; ?>
 </div>
 <!-- Får allt under header til att vara centrert -->
 <main id="mainContent">
-    <blur></blur>
     <!-- Håller på resturanger/barer "objects" -->
     <div id="content">
         <?php

@@ -1,5 +1,5 @@
 <div id="info-msg-add">
-    <form method="GET" action="underpages/comment-added.php">
+    <form method="get" action="underpages/comment-added.php">
         <input type="text" name="place_id" value="<?php echo $placevar ?>" class="hidestuff">
         <input type="text" name="comment" placeholder="COMMENT">
         <button type="submit">ADD</button>

@@ -22,27 +22,26 @@ foreach ($places as $place) {
                 <?php echo "<img srcset=\"{$place['img_url']}\" src='imgbin/alt_place.png'/>"; ?>
             </div>
             <div class="info-name"><?php echo $place['place_name']; ?></div>
-            <div class="info-place">DISTANCE: <?php echo $place['distance']; ?></div>
-            <div class="info-type">STED TYPE: <?php echo $place['place_type']; ?></div>
-            <div class="info-address">ADRESS: <?php echo $place['place_adress']; ?></div>
-            <div class="info-time">OPENED AT:
+            <div class="info-place">Distanse: <?php echo $place['distance']; ?></div>
+            <div class="info-type">Sted type: <?php echo $place['place_type']; ?></div>
+            <div class="info-address">Adress: <?php echo $place['place_adress']; ?></div>
+            <div class="info-time">Åpentider:
                 <?php echo $place['open_at']; ?>-<?php echo $place['closes_at']; ?></div>
             <div class="info-description"><?php echo $place['description']; ?></div>
-<hr class="oneliner">
-        <div class="event-i-places">
-        <h1>EVENTS happening here:</h1>
-            <!-- Event koppling till places-->
-            <?php foreach ($events as $event) {
-                if ($place['id'] == $event['place_id']) {
-                    echo '<p>';
-                    echo $event['event_name'];
-                    echo ' : ';
-                    echo $event['event_time'];
-                    echo ':00';
-                    echo '</p>';
-                }
-            } ?>
-        </div>
+            <div class="event-i-places">
+                <h1>Events here:</h1>
+                <!-- Event koppling till places-->
+                <?php foreach ($events as $event) {
+                    if ($place['id'] == $event['place_id']) {
+                        echo '<p>';
+                        echo $event['event_name'];
+                        echo ' : ';
+                        echo $event['event_time'];
+                        echo ':00';
+                        echo '</p>';
+                    }
+                } ?>
+            </div>
         </div>
         <!-- Message window till höger -->
         <div class="info-msg">

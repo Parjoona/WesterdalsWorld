@@ -35,6 +35,7 @@ $(document).ready(function () {
         });
     });
 
+
     $('.delete-comment-btn').click(function () {
         var myKey = $(this).attr('data-id');
         deletecomment(myKey);
