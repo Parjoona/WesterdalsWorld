@@ -3,7 +3,7 @@
     <!-- knappar venstre -->
     <a id="about-btn" href="/WesterdalsWorld/underpages/contactoform.php">About us</a>
     <!-- LOGO -->
-    <a href="/WesterdalsWorld/index.php" id="logo"><img id="lg-pic" src="/WesterdalsWorld/imgbin/logo/300.png"></a>
+    <a href="/WesterdalsWorld/index.php" id="logo"><img id="lg-pic" src="/WesterdalsWorld/imgbin/logo/23.png"></a>
     <!-- knappar hoyre -->
     <?php
     // If logged in or not
