@@ -417,13 +417,14 @@ main {
 }
 
 #info-msg-add {
-    background: #45a049;
-    margin: 2px;
+    background: #FFF;
+    margin: 5px;
+    padding: 3px 0 3px 3px;
 }
 
 #info-msg-add input {
     text-align: center;
-    margin: 10px 0 10px 5px;
+    margin: 0 0 5px 5px;
     width: 250px;
     height: 20px;
     padding: 0;
