@@ -43,7 +43,7 @@ $(document).ready(function () {
 
     function deletecomment(myKey) {
         var accbox = "<div class='acc-box'> Vill du ta bort denna kommentar?<div class='acc-del' data-id='" + myKey + "'>" +
-            "ACCEPT</div><div class='decli-del'>DECLINE</div></div>";
+            "AKSEPTER</div><div class='decli-del'>AVSLÅ</div></div>";
         //Tar enbart fram en knapp, och inte flera.
         $('.info-msg-box .delete-comment-btn').eq(0).after($(accbox));
 

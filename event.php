@@ -29,14 +29,7 @@ include 'config.php';
     ?>
     <!-- Håller på resturanger/barer "objects" -->
     <div id="content">
-        <?php
-        // if first time open welcome splash
-        if (!isset($_SESSION['welcome'])) {
-            $_SESSION['welcome'] = 'value';
-            require 'underpages/welcomesplash.php';
-        }
-
-        require 'underpages/events.php' ?>
+        <?php require 'underpages/events.php' ?>
     </div>
     <!-- Object som åker ut, håller på "messages" som folk skriver -->
     <div id="info-win">

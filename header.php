@@ -16,7 +16,7 @@ session_start(); ?>
         echo '<a id="logout-btn" href="/~joopar16/Westerwhat/bruker_system/logout.php">Logg ut</a>';
     } else if (!isset($_SESSION['username'])) {
         echo '<a id="login-btn" href="/~joopar16/Westerwhat/bruker_system/logon.php">Logg inn</a>';
-        echo '<a id="settings-btn" href="/~joopar16/Westerwhat/bruker_system/new_user.php">Register</a>';
+        echo '<a id="settings-btn" href="/~joopar16/Westerwhat/bruker_system/new_user.php">Registrer</a>';
     }
     ?>
 </header>

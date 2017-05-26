@@ -16,14 +16,7 @@ require 'config.php'; ?>
 <main id="mainContent">
     <!-- Håller på resturanger/barer "objects" -->
     <div id="content">
-        <?php
-        // if first time open welcome splash
-        if (!isset($_SESSION['welcome'])) {
-            $_SESSION['welcome'] = 'value';
-            require 'underpages/welcomesplash.php';
-        }
-
-        require 'underpages/places.php' ?>
+        <?php require 'underpages/places.php' ?>
     </div>
     <!-- Object som åker ut, håller på "messages" som folk skriver -->
     <div id="info-win">
