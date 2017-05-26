@@ -9,3 +9,5 @@ foreach ($msgs as $msg) {
         $conn->exec($sql);
     }
 }
+
+header('Location: '.'../place.php');
