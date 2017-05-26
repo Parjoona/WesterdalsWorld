@@ -22,7 +22,7 @@
             setcookie("welcome", "value", time() + 60 * 60 * 24 * 100, "/");
         }
         ?>
-        <p style="left: 0; right: 0; text-align: center; top: 50px;">Tryck på en av dessa för att starta!</p>
+        <p style="left: 0; right: 0; text-align: center; top: 50px;">Trykk for å starte</p>
     </div>
     <!-- Object som åker ut, håller på "messages" som folk skriver -->
     <div id="info-win">

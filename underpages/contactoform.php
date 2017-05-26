@@ -23,7 +23,7 @@
             <input type="email" name="email" placeholder="email@example.com" required="">
             <h4>Message</h4>
             <textarea name="message" placeholder="Write your message here" required=""> </textarea>
-            <p><input type="submit" name="submit" value="Submit"></p>
+            <p><input type="submit" name="submit" value="Send"></p>
             <div class="clear"> </div>
         </form>
     </div>
