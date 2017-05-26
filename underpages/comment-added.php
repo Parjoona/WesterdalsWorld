@@ -16,4 +16,4 @@ try {
     echo $e->getMessage();
 }
 
-header('Location: '.'../index.php');
+header('Location: '.$_SERVER['REQUEST_URI']);

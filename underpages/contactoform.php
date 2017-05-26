@@ -1,5 +1,4 @@
 <?php require '../headunderpages.php'; ?>
-<body>
 <?php require '../header.php'; ?>
 <main class="contactContent">
     <div id="infoCont">
@@ -27,10 +26,6 @@
             <div class="clear"> </div>
         </form>
     </div>
-    </div>
-
-
-
 </main>
 </wrapper>
 </body>

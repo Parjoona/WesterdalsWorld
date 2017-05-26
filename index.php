@@ -1,6 +1,5 @@
 <!-- Kallar på html, css & andra taggar -->
  <?php require 'head.php'; ?>
-<body>
 <?php require 'header.php' ?>
 
 <!-- Split med menu inni -->
@@ -28,11 +27,9 @@
     <div id="info-win">
         <!-- Closing knapp för message fönster -->
         <div id="info-close-btn"><p>CLOSE</p></div>
-        <div id="info-content">
-        </div>
+        <div id="info-content"></div>
     </div>
-</div>
-</wrapper>
-</main>
-</body>
 
+</main>
+</wrapper>
+</body>

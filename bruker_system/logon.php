@@ -1,8 +1,6 @@
 <?php require '../headunderpages.php';
 ?>
-<body>
 <?php require '../header.php' ?>
-
 <main id="content">
     <div id="logreg">
         <form action="login.php" method="get">
@@ -16,5 +14,4 @@
     </div>
 </main>
 </wrapper>
-</main>
 </body>

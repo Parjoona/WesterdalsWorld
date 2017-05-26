@@ -20,7 +20,6 @@ wrapper * {
 
 p, h1, a, form {
     font-family: 'Roboto', sans-serif;
-    max-font-size: 1em;
 }
 
 /*HEADER START*/
@@ -70,7 +69,7 @@ header #logo:hover {
     background: #004E64;
 }
 
-header #lg-pic {
+header .lg-pic {
     margin: 0 auto;
     left: 0;
     right: 0;

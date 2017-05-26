@@ -4,10 +4,11 @@ session_start(); ?>
     <!-- knappar venstre -->
     <a id="about-btn" href="/~joopar16/Westerwhat/underpages/contactoform.php">Om oss</a>
     <!-- LOGO -->
-    <a href="/~joopar16/Westerwhat/place.php" id="logo"><img id="lg-pic" class="img-1" src="/~joopar16/Westerwhat/imgbin/logo/23.png">
-        <img id="lg-pic" class="rotationPicture img-2" src="/~joopar16/Westerwhat/imgbin/logo/23-1.png">
-        <img id="lg-pic" class="rotationPicture img-3" src="/~joopar16/Westerwhat/imgbin/logo/23-2.png">
-        <img id="lg-pic" class="rotationPicture img-4" src="/~joopar16/Westerwhat/imgbin/logo/23-3.png">
+    <a href="/~joopar16/Westerwhat/place.php" id="logo">
+        <img class="img-1 lg-pic" src="/~joopar16/Westerwhat/imgbin/logo/23.png" alt="imgbin/logo/23.png">
+        <img class="rotationPicture img-2 lg-pic" src="/~joopar16/Westerwhat/imgbin/logo/23-1.png" alt="imgbin/logo/23-2.png">
+        <img class="rotationPicture img-3 lg-pic" src="/~joopar16/Westerwhat/imgbin/logo/23-2.png" alt="imgbin/logo/23-3.png">
+        <img class="rotationPicture img-4 lg-pic" src="/~joopar16/Westerwhat/imgbin/logo/23-3.png" alt="imgbin/logo/23-4.png">
     </a>
     <!-- knappar hoyre -->
     <?php

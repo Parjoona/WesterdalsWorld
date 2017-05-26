@@ -1,7 +1,6 @@
 <?php
 require '../headunderpages.php';
 ?>
-<body>
 <?php require '../header.php'; ?>
 <main id="content">
     <div id="logreg">

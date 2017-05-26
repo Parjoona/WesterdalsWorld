@@ -2,7 +2,6 @@
 require 'config.php'; ?>
 <!-- Kallar på html, css & andra taggar -->
 <?php require 'head.php' ?>
-<body>
 <?php require 'header.php' ?>
 
 <!-- Split med menu inni -->
@@ -22,10 +21,8 @@ require 'config.php'; ?>
     <div id="info-win">
         <!-- Closing knapp för message fönster -->
         <div id="info-close-btn"><p>LUKK</p></div>
-        <div id="info-content">
-        </div>
+        <div id="info-content"></div>
     </div>
-    </div>
-    </wrapper>
 </main>
+</wrapper>
 </body>
