@@ -22,7 +22,7 @@ foreach ($places as $place) {
                 <?php echo "<img srcset=\"{$place['img_url']}\" src='imgbin/alt_place.png'/>"; ?>
             </div>
             <div class="info-name"><?php echo $place['place_name']; ?></div>
-            <div class="info-place">Distanse: <?php echo $place['distance']; ?></div>
+            <div class="info-place">Distanse: <?php echo $place['distance']; ?>m</div>
             <div class="info-type">Sted type: <?php echo $place['place_type']; ?></div>
             <div class="info-address">Adress: <?php echo $place['place_adress']; ?></div>
             <div class="info-time">Åpentider:

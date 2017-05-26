@@ -10,7 +10,7 @@ try {
     $sql = "INSERT INTO msg ( comment, username_comment, event_id, place_id ) VALUES ( :comment, :username_comment, :event_id, :place_id )";
     $query = $conn->prepare($sql);
     $query->execute(array(':comment' => $comment, ':username_comment' => $username_comment, ':event_id' => $eventid, ':place_id' => $placeid));
-
+    header('Location: '.'../index.php');
     echo "New records created successfully";
 } catch (PDOException $e) {
     echo $e->getMessage();

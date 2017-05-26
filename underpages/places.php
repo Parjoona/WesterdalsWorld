@@ -7,5 +7,9 @@ foreach ($places as $place) {
     echo "<img srcset=\"{$place['img_thumbnail']}\" src='imgbin/alt_place.png'/>";
     echo '</div><div class="box-type">';
     echo $place['place_type'];
-    echo '</div></div>';
+    echo '</div>';
+    echo '<div class="box-distance">';
+    echo $place['distance'];
+    echo 'm</div>';
+    echo '</div>';
 }

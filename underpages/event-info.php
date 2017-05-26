@@ -8,18 +8,27 @@ foreach ($events as $event) {
         $eventvar = $event['id'];
         ?>
         <div class="info-container">
+            <div class="event-i-event">Info</div>
             <div class="info-name"><?php echo $event['event_name']; ?></div>
-            <div class="info-type">EVENT TYPE: <?php echo $event['event_type']; ?></div>
-            <div class="info-time">START kl: <?php echo $event['event_time']; ?></div>
+            <div class="info-type">Type: <?php echo $event['event_type']; ?></div>
+            <div class="info-time">Start: <?php echo $event['event_time']; ?></div>
+            <div>Sted: <?php
+                foreach ($places as $place) {
+                    if ($place['id'] == $event['place_id']) {
+                        echo $place['place_name'];
+                    }
+                }
+                ?>
+            </div>
+            <div>Creator: <?php echo $event['username_event']; ?></div>
+            <div>Description <?php echo $event['description']; ?></div>
+
         </div>
 
         <div class="info-msg">
-
-
             <?php if (empty($_SESSION)) {
                 echo 'You need to be logged in to see comments on this post';
             } else if (!empty($_SESSION)) { ?>
-
                 <div id="info-msg-add">
                     <form method="GET" action="underpages/comment-added.php">
                         <input type="text" name="event_id" value="<?php echo $eventvar ?>" class="hidestuff">
