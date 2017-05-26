@@ -503,14 +503,14 @@ main {
 }
 
 #addEvSubmit {
-    background-color: #4CAF50;
+    background-color: #004E64;
     color: #E8F1F2;
     border: none;
     cursor: pointer;
 }
 
 #addEvSubmit:hover {
-    background-color: #45a049;
+    background-color: #427AA1;
 }
 
 .infoInAnim {
@@ -733,7 +733,7 @@ p.errordiv {
     width: 80px;
     height: 30px;
     float: left;
-    background: forestgreen;
+    background: #ad1a1a;
 }
 
 .decli-del {
@@ -748,7 +748,7 @@ p.errordiv {
 }
 
 .acc-del:hover {
-    background: #4CAF50;
+    background: #891111;
 }
 
 #new-event-btn {
