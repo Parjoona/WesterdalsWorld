@@ -22,8 +22,8 @@ include 'config.php';
 <main id="mainContent">
     <?php
 
-    if (empty($_SESSION)) {
-    } else if (!empty($_SESSION)) {
+    if (empty($_SESSION['username'])) {
+    } else if (!empty($_SESSION['username'])) {
         echo '<a href="add_event/add_event.php" class="neweventlink"><div id="new-event-btn"></div></a>';
     }
     ?>
@@ -31,16 +31,17 @@ include 'config.php';
     <div id="content">
         <?php
         // if first time open welcome splash
-        if (!isset($_COOKIE['welcome'])) {
+        if (!isset($_SESSION['welcome'])) {
+            $_SESSION['welcome'] = 'value';
             require 'underpages/welcomesplash.php';
-            setcookie("welcome", "value", time() + 60 * 60 * 24 * 100, "/");
         }
+
         require 'underpages/events.php' ?>
     </div>
     <!-- Object som åker ut, håller på "messages" som folk skriver -->
     <div id="info-win">
         <!-- Closing knapp för message fönster -->
-        <div id="info-close-btn"><p>CLOSE</p></div>
+        <div id="info-close-btn"><p>LUKK</p></div>
         <div id="info-content">
         </div>
     </div>

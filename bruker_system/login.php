@@ -17,7 +17,7 @@ $count = $statement->rowCount();
 
     if ($count > 0) {
         $_SESSION['username'] = $_GET['bruker'];
-        header("location:../index.php");
+        header("location:../place.php");
     } else {
         $message = '<label>Wrong Data</label>';
     }

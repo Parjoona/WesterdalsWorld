@@ -45,9 +45,11 @@ foreach ($places as $place) {
         <!-- Message window till höger -->
         <div class="info-msg">
             <?php
-            if (empty($_SESSION)) {
-                echo 'You need to be logged in to see comments on this post';
-            } else if (!empty($_SESSION)) {
+            if (empty($_SESSION['username'])) {
+                echo '<div class="must-login-txt">';
+                echo 'Du må være logget inn for å se kommentarer.';
+                echo '</div>';
+            } else if (!empty($_SESSION['username'])) {
                 require 'commentfield-places.php';
             }
             ?>

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="sv" xmlns="http://www.w3.org/1999/html">
+<html lang="no" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">

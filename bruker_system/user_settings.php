@@ -13,7 +13,7 @@
     <input type="password" name="nyttPass1">
     Nytt Passord :
     <input type="password" name="nyttPass2">
-    <input type="submit" value="Logg inn">
+    <input type="submit" value="Endre">
 </form>
     </div>
 </main>

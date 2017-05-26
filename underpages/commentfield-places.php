@@ -1,8 +1,8 @@
 <div id="info-msg-add">
     <form method="get" action="underpages/comment-added.php">
         <input type="text" name="place_id" value="<?php echo $placevar ?>" class="hidestuff">
-        <input type="text" name="comment" placeholder="COMMENT">
-        <button type="submit">ADD</button>
+        <input type="text" name="comment" placeholder="KOMMENTAR">
+        <button type="submit">DEL</button>
     </form>
 </div>
 <?php
@@ -17,7 +17,7 @@ foreach ($msgs as $msg) {
         echo $msg['comment'];
         echo '</div>';
 
-        if (empty($_SESSION)) { // Do nothing
+        if (empty($_SESSION['username'])) { // Do nothing
         } else if (
             // Shows delete button if right user
             $_SESSION['username'] == $msg['username_comment']) {

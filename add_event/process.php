@@ -3,8 +3,6 @@ require '../config.php';
 error_log(print_r($_GET, true));
 session_start();
 
-var_dump($_GET);
-
 $placenum = $_GET['placested'];
 $title = $_GET['event_name'];
 $type = $_GET['event_type'];
@@ -27,4 +25,4 @@ try {
     echo $e->getMessage();
 }
 
-//header('Location: ' . '../event.php');
+header('Location: ' . '../event.php');

@@ -20,20 +20,22 @@ foreach ($events as $event) {
                 }
                 ?>
             </div>
-            <div>Creator: <?php echo $event['username_event']; ?></div>
-            <div>Description <?php echo $event['description']; ?></div>
+            <div>Vert: <?php echo $event['username_event']; ?></div>
+            <div>Beskrivelse: <?php echo $event['description']; ?></div>
 
         </div>
 
         <div class="info-msg">
-            <?php if (empty($_SESSION)) {
-                echo 'You need to be logged in to see comments on this post';
-            } else if (!empty($_SESSION)) { ?>
+            <?php if (empty($_SESSION['username'])) {
+                echo '<div class="must-login-txt">';
+                echo 'Du må være logget inn for å se kommentarer.';
+                echo '</div>';
+            } else if (!empty($_SESSION['username'])) { ?>
                 <div id="info-msg-add">
                     <form method="GET" action="underpages/comment-added.php">
                         <input type="text" name="event_id" value="<?php echo $eventvar ?>" class="hidestuff">
-                        <input type="text" name="comment" placeholder="COMMENT">
-                        <button type="submit">ADD</button>
+                        <input type="text" name="comment" placeholder="KOMMENTAR">
+                        <button type="submit">DEL</button>
                     </form>
                 </div>
                 <?php

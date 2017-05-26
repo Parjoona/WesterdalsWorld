@@ -1,5 +1,5 @@
 <!-- Kallar på html, css & andra taggar -->
- <?php require 'head.php' ?>
+ <?php require 'head.php'; ?>
 <body>
 <?php require 'header.php' ?>
 
@@ -17,9 +17,9 @@
     <div id="content">
         <?php
         // if first time open welcome splash
-        if (!isset($_COOKIE['welcome'])) {
+        if (!isset($_SESSION['welcome'])) {
+            $_SESSION['welcome'] = 'value';
             require 'underpages/welcomesplash.php';
-            setcookie("welcome", "value", time() + 60 * 60 * 24 * 100, "/");
         }
         ?>
         <p style="left: 0; right: 0; text-align: center; top: 50px;">Trykk for å starte</p>

@@ -17,11 +17,11 @@
             <p class="statusMsg <?php echo !empty($msgClass)?$msgClass:''; ?>"><?php echo $statusMsg; ?></p>
         <?php } ?>
         <form action="contactoform.php" method="post">
-            <h4>Name</h4>
+            <h4>Navn</h4>
             <input type="text" name="name" placeholder="Your Name" required="">
-            <h4>Email </h4>
+            <h4>Epost</h4>
             <input type="email" name="email" placeholder="email@example.com" required="">
-            <h4>Message</h4>
+            <h4>Melding</h4>
             <textarea name="message" placeholder="Write your message here" required=""> </textarea>
             <p><input type="submit" name="submit" value="Send"></p>
             <div class="clear"> </div>
