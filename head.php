@@ -1,9 +1,8 @@
 <!DOCTYPE html>
-<html lang="en" xmlns="http://www.w3.org/1999/html">
+<html lang="sv" xmlns="http://www.w3.org/1999/html">
 <head>
-    <meta charset="UTF-8">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
     <title>Westerdals WesterWhat</title>
     <!-- Javascript -->
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"

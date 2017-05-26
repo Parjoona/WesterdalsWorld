@@ -5,7 +5,8 @@ $db_pass = 'RK896tibialolz1';
 $db_name = 'joopar16_westerproject';
 $db_port = 3306;
 
-$conn = new PDO('mysql:host=tek.westerdals.no;dbname=joopar16_westerproject', $db_user, $db_pass);
+$conn = new PDO('mysql:host=tek.westerdals.no;dbname=joopar16_westerproject; charset=utf8', $db_user, $db_pass);
+
 /* Checkar om det blir errors, *INAKTIVERA FÖR DEN SKA LÄGGAS UT PÅ RIKTIG SIDA*
 try {
     $conn = new PDO('mysql:host=localhost;dbname=westerproject',$db_user,$db_pass);
@@ -16,7 +17,7 @@ try {
 */
 
 // Hämtar places
-$stmtplaces = $conn->prepare('SELECT * FROM places');
+$stmtplaces = $conn->prepare('SELECT * FROM places ORDER BY distance ASC');
 $stmtplaces->execute();
 $places = $stmtplaces->fetchAll();
 // Hämtar events

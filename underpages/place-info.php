@@ -17,7 +17,7 @@ foreach ($places as $place) {
         <script type="text/javascript" src="jsbin/script.js"></script>
 
         <!-- container för vänster information-->
-        <div class="info-container">
+        <div class="info-container" class="infoOutAnim">
             <div class="info-img">
                 <?php echo "<img srcset=\"{$place['img_url']}\" src='imgbin/alt_place.png'/>"; ?>
             </div>
@@ -37,7 +37,6 @@ foreach ($places as $place) {
                         echo $event['event_name'];
                         echo ' : ';
                         echo $event['event_time'];
-                        echo ':00';
                         echo '</p>';
                     }
                 } ?>
