@@ -27,7 +27,7 @@ header {
     width: 100%;
     min-width: 100%;
     height: 70px;
-    background: #004E64;
+    background: -webkit-linear-gradient(left, #004e64 0%,#154b70 100%);
     border-bottom: #07020d solid 1px;
     box-shadow: 0 0 35px #929292;
 }
