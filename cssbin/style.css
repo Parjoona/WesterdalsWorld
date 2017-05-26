@@ -1,6 +1,10 @@
 /* Import av fonts */
 @import url('https://fonts.googleapis.com/css?family=Roboto:100');
 
+::-webkit-scrollbar {
+    display: none;
+}
+
 html, body {
     margin: 0;
     padding: 0;
@@ -123,7 +127,7 @@ header #username_session {
 }
 
 #menu li {
-    border-radius: 2px;
+    border-top-left-radius: 5px;
     display: inline-block;
     width: 150px;
     height: 30px;
@@ -160,13 +164,13 @@ main {
     left: 0;
     right: 0;
     transition: 0.75s;
-    border-radius: 2px;
+    border-top-left-radius: 5px;
 }
 
 /* LIGGER INNE I MAIN, INNEHÅLLER OBJECT */
 #content {
     margin: 0 auto;
-    border-radius: 2px;
+    border-top-left-radius: 5px;
     left: 0;
     right: 0;
     border: #004E64 solid 1px;
@@ -174,6 +178,7 @@ main {
     width: 992px;
     height: 100%;
     z-index: 10;
+    overflow: scroll;
 }
 
 #welcome-splash {
@@ -203,8 +208,8 @@ main {
     position: relative;
     float: left;
     text-align: center;
-    border-top-left-radius: 2px;
-    border-top-right-radius: 2px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 0px;
 }
 
 #box-con:hover {
@@ -255,7 +260,7 @@ main {
 
 /* ÅKER UT FRÅN MAIN*/
 #info-win {
-    height: 600px;
+    height: 500px;
     width: 600px;
     left: 0;
     right: 0;
@@ -266,13 +271,13 @@ main {
     z-index: -1;
     background: #E8F1F2;
     border: 1px solid #004E64;
-    border-top-left-radius: 10px;
+    border-top-left-radius: 5px;
 }
 
 #info-close-btn {
     border: 1px solid #004E64;
     left: -1px;
-    border-top-left-radius: 10px;
+    border-top-left-radius: 5px;
     width: 600px;
     height: 20px;
     top: 0;
@@ -299,6 +304,7 @@ main {
     right: 0;
     left: 0;
     font-family: 'Roboto', sans-serif;
+    overflow: scroll;
 }
 
 .info-container {
@@ -315,6 +321,7 @@ main {
 .event-i-places {
     border-top: 1px solid #000;
     border-left: 1px solid #000;
+    border-top-left-radius: 5px;
     padding: 15px 0 0 15px;
     margin: 20px 15px;
     text-align: center;
@@ -334,14 +341,9 @@ main {
     height: 190px;
     border-top: 1px solid #000;
     border-right: 1px solid #000;
-    opacity: 0.75;
+    opacity: 1;
     z-index: 40;
     transition: 300ms;
-}
-
-.info-img:hover {
-    transform: scale(1.30);
-    opacity: 1;
 }
 
 .info-img img {
@@ -352,6 +354,7 @@ main {
 }
 
 .info-msg {
+    overflow: scroll;
     right: 0;
     width: 325px;
     height: 600px;
@@ -505,11 +508,13 @@ main {
 @keyframes infoIn {
     0% {
         transform: translate3d(-100%, 0, 0);
+        display: none;
         opacity: 0;
         z-index: -1;
     }
     100% {
         transform: translateX(0);
+        display: block;
         opacity: 1;
         z-index: 35;
     }
@@ -518,11 +523,13 @@ main {
 @keyframes infoOut {
     0% {
         transform: translateX(0);
+        display: block;
         opacity: 1;
         z-index: 35;
     }
     100% {
         transform: translate3d(100%, 0, 0);
+        display: none;
         opacity: 0;
         z-index: -1;
     }
@@ -716,15 +723,12 @@ p.errordiv {
     background: #004E64;
 }
 
-
-
 #new-event-btn {
     width: 200px;
     height: 30px;
     background: #004E64;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    transform-origin: left top 0;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 0px;
     text-align: center;
     line-height: 30px;
     color: #E8F1F2;
@@ -743,6 +747,6 @@ p.errordiv {
 .neweventlink {
     width: 200px;
     height: 30px;
-    right: 50px;
+    right: -2px;
     top: -30px;
 }

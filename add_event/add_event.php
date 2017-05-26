@@ -24,6 +24,10 @@
                 <label for="date_time">Når</label>
                 <input type="datetime-local" name="date_time" title="date_time"/>
 
+                <label for="description">Description</label>
+                <input type="text" name="description" title="description">
+
+                <label for="placested">Sted:</label>
                 <select name="placested">
                     <?php
                     foreach ($places as $place) {

@@ -3,11 +3,7 @@
     <!-- knappar venstre -->
     <a id="about-btn" href="/~joopar16/Westerwhat/underpages/contactoform.php">About us</a>
     <!-- LOGO -->
-<<<<<<< Updated upstream
-    <a href="/WesterdalsWorld/index.php" id="logo"><img id="lg-pic" src="/WesterdalsWorld/imgbin/logo/23.png"></a>
-=======
-    <a href="/~joopar16/Westerwhat/index.php" id="logo"><img id="lg-pic" src="/~joopar16/Westerwhat/imgbin/logo/300.png"></a>
->>>>>>> Stashed changes
+    <a href="/~joopar16/Westerwhat/index.php" id="logo"><img id="lg-pic" src="/~joopar16/Westerwhat/imgbin/logo/23.png"></a>
     <!-- knappar hoyre -->
     <?php
     // If logged in or not
