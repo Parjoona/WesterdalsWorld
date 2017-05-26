@@ -21,7 +21,7 @@ $stmtplaces = $conn->prepare('SELECT * FROM places ORDER BY distance ASC');
 $stmtplaces->execute();
 $places = $stmtplaces->fetchAll();
 // Hämtar events
-$stmtevents = $conn->prepare('SELECT * FROM events');
+$stmtevents = $conn->prepare('SELECT * FROM events WHERE DATE(event_time) > DATE(NOW()) ORDER BY event_time ASC');
 $stmtevents->execute();
 $events = $stmtevents->fetchAll();
 // Hämtar message

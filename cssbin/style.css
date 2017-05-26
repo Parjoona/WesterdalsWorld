@@ -66,12 +66,17 @@ header #logo {
     margin: 0 auto;
 }
 
+header #logo:hover {
+    background: #004E64;
+}
+
 header #lg-pic {
     margin: 0 auto;
     left: 0;
     right: 0;
-    width: 300px;
-    height: 70px;
+    top: 10.5px;
+    width: 210px;
+    height: 49px;
 }
 
 header #settings-btn {
@@ -156,8 +161,8 @@ header #username_session {
 
 /* MAIN - HÅLLER CONTENT & MESSAGE WINDOW */
 main {
-    background: #004E64;
-    width: 1010px;
+    width: 1260px;
+    max-width: 1260px;
     margin: 0 auto;
     height: 75%;
     min-height: 75%;
@@ -165,18 +170,19 @@ main {
     left: 0;
     right: 0;
     transition: 0.75s;
-    border-top-left-radius: 5px;
+    border-top-left-radius: 10px;
 }
 
 /* LIGGER INNE I MAIN, INNEHÅLLER OBJECT */
 #content {
     margin: 0 auto;
-    border-top-left-radius: 5px;
+    border-top-left-radius: 10px;
     left: 0;
     right: 0;
     border: #004E64 solid 1px;
     background: #E8F1F2;
-    width: 1010px;
+    width: 1260px;
+    max-width: 1260px;
     height: 100%;
     z-index: 10;
     overflow: scroll;
@@ -277,7 +283,7 @@ main {
     right: 0;
     margin: 0 auto;
     top: 70px;
-    opacity: 1;
+    opacity: 0;
     transition: 0.75s;
     z-index: -1;
     background: #E8F1F2;
@@ -309,7 +315,7 @@ main {
 #info-content {
     text-align: left;
     transition: 0.75s;
-    height: 500px;
+    height: 475px;
     width: 600px;
     top: 20px;
     right: 0;
@@ -353,6 +359,10 @@ main {
     color: #000;
     font-size: 20px;
     margin: 0;
+}
+
+.event-i-places p {
+    text-align: left;
 }
 
 .info-img {
@@ -783,4 +793,52 @@ p.errordiv {
     margin: 0 auto;
     width: 275px;
     text-align: center;
+}
+
+.rotationPicture {
+    opacity: 0;
+}
+
+@keyframes image-2 {
+    0% {opacity: 0;}
+    15% {opacity: 1;}
+    25% {opacity: 1;}
+    35% {opacity: 1;}
+    50% {opacity: 1;}
+    65% {opacity: 1;}
+    75% {opacity: 1;}
+    85% {opacity: 1;}
+    100% {opacity: 0;}
+}
+@keyframes image-3 {
+    0% {opacity: 0;}
+    15% {opacity: 0;}
+    25% {opacity: 1;}
+    35% {opacity: 1;}
+    50% {opacity: 1;}
+    65% {opacity: 1;}
+    75% {opacity: 1;}
+    85% {opacity: 0;}
+    100% {opacity: 0;}
+}
+@keyframes image-4 {
+    0% {opacity: 0;}
+    15% {opacity: 0;}
+    25% {opacity: 0;}
+    35% {opacity: 1;}
+    50% {opacity: 1;}
+    65% {opacity: 1;}
+    75% {opacity: 0;}
+    85% {opacity: 0;}
+    100% {opacity: 0;}
+}
+
+#logo:hover .img-2 {
+    animation: image-2 5s infinite;
+}
+#logo:hover .img-3 {
+    animation: image-3 5s infinite;
+}
+#logo:hover .img-4 {
+    animation: image-4 5s infinite;
 }

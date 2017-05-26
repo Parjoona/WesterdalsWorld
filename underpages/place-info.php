@@ -28,8 +28,8 @@ foreach ($places as $place) {
             <div class="info-time">Åpentider:
                 <?php echo $place['open_at']; ?>-<?php echo $place['closes_at']; ?></div>
             <div class="info-description"><?php echo $place['description']; ?></div>
-            <div class="event-i-places">
-                <h1>Events here:</h1>
+            <div class="event-i-places"><h1>Events here:</h1>
+
                 <!-- Event koppling till places-->
                 <?php foreach ($events as $event) {
                     if ($place['id'] == $event['place_id']) {
