@@ -14,5 +14,5 @@
         <br>
         Trykk for å starte
     </p>
-    <img src="imgbin/places_img/Bla.jpg">
+    <img src="imgbin/places_img/CAPTURE.PNG">
 </div>
