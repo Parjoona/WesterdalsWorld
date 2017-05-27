@@ -6,8 +6,8 @@ require 'header.php';
 <!-- Split med menu inni -->
 <div id="menu">
     <ul id="ulmenu">
-        <a href="place.php"><li>Places</li></a>
-        <a href="event.php"><li class="active">Events</li></a>
+        <a href="place.php"><li>Hvor</li></a>
+        <a href="event.php"><li class="active">Hva</li></a>
     </ul>
 </div>
 <!-- Får allt under header til att vara centrert -->
