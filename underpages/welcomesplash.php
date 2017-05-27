@@ -14,5 +14,5 @@
         <br>
         Trykk for å starte
     </p>
-    <img src="imgbin/places_img/Capture.PNG" alt="Map picture">
+    <img src="imgbin/places_img/Capture.PNG">
 </div>
