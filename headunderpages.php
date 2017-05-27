@@ -15,4 +15,4 @@
     <link rel="stylesheet" href="../cssbin/style.css">
 </head>
 <body>
-<wrapper>
+<div id="wrapper">
