@@ -1,6 +1,7 @@
-<?php require '../headunderpages.php';
+<?php
+require '../headunderpages.php';
+require '../header.php';
 ?>
-<?php require '../header.php' ?>
 <main id="content">
     <div id="logreg">
         <form action="login.php" method="get">
@@ -12,6 +13,4 @@
             <input type="submit" value="Logg inn">
         </form>
     </div>
-</main>
-</wrapper>
-</body>
+<?php require '../footer.php' ?>

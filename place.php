@@ -1,8 +1,8 @@
 <?php
-require 'config.php'; ?>
-<!-- Kallar på html, css & andra taggar -->
-<?php require 'head.php' ?>
-<?php require 'header.php' ?>
+require 'config.php';
+require 'head.php';
+require 'header.php'
+?>
 
 <!-- Split med menu inni -->
 <div id="menu">
@@ -23,6 +23,4 @@ require 'config.php'; ?>
         <div id="info-close-btn"><p>LUKK</p></div>
         <div id="info-content"></div>
     </div>
-</main>
-</wrapper>
-</body>
+<?php require 'footer.php' ?>

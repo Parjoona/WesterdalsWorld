@@ -1,5 +1,7 @@
-<?php require '../headunderpages.php'; ?>
-<?php require '../header.php'; ?>
+<?php
+require '../headunderpages.php';
+require '../header.php';
+?>
 <main class="contactContent">
     <div id="infoCont">
         <h3 id="conText"> Takk for at du tar i bruk vår side, ved å fylle ut skjemaet og klikker send tar vi i mot
@@ -26,7 +28,4 @@
             <div class="clear"> </div>
         </form>
     </div>
-</main>
-</wrapper>
-</body>
-</html>
+<?php require '../footer.php' ?>

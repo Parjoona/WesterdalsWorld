@@ -1,5 +1,4 @@
-<?php
-include '../config.php';
+<?php include '../config.php';
 session_start();
 
 $num = isset($_GET['data']) ? $_GET['data'] : '404 could not find page';
@@ -10,10 +9,6 @@ foreach ($places as $place) {
         $placevar = $place['id']
         ?>
 
-        <script src="https://code.jquery.com/jquery-3.2.1.min.js"
-                integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-                crossorigin="anonymous">
-        </script>
         <script type="text/javascript" src="jsbin/script.js"></script>
 
         <!-- container för vänster information-->
@@ -23,9 +18,9 @@ foreach ($places as $place) {
             </div>
             <div class="info-name"><?php echo $place['place_name']; ?></div>
             <div class="info-place">Distanse: <?php echo $place['distance']; ?>m</div>
-            <div class="info-type">Sted type: <?php echo $place['place_type']; ?></div>
-            <div class="info-address">Adress: <?php echo $place['place_adress']; ?></div>
-            <div class="info-time">Åpentider:
+            <div class="info-type">Kategori: <?php echo $place['place_type']; ?></div>
+            <div class="info-address">Adresse: <?php echo $place['place_adress']; ?></div>
+            <div class="info-time">Åpningstider:
                 <?php echo $place['open_at']; ?>-<?php echo $place['closes_at']; ?></div>
             <div class="info-description"><?php echo $place['description']; ?></div>
             <div class="event-i-places"><h1>Events here:</h1>
@@ -33,11 +28,18 @@ foreach ($places as $place) {
                 <!-- Event koppling till places-->
                 <?php foreach ($events as $event) {
                     if ($place['id'] == $event['place_id']) {
-                        echo '<p>';
+
+                        $time = strtotime($event['event_time']);
+                        $timeformated = date("m/d g:i A", $time);
+
+
+                        echo '<div class="place-event">';
+                        echo "<div class='place-event-img'><img srcset=\"{$place['img_url']}\" src='imgbin/alt_place.png'/></div>";
+                        echo '<div class="place-event-name"><p>';
                         echo $event['event_name'];
-                        echo ' : ';
-                        echo $event['event_time'];
-                        echo '</p>';
+                        echo '</p></div><div class="place-event-time"><p>';
+                        echo $timeformated;
+                        echo '</p></div></div>';
                     }
                 } ?>
             </div>

@@ -1,7 +1,7 @@
 <?php
 require '../headunderpages.php';
+require '../header.php';
 ?>
-<?php require '../header.php'; ?>
 <main id="content">
     <div id="logreg">
         <form action="add_user.php" method="get">
@@ -19,7 +19,4 @@ require '../headunderpages.php';
             <input type="submit" value="Registrer">
         </form>
     </div>
-</main>
-</wrapper>
-</body>
-</html>
+<?php require '../footer.php' ?>

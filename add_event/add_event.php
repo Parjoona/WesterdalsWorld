@@ -1,16 +1,8 @@
-<?php require '../config.php'; ?>
-
-<!DOCTYPE html>
-<html>
-<head>
-    <link rel="stylesheet" href="../cssbin/style.css" type="text/css"/>
-    <title>Add Event</title>
-</head>
-
-<body>
-<wrapper>
-    <!-- La till den php require + main taggen -->
-    <?php require '../header.php' ?>
+<?php
+require '../config.php';
+require '../headunderpages.php';
+require '../header.php';
+?>
     <main id="content">
         <div id="addEvDiv">
             <form id="form" method="get" action="process.php">
@@ -40,6 +32,4 @@
             </form>
         </div>
     </main>
-</wrapper>
-</body>
-</html>
+    <?php require '../footer.php' ?>

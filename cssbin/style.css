@@ -28,7 +28,6 @@ header {
     min-width: 100%;
     height: 70px;
     background: -webkit-linear-gradient(left, #004e64 0%,#154b70 100%);
-    border-bottom: #07020d solid 1px;
     box-shadow: 0 0 35px #929292;
 }
 
@@ -141,6 +140,7 @@ header #username_session {
     line-height: 30px;
     font-family: 'Roboto', sans-serif;
     border: 1px solid #004E64;
+    border-bottom: #E8F1F2;
 }
 
 #menu li:hover {
@@ -189,11 +189,9 @@ main {
 }
 
 #welcome-splash {
-    margin: 5px 5px 0 5px;
-    height: 400px;
-    width: 992px;
+    margin: 0 auto;
+    height: 100%;
     background: #E8F1F2;
-    border: 1px solid #004E64;
     position: relative;
 }
 
@@ -339,7 +337,6 @@ main {
     border-top-left-radius: 5px;
     padding: 5px 0 0 7px;
     margin: 20px 15px;
-    text-align: center;
     width: 245px;
 }
 
@@ -349,7 +346,6 @@ main {
     border-top-left-radius: 5px;
     padding: 5px 0 0 7px;
     margin: 10px 10px;
-    text-align: center;
     width: 245px;
 }
 
@@ -360,8 +356,46 @@ main {
     margin: 0;
 }
 
-.event-i-places p {
-    text-align: left;
+.place-event {
+    overflow: hidden;
+    margin: 20px 0;
+    height: 60px;
+    box-shadow: 0 0 3px #000;
+}
+
+.place-event * {
+    margin: 0 0 4px;
+}
+
+.place-event p {
+    padding: 0 5px;
+    box-shadow: 0 0 1px #000;
+}
+
+.place-event-name {
+    background: #004E64;
+    color: #E8F1F2;
+}
+
+.place-event-time {
+    background: #E8F1F2;
+}
+
+.place-event-img {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    left: -10px;
+    top: -5px;
+    width: 245px;
+    height: 60px;
+    overflow: hidden;
+}
+
+.place-event-img img {
+    width: 400px;
+    height: 300px;
+    margin: -75px 0 0 -100px;
 }
 
 .info-img {

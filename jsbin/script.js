@@ -72,7 +72,7 @@ $(document).ready(function () {
     });
     //Tar bort splashscreen vid första besök.
     $('#welcome-splash').click(function () {
-        $(this).remove();
+        $(location).attr('href', 'place.php')
     });
 
     //Byter färg på meny.

@@ -1,15 +1,8 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: Pauma
- * Date: 2017-03-30
- * Time: 12:01
- */
 include 'config.php';
+require 'head.php';
+require 'header.php';
 ?>
-<!-- Kallar på html, css & andra taggar -->
-<?php require 'head.php' ?>
-<?php require 'header.php' ?>
 <!-- Split med menu inni -->
 <div id="menu">
     <ul id="ulmenu">
@@ -36,7 +29,4 @@ include 'config.php';
         <div id="info-close-btn"><p>LUKK</p></div>
         <div id="info-content"></div>
     </div>
-</main>
-</wrapper>
-</body>
-</html>
+<?php require 'footer.php' ?>
