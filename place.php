@@ -13,10 +13,12 @@ require 'header.php'
 </div>
 <!-- Får allt under header til att vara centrert -->
 <main id="mainContent">
+
     <!-- Håller på resturanger/barer "objects" -->
     <div id="content">
         <?php require 'underpages/places.php' ?>
     </div>
+    <div class="arrows"></div>
     <!-- Object som åker ut, håller på "messages" som folk skriver -->
     <div id="info-win">
         <!-- Closing knapp för message fönster -->

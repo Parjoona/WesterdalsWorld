@@ -8,7 +8,6 @@ require 'header.php'
     <!-- Håller på resturanger/barer "objects" -->
     <div id="content">
         <?php require 'underpages/welcomesplash.php'; ?>
-        <p style="left: 0; right: 0; text-align: center; top: 50px;">Trykk for å starte</p>
     </div>
     <!-- Object som åker ut, håller på "messages" som folk skriver -->
     <?php require 'footer.php' ?>

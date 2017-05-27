@@ -195,12 +195,23 @@ main {
     position: relative;
 }
 
-#welcome-splash * {
+#welcome-splash p {
     margin: 0 auto;
     top: 50%;
-    left: 50%;
+    left: 25%;
     transform: translate(-50%, -50%);
-    width: 750px;
+    width: 450px;
+    text-align: center;
+}
+
+#welcome-splash img {
+    margin: 0 auto;
+    top: 50%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    text-align: center;
+    border-radius: 50%;
 }
 
 /* CONTAINS "PLACES" */
@@ -835,11 +846,6 @@ p.errordiv {
 @keyframes image-2 {
     0% {opacity: 0;}
     15% {opacity: 1;}
-    25% {opacity: 1;}
-    35% {opacity: 1;}
-    50% {opacity: 1;}
-    65% {opacity: 1;}
-    75% {opacity: 1;}
     85% {opacity: 1;}
     100% {opacity: 0;}
 }
@@ -847,31 +853,79 @@ p.errordiv {
     0% {opacity: 0;}
     15% {opacity: 0;}
     25% {opacity: 1;}
-    35% {opacity: 1;}
-    50% {opacity: 1;}
-    65% {opacity: 1;}
     75% {opacity: 1;}
     85% {opacity: 0;}
     100% {opacity: 0;}
 }
 @keyframes image-4 {
     0% {opacity: 0;}
-    15% {opacity: 0;}
     25% {opacity: 0;}
     35% {opacity: 1;}
-    50% {opacity: 1;}
     65% {opacity: 1;}
     75% {opacity: 0;}
-    85% {opacity: 0;}
     100% {opacity: 0;}
 }
 
 #logo:hover .img-2 {
-    animation: image-2 5s infinite;
+    animation: image-2 3s infinite;
 }
 #logo:hover .img-3 {
-    animation: image-3 5s infinite;
+    animation: image-3 3s infinite;
 }
 #logo:hover .img-4 {
-    animation: image-4 5s infinite;
+    animation: image-4 3s infinite;
+}
+/* https://codepad.co/snippet/ziUi7Svz */
+
+.arrows {
+    height: 20px;
+    width: 20px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    bottom: -5%;
+}
+
+.arrows:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-left: 10px solid rgba(0, 0, 0, 0.7);
+    border-bottom: 10px solid rgba(0, 0, 0, 0.7);
+    transform: translate(10px, 40px) rotate(-45deg);
+    animation: arrows 1.5s linear infinite;
+}
+
+.arrows:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-left: 10px solid rgba(0, 0, 0, 0.7);
+    border-bottom: 10px solid rgba(0, 0, 0, 0.7);
+    transform: translate(20px, 0px) rotate(-45deg);
+    animation: arrows 1.5s linear infinite -0.75s;
+}
+
+@keyframes arrows {
+    0% {
+        border-left: 10px solid transparent;
+        border-bottom: 10px solid transparent;
+        transform: translate(-5px, -20px) rotate(-45deg);
+    }
+    10%, 90% {
+        border-left: 10px solid transparent;
+        border-bottom: 10px solid transparent;
+    }
+    50% {
+        border-left: 10px solid rgba(0, 0, 0, 0.7);
+        border-bottom: 10px solid rgba(0, 0, 0, 0.7);
+        transform: translate(-5px, 0px) rotate(-45deg);
+    }
+    100% {
+        border-left: 10px solid transparent;
+        border-bottom: 10px solid transparent;
+        transform: translate(-5px, 20px) rotate(-45deg);
+    }
 }
