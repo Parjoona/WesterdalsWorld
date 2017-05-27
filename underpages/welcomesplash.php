@@ -1,6 +1,6 @@
 <div id="welcome-splash">
     <p>
-        <span style="font-size: 30px">WesterdalsWhat</span>
+        <span style="font-size: 30px; left: 0; right: 0;">WesterdalsWhat</span>
         <br>
         <br>
         <br>
@@ -14,5 +14,5 @@
         <br>
         Trykk for å starte
     </p>
-    <img src="imgbin/places_img/CAPTURE.PNG">
+    <img src="imgbin/places_img/Capture.PNG">
 </div>
