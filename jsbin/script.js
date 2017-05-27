@@ -19,6 +19,15 @@ $(document).ready(function () {
             }
         });
     });
+
+    $(function($) {
+        $('#content').on('scroll', function() {
+            if(Math.round($(this).scrollTop() + $(this).innerHeight(), 10) >= Math.round($(this)[0].scrollHeight, 10)) {
+                $('.arrows').css({'opacity':'0'});
+            }
+        })
+    });
+
     //Var tvungen att lägga som duplikat för att få det att fungera som vilja.
     $('.eventCon').click(function () {
         var myKey = $(this).attr('data-id');

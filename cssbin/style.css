@@ -883,7 +883,9 @@ p.errordiv {
     margin: 0 auto;
     left: 0;
     right: 0;
-    bottom: -5%;
+    bottom: -8%;
+    transition: 1s;
+    opacity: 1;
 }
 
 .arrows:before {
