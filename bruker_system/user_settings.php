@@ -5,7 +5,7 @@ require '../header.php';
 
 <main id="content">
     <div id="logreg">
-        <form action="change_passsword.php" method="post">
+        <form action="change-password.php" method="get">
             <h2>Bytt passord</h2>
             Gammelt passord :<input type="text" name="gammeltPass">
             Nytt passord :
